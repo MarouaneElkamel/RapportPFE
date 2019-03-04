@@ -1,0 +1,86 @@
+\part{Réalisation}
+\setcounter{chapter}{2}
+\chapter{Réalisation}
+\graphicspath{{Chapitre3/figures/}}
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+
+
+\section{Outils et langages utilisés}
+L'étude technique peut se trouver dans cette partie, comme elle peut \^etre faite en
+parall\'ele avec l'\'etude th\'eorique (comme le sugg\'ere le mod\'ele 2TUP).
+Dans cette partie, il faut essayer de convaincre le lecteur de vos choix en termes de
+technologie. Un \'etat de l'art est souhait\'e ici, avec un comparatif, une synth\'ese et un choix 
+d'outils, m\^eme tr\'es brefs.
+\section{Pr\'esentation de l'application}
+C'est tout \'a fait normal que tout le monde attend cette partie pour coller \'a souhait toutes les images
+correspondant aux interfaces diverses de l'application si ch\'ere \'a votre coeur, mais
+abstenez vous! Il FAUT mettre des imprime \'ecrans, mais bien choisis, et surtout, c'est
+bien de les bien formuler : Choisissez un sc\'enario d'ex\'ecution, par exemple la cr\'eation d'un 
+nouveau client, et montrer les diff\'erentes interfaces n\'ecessaires pour le faire, en
+expliquant bri\'evement le comportement de l'application. Pas trop d'images, ni trop de
+commentaires : concis, encore et toujours.
+
+\'Evitez ici de coller du code : personne n'a envie de voir le contenu de votre classe Java.
+Mais  vous  pouvez ins\'erer des snippets (bouts de code) pour montrer certaines
+fonctionnalit\'es \cite{YOUSFI2015}\cite{Latex}, si vous en avez vraiment besoin. Si vous voulez montrer une partie de votre code, les \'etapes d'installation ou de configuration vous pourrez les mettre dans l'annexe.
+\subsection{Exemple de tableau}
+
+Vous pouvez utiliser une description tabulaire d'une \'eventuelle comparaison entre les travaux existants. Ceci est un exemple de tableau: Tab \ref{tab:exple}.
+
+\begin{table}[ht]
+	\centering
+	\caption{Tableau comparatif}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\centering{}\vspace*{\fill}}X|>{\centering{}\vspace*{\fill}}X|>{\centering{}\vspace*{\fill}}X|>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			& \bfseries Col1 & \bfseries Col2 &\bfseries Col3 &\bfseries Col4\\
+			\hline \hline
+			Row1		&		&	X	&		&		\\
+			Row2		&	X	&		&		&		\\
+			Row3		&	X	&	X	&	X	&	X	\\
+			Row4		&	X	&		&	X	&	X	\\
+			Row5		&	X	&		&	X	&	X	\\
+			Row6		&	X	&		&	X	&	X	\\
+			Row7		&	X	&		&	X	&		\\
+			Row8		&	X	&	X	&	X	&		\\
+			\hline
+	\end{tabularx}
+	\label{tab:exple}
+\end{table}
+
+\subsection{Exemple de Code}
+Voici un exemple de code Java modifié, avec coloration syntaxique \ref{code:vectorJIF}.
+
+\begin{lstlisting}[rulecolor=\color{white}]
+\end{lstlisting}
+
+\begin{lstlisting}[label=code:vectorJIF,caption=Extrait de la classe \textit{Vector.jif},language=java,emph={label L,L}, emphstyle=\bf]
+	public class Vector[label L] extends AbstractList[L] { 
+		private int{L} length; 
+		private Object{L}[]{L} elements;
+		public Vector() ... 
+		public Object elementAt(int i):{L;i} 
+					throws IndexOutOfBoundsException {
+			... 
+			return elements[i]; 
+		}
+		public void setElementAt{L}(Object{L} o, int{L} i) ... 
+		public int{L} size() { 
+			return length; 
+		} 
+	}
+\end{lstlisting}
+
+%==============================================================================
+\end{spacing}

@@ -1,0 +1,121 @@
+
+\setcounter{chapter}{2}
+\chapter{Réalisation}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre3/figures/}}
+
+%\DoPToC
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+
+%==============================================================================
+\section*{Introduction}
+Ce chapitre porte sur la partie pratique ainsi que la bibliographie.
+
+\section{Outils et langages utilisés}
+L'étude technique peut se trouver dans cette partie, comme elle peut être faite en
+parallèle avec l'étude théorique (comme le suggère le modèle 2TUP).
+Dans cette partie, il faut essayer de convaincre le lecteur de vos choix en termes de
+technologie. Un état de l'art est souhaité ici, avec un comparatif, une synthèse et un choix 
+d'outils, même très brefs.
+\section{Présentation de l'application}
+Il est tout à fait normal que tout le monde attende cette partie pour coller à souhait toutes les images
+correspondant aux interfaces diverses de l'application si chère à votre coeur, mais
+abstenez vous! Il FAUT mettre des imprime écrans, mais bien choisis, et surtout, il faut les scénariser : Choisissez un scénario d'exécution, par exemple la création d'un 
+nouveau client, et montrer les différentes interfaces nécessaires pour le faire, en
+expliquant brièvement le comportement de l'application. Pas trop d'images, ni trop de
+commentaires : concis, encore et toujours.
+
+Évitez ici de coller du code : personne n'a envie de voir le contenu de vos classes.
+Mais  vous  pouvez insérer des snippets (bouts de code) pour montrer certaines
+fonctionnalités \cite{YOUSFI2015}\cite{Latex}, si vous en avez vraiment besoin. Si vous voulez montrer une partie de votre code, les étapes d'installation ou de configuration, vous pourrez les mettre dans l'annexe.
+\subsection{Exemple de tableau}
+
+Vous pouvez utiliser une description tabulaire d'une éventuelle comparaison entre les travaux existants. Ceci est un exemple de tableau: Tab \ref{tab:exple}.
+
+\begin{table}[ht]
+	\centering
+	\caption{Tableau comparatif}
+	\footnotesize
+	\begin{tabularx}{\linewidth}{|>{\bfseries \vspace*{\fill}}X ||>{\centering{}\vspace*{\fill}}X|>{\centering{}\vspace*{\fill}}X|>{\centering{}\vspace*{\fill}}X|>{\vspace*{\fill}}X<{\centering{}}|}	
+			\hline 
+			& \bfseries Col1 & \bfseries Col2 &\bfseries Col3 &\bfseries Col4\\
+			\hline \hline
+			Row1		&		&	X	&		&		\\
+			Row2		&	X	&		&		&		\\
+			Row3		&	X	&	X	&	X	&	X	\\
+			Row4		&	X	&		&	X	&	X	\\
+			Row5		&	X	&		&	X	&	X	\\
+			Row6		&	X	&		&	X	&	X	\\
+			Row7		&	X	&		&	X	&		\\
+			Row8		&	X	&	X	&	X	&		\\
+			\hline
+	\end{tabularx}
+	\label{tab:exple}
+\end{table}
+
+\subsection{Exemple de Code}
+Voici un exemple de code Java, avec coloration syntaxique \ref{code:java}.
+
+\begin{lstlisting}[rulecolor=\color{white}]
+\end{lstlisting}
+
+\begin{lstlisting}[label=code:java,caption=Helloworld Java,language=java]
+	public class HelloWorld {
+	//la méthode main
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+
+}
+\end{lstlisting}
+
+\section{Remarques sur la bibliographie}
+Votre bibliographie doit répondre à certains critères, sinon, on vous fera encore et
+toujours la remarque dessus (et parfois, même si vous pensez avoir tout fait comme il
+ faut, on peut vous faire la remarque quand même : chacun a une conception très
+personnelle de comment une bibliographie devrait être).\\
+\begin{itemize}
+\item Une bibliographie dans un bon rapport doit contenir plus de livres et d'articles 
+que de sites web : après tout c'est une biblio. Privilégiez donc les ouvrages
+reconnus et publiés pour vos définitions, au lieu de sauter directement sur le premier article wikipedia;
+ \item Les éléments d'une bibliographie sont de préférence classés par ordre
+alphabétique, ou par thèmes (et ordre alphabétique pour chaque thème);
+\item Une entrée bibliographique doit être sous la forme suivante :
+\begin{itemize}
+\item Elle doit contenir un identifiant unique: représenté soit par un numéro
+[1] ou par le nom du premier auteur, suivi de l'année d'édition [Kuntz, 1987];
+\item Si c'est un livre : Les noms des auteurs, suivi du titre du livre, de l'éditeur, 
+ISBN/ISSN, et la date d'édition;
+\item Si c'est un article : Les noms des auteurs, le titre , le journal ou la
+conférence, et la date de publication;
+\item Si c'est un site web ou un document électronique : Le titre, le lien et la date 
+de consultation;
+\item Si c'est une thèse : nom et prénom, titre de la thèse, université de
+soutenance, année de soutenance, nombre de pages;
+\item Exemples : 
+\begin{description}
+\item $[Bazin, 1992]$ BAZIN R., REGNIER B. Les traitements antiviraux et leurs essais
+thérapeutiques. Rev. Prat., 1992, 42, 2, p.148-153.\\
+\item $[Anderson,1998]$ ANDERSON P.JF. Checklist of criteria used for evaluation of metasites.
+[en ligne]. Université du Michigan, Etats Unis. Site disponible sur :\\
+http://www.lib.umich.edu/megasite/critlist.html.(Page consultée le 11/09/1998).
+\end{description}
+\item Dans le texte du rapport, on doit obligatoirement citer la référence en  faisant appel à son identifiant, juste après avoir utilisé la citation. Si ceci n'est pas fait dans les règles, on peut être accusé de plagiat.
+\end{itemize} 
+\end{itemize} 
+
+\section*{Conclusion}
+Voilà.
+
+%==============================================================================
+\end{spacing}

@@ -1,0 +1,42 @@
+\setcounter{mtc}{5} %indique le numéro réel du chapitre, pour la mini table des matières
+\chapter{Étude Théorique}
+\minitoc  %insert la minitoc
+
+\graphicspath{{Chapitre1/figures/}}
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+
+\section*{Introduction}
+Une étude théorique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
+\section{État de l'art} 
+C'est une étude assez détaillée sur ce qui existe sur le marché ou dans la littérature (d'où 
+le terme état de l'art), qui permet de répondre à la problématique. L'idée ici est de faire 
+un comparatif entre les solutions existantes, mais surtout d'analyser le résultat de cette 
+comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour répondre à votre 
+problématique.
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.9]{art.jpg}
+\caption{État de l'art}
+\label{fig:fig1}
+\end{figure}
+\section{Étude de l'existant}
+Elle est en général réalisée quand on va développer un module supplémentaire sur un 
+logiciel existant, ou si on va modifier une application existante. L'étude de l'existant
+consiste à expliquer ce qui existe déjà dans votre environnement de travail.
+
+\section*{Conclusion}
+La conclusion est en général sans numérotation, et n'apparaît pas dans la table des matières.
+
+
+%==============================================================================
+\end{spacing}

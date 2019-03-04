@@ -1,0 +1,26 @@
+\chapter{Conclusion Générale et Perspectives}
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+
+C'est l'une des parties les plus importantes et pourtant les plus négligées 
+du rapport. Ce qu'on \underline{ne veut pas voir} ici, c'est combien ce stage vous a été bénéfique, comment il vous a appris à vous intégrer, à connaître le monde du travail, etc.\\
+Franchement, personne n'en a rien à faire, du moins dans cette partie. Pour cela, vous 
+avez les remerciements et les dédicaces, vous pourrez vous y exprimer à souhait.\\
+La conclusion, c'est très simple : c'est d'abord le résumé de ce que vous avez raconté
+dans le rapport : vous reprenez votre contribution, en y ajoutant ici les outils que vous 
+avez utilisé, votre manière de procéder. Vous pouvez même mettre les difficultés
+rencontrées. En deuxième lieu, on y met les perspectives du travail : ce qu'on pourrait 
+ajouter à votre application, comment on pourrait l'améliorer.
+
+%==============================================================================
+\end{spacing}

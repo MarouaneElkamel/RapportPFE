@@ -1,0 +1,235 @@
+\documentclass[oneside,12pt]{Classes/aesm_edspia}
+
+\usepackage{minitoc}
+\usepackage[latin1]{inputenc}
+\usepackage[english,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{lmodern}%font modern
+\rmfamily
+\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub * cmr/bx/sc}{} 
+\usepackage{lettrine}
+\usepackage{tabularx}
+\usepackage{epsfig, floatflt, amssymb} 
+\usepackage{moreverb} %% pour le verbatim en boite
+\usepackage{cases}%equations en systemes numérotés - soluce possible package : CASES
+\usepackage{multirow} %% pour regrouper un texte sur plusieurs lignes dans une table
+\usepackage{url} %% pour citer les url par \url
+\usepackage[all]{xy} %% pour la barre au dessus des symboles
+\usepackage{textcomp} %% pour le symbol pour mille par \textperthousand et degrés par \degres
+\usepackage[right]{eurosym}
+\usepackage{setspace} %interligne simple, double etc...
+\usepackage{Classes/eurosans} %%pour le symbole \euro
+\usepackage{epic,eepic}
+\usepackage{soul}
+\usepackage[nottoc]{tocbibind} % tables des figures, des matieres et autres dans la TOC
+\usepackage{fancybox}
+\usepackage[leftcaption]{sidecap}
+\usepackage[labelsep=endash, textfont={footnotesize, singlespacing}, margin=10pt, format=plain, labelfont=bf]{caption}
+\usepackage[Conny]{Classes/fncychap} %en tete chapitrage
+\newcommand{\ie}{c.-\`a-d.~}
+\hbadness=10000% pb d'overfull box réglé
+\hfuzz=50pt
+\pdfcompresslevel9 % pour compresser le pdf final au maximum
+\pdfoptionpdfminorversion=5 % pour accepté les images PDF version 1.5 (ex: celles produites par Office 2007)
+\def\underscore{\char`\_}
+\makeatletter
+\renewcommand{\thesection}{\arabic {section}}
+\renewcommand{\SC@figure@vpos}{c}% centrer verticalement le caption avec le package sidecap...
+\renewcommand{\fnum@figure}{\small\textbf{Figure~\thefigure}}
+\renewcommand{\fnum@table}{\small\textbf{Tableau~\thetable}}
+
+\makeatother
+\usepackage{subfig}
+\def\thechapter{\Roman{chapter}}
+
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{Classes/mcode}
+
+
+%%% Listings
+
+\usepackage{listings}
+\lstloadlanguages{xml, java}
+	
+	 \usepackage{listings}
+  \usepackage{courier}
+ \lstset{
+         basicstyle=\footnotesize\ttfamily, 
+         %numbers=left,               
+         numberstyle=\tiny,          
+         %stepnumber=2,               
+         numbersep=5pt,              
+         tabsize=2,                  
+         extendedchars=true,         
+         breaklines=true,            
+         keywordstyle=\color[rgb]{0.43,0,0}\textbf,
+    		frame=b,
+         commentstyle=\color[rgb]{0.51,0.51,0.51} \textit ,
+         stringstyle=\ttfamily  \color[rgb]{0,0.44,0} ,
+         showspaces=false,           
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false            
+ }
+ 
+ \usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFont{red}{\color{red}}
+\DeclareCaptionFont{black}{\color{black}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=black,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\figurename{\small\textbf{Figure}} 
+
+\addtocounter{page}{-1}%pour revenir à 0
+
+% Pour remplir la page de garde
+\AuteurA{Flen} {FOULENI} 
+%\AuteurB{Flen2} {FOULENI}
+%\AuteurC{Flen3} {FOULENI} 
+%\AuteurD{Flen4} {FOULENI}
+
+\Encadrant{Mr}{Flen}{FOULENI}
+\EncadrantS{Mme} {Flena} {FALTEN}
+
+\Filiere{GL ou RT}
+\datesout{--/--/2015}
+
+
+
+\President{M. President} {FLEN}     %% Président du Jury
+\RapporteurA{Mme. Rapporteur} {FLENA} %%Rapporteur
+
+
+
+\AnneeUniv{2014/2015}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makethese %% crée la couverture.
+
+\onehalfspacing
+
+% une page blanche (deuxième de couverture)
+\newpage\thispagestyle{empty}\addtocounter{page}{-3}
+\null\newpage\thispagestyle{empty}
+
+
+\frontmatter %numérotation en iii
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Remerciements}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\include{Remerciement/remerciement}
+
+
+%%%%%%%% TOC
+
+%profondeur dans la table des matières et de la numérotation des sections
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+\renewcommand{\contentsname}%
+    {Table des Matières}%
+
+%%%%minitoc
+\dominitoc % génère la minitoc
+\nomtcrule % supprime les lignes horizontales de la minitoc
+\renewcommand{\mtctitle}{Plan} % Modifie le titre de la minitoc
+
+%%%%
+\tableofcontents
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[R]{Table des Matières}
+
+
+%%%%%%%% Figures
+
+\makeatletter
+%\renewcommand{a\thefigure}{\@arabic\c@figure}
+\@addtoreset{figure}{chapter}
+\makeatother
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\listfigurename{Liste des Figures}
+\listoffigures \mtcaddchapter 
+
+\fancyhead[R]{Liste des Figures}
+\newpage
+
+
+%%%%%%%% Tableaux
+
+\makeatletter
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\listtablename{Liste des Tableaux}
+
+\listoftables  \mtcaddchapter 
+
+\fancyhead[R]{Liste des Tableaux}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\fancyhead[R]{Résumés}
+
+\include{Resumes/resumeF}
+
+\include{Resumes/resumeA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                       
+\mainmatter %numéros arabes
+\pagestyle{fancy}
+\fancyhead[R]{Introduction Générale}
+\include{Introduction/introduction}
+\fancyhf{}
+\fancyhead[R]{Introduction Générale}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+\include{Chapitre1/chapitre1}
+\include{Chapitre2/chapitre2}
+\include{Chapitre3/chapitre3}
+
+\backmatter
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{Conclusion Générale et Perspectives}{}}
+\fancyhead[R]{Conclusion Générale et Perspectives}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\include{Conclusion/conclusion}
+
+\bibliographystyle{Biblio/unsrt_modif} 
+\singlespacing
+\renewcommand{\bibname}{Bibliographique}
+
+\bibliography{Biblio/aesm_edspia}
+
+\onehalfspacing
+
+\appendix
+\include{Annexe1/annexe1}
+
+\end{document}

@@ -1,0 +1,82 @@
+
+\setcounter{chapter}{1}
+\chapter{Conception}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre2/figures/}}
+
+%\DoPToC
+
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+\section*{Introduction}
+La partie conception de l'application \textbf{\textsl{n'est pas toujours obligatoire}}. En effet, quand notre travail consiste en une étude théorique, ou une mise en place d'un système par exemple, 
+il est inutile voire obsolète de faire un diagramme de classes ou de séquence.\\
+Quand il s'agit de développement, par contre, la partie conception s'impose. 
+\section{Recommadations}
+En général, 
+il faut suivre les règles suivantes :
+\begin{itemize}
+	\item Choisir une méthodologie de travail : un processus unifié, une méthode agile;
+\end{itemize}
+\section{Diagrammes}
+Il faut Bien choisir les diagrammes adéquats pour votre application. En général, les
+diagrammes obligatoires sont les diagrammes de cas d'utilisation, de classe et de 
+séquence. Vous pouvez ajouter en plus le diagramme qui vous semble pertinent :
+par exemple, pour une application sur plusieurs tiers, il est intéressant de
+montrer le diagramme de déploiement;
+\begin{itemize}
+
+\item Les diagrammes doivent être clairs, lisibles et bien expliqués, sans pour autant
+nous submerger de détails. Des explications trop longues deviennent ennuyeuses;
+\item Si un diagramme est trop grand, vous pouvez le diviser, le représenter sous
+forme de plusieurs diagrammes, ou vous abstraire de certains détails. Si c'est
+impossible, imprimez le sur une grande page (A3), quitte à la plier ensuite. Le
+plus important est que tous les mots soient lisibles.
+
+\end{itemize}
+\subsection{Diagramme de Séquence}
+Un diagramme de séquence :
+\begin{itemize}
+	\item Représente un scénario possible qui se déroule dans un cas d'utilisation. 
+	Vous n'êtes donc pas obligés de montrer tous les cas d'exécution possibles;
+	\item Représente l'interaction entre les objets : donc normalement, toutes les
+	instances définies dans un diagramme de séquences doivent correspondre 
+	 à des classes qui se trouvent dans le diagramme des classes;
+	 \item Il existe parfois des dizaines de diagrammes de séquences possibles. Choisissez certains d'entre eux à mettre dans le rapport (2 ou 3). Privilégiez les diagrammes les plus importants (et non, l'authentification n'en fait pas partie!).
+\end{itemize}
+\subsection{Diagramme de Classes}
+Un diagramme de classes :
+\begin{itemize}
+\item Doit être fidèle à l'architecture logicielle choisie. Si vous utilisez le MVC, 
+alors les trois couches doivent être représentées dans le diagramme de classes grâce aux packages;
+\item Les stéréotypes sont fortement conseillés. Si vous développez une
+application web, n'hésitez pas à utiliser les stéréotypes de la figure \ref{fig:fig2} : 
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.9]{stereotypes.jpg}
+\caption{Les stéréotypes}
+\label{fig:fig2}
+\end{figure}
+\item Attention à ne pas confondre classes et tables : évitez la tentation de
+mettre des id partout.
+
+\end{itemize}
+ 
+\section*{Conclusion}
+Faire ici une petite récapitulation du chapitre, ainsi qu'une introduction du chapitre suivant.
+
+
+
+
+
+%==============================================================================
+\end{spacing}
