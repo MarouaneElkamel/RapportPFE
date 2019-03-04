@@ -12,11 +12,11 @@
 \usepackage{tabularx}
 \usepackage{epsfig, floatflt, amssymb} 
 \usepackage{moreverb} %% pour le verbatim en boite
-\usepackage{cases}%equations en systemes numérotés - soluce possible package : CASES
+\usepackage{cases}%equations en systemes numerotes - soluce possible package : CASES
 \usepackage{multirow} %% pour regrouper un texte sur plusieurs lignes dans une table
 \usepackage{url} %% pour citer les url par \url
 \usepackage[all]{xy} %% pour la barre au dessus des symboles
-\usepackage{textcomp} %% pour le symbol pour mille par \textperthousand et degrés par \degres
+\usepackage{textcomp} %% pour le symbol pour mille par \textperthousand et degres par \degres
 \usepackage[right]{eurosym}
 \usepackage{setspace} %interligne simple, double etc...
 \usepackage{Classes/eurosans} %%pour le symbole \euro
@@ -28,10 +28,10 @@
 \usepackage[labelsep=endash, textfont={footnotesize, singlespacing}, margin=10pt, format=plain, labelfont=bf]{caption}
 \usepackage[Conny]{Classes/fncychap} %en tete chapitrage
 \newcommand{\ie}{c.-\`a-d.~}
-\hbadness=10000% pb d'overfull box réglé
+\hbadness=10000% pb d'overfull box regle
 \hfuzz=50pt
 \pdfcompresslevel9 % pour compresser le pdf final au maximum
-\pdfoptionpdfminorversion=5 % pour accepté les images PDF version 1.5 (ex: celles produites par Office 2007)
+\pdfoptionpdfminorversion=5 % pour accepte les images PDF version 1.5 (ex: celles produites par Office 2007)
 \def\underscore{\char`\_}
 \makeatletter
 \renewcommand{\thesection}{\arabic {section}}
@@ -89,40 +89,40 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand\figurename{\small\textbf{Figure}} 
 
-\addtocounter{page}{-1}%pour revenir à 0
+\addtocounter{page}{-1}%pour revenir e 0
 
 % Pour remplir la page de garde
-\AuteurA{Flen} {FOULENI} 
+\AuteurA{Marouane} {ELKAMEL} 
 %\AuteurB{Flen2} {FOULENI}
 %\AuteurC{Flen3} {FOULENI} 
 %\AuteurD{Flen4} {FOULENI}
 
-\Encadrant{Mr}{Flen}{FOULENI}
-\EncadrantS{Mme} {Flena} {FALTEN}
+\Encadrant{Mr}{Aymen}{SELLAOUTI}
+\EncadrantS{Mr} {Anis} {KALLEL}
 
-\Filiere{GL ou RT}
-\datesout{--/--/2015}
+\Filiere{GL}
+\datesout{--/--/2019}
 
 
 
-\President{M. President} {FLEN}     %% Président du Jury
+\President{M. President} {FLEN}     %% President du Jury
 \RapporteurA{Mme. Rapporteur} {FLENA} %%Rapporteur
 
 
 
-\AnneeUniv{2014/2015}
+\AnneeUniv{2018/2019}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\makethese %% crée la couverture.
+\makethese %% cree la couverture.
 
 \onehalfspacing
 
-% une page blanche (deuxième de couverture)
+% une page blanche (deuxieme de couverture)
 \newpage\thispagestyle{empty}\addtocounter{page}{-3}
 \null\newpage\thispagestyle{empty}
 
 
-\frontmatter %numérotation en iii
+\frontmatter %numerotation en iii
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{Remerciements}
@@ -135,17 +135,17 @@
 
 %%%%%%%% TOC
 
-%profondeur dans la table des matières et de la numérotation des sections
+%profondeur dans la table des matieres et de la numerotation des sections
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
 
 \renewcommand{\contentsname}%
-    {Table des Matières}%
+    {Table des Matieres}%
 
 %%%%minitoc
-\dominitoc % génère la minitoc
+\dominitoc % genere la minitoc
 \nomtcrule % supprime les lignes horizontales de la minitoc
 \renewcommand{\mtctitle}{Plan} % Modifie le titre de la minitoc
 
@@ -154,7 +154,7 @@
 
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyhead[R]{Table des Matières}
+\fancyhead[R]{Table des Matieres}
 
 
 %%%%%%%% Figures
@@ -186,7 +186,7 @@
 \fancyhead[R]{Liste des Tableaux}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\fancyhead[R]{Résumés}
+%\fancyhead[R]{Resumes}
 
 \include{Resumes/resumeF}
 
@@ -195,12 +195,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
                        
-\mainmatter %numéros arabes
+\mainmatter %numeros arabes
 \pagestyle{fancy}
-\fancyhead[R]{Introduction Générale}
+\fancyhead[R]{Introduction Generale}
 \include{Introduction/introduction}
 \fancyhf{}
-\fancyhead[R]{Introduction Générale}
+\fancyhead[R]{Introduction Generale}
 \fancyfoot[R]{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -214,8 +214,8 @@
 \backmatter
 \pagestyle{fancy}
 \fancyhf{}
-\renewcommand{\chaptermark}[1]{\markboth{Conclusion Générale et Perspectives}{}}
-\fancyhead[R]{Conclusion Générale et Perspectives}
+\renewcommand{\chaptermark}[1]{\markboth{Conclusion Generale et Perspectives}{}}
+\fancyhead[R]{Conclusion Generale et Perspectives}
 \fancyfoot[R]{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}

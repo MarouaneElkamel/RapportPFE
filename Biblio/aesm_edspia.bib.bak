@@ -3,8 +3,8 @@
 
 @Article{SFAXI2015,
 author = {Lilia Sfaxi and Souheib Yousfi},
-title = {Pour bien écrire un rapport},
-journal = {Département Math-info},
+title = {Pour bien ecrire un rapport},
+journal = {Departement Math-info},
 year = {2015},
 }
 
@@ -12,15 +12,15 @@ year = {2015},
 author = {Souheib Yousfi and Lilia Sfaxi},
 editor = {INSAT},
 title = {Rapport Latex},
-publisher = {Département Math-info},
+publisher = {Departement Math-info},
 year = {2015},
 }
 
 @misc{Latex,
   author = {Mr. Latex},
-  title = {{Débuter avec Latex}},
+  title = {{Debuter avec Latex}},
   howpublished = "\url{www.latex.com}",
   year = {2008}, 
-  note = "[En ligne; consulté le 19-Juillet-2008]"
+  note = "[En ligne; consulte le 19-Juillet-2008]"
 }
 

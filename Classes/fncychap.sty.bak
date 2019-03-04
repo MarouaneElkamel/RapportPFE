@@ -1,4 +1,4 @@
-%modifié pour Conny le 3/01/08. D. LANTIAT
+%modifie pour Conny le 3/01/08. D. LANTIAT
 %%% Copyright   Ulf A. Lindgren
 %%%
 %%% Note        Premission is granted to modify this file under
@@ -490,7 +490,7 @@
   \ChRuleWidth{2pt}
 
   \renewcommand{\DOCH}{%
-  	\vskip -4\baselineskip % ajouté pour remonter le chapitre et diminuer l'espace vertical avant
+  	\vskip -4\baselineskip % ajoute pour remonter le chapitre et diminuer l'espace vertical avant
     \mghrulefill{3\RW}\par\nobreak
     \vskip -0.5\baselineskip
     \mghrulefill{\RW}\par\nobreak

@@ -1,4 +1,4 @@
-%% Modifié le 26 juin = ligne 657 pour espacement horizontal table des figures
+%% Modifie le 26 juin = ligne 657 pour espacement horizontal table des figures
 %% This is file `book.cls',
 %% generated with the docstrip utility.
 %%

@@ -10,7 +10,7 @@
 \else   \LoadClass[pdftex, a4paper]{book}
 \fi
 
-%Packages à charger
+%Packages e charger
 \usepackage{amssymb}
 \usepackage{graphics}
 \usepackage{fancyhdr} % en-tete et pieds de page
@@ -23,7 +23,7 @@
 \RequirePackage{calc}
 \RequirePackage{float}
 
-%Redéfinition de l'environnement \part
+%Redefinition de l'environnement \part
 \def\@part[#1]#2{
 		 \refstepcounter{part}%
  	{
@@ -39,11 +39,11 @@
  	}%
  	\nobreak
  	\vskip 3ex\@afterheading
- 	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\ 
+ 	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 }%
 
 %Bibliographie
-\renewcommand{\bibname}{Références Bibliographiques}
+\renewcommand{\bibname}{References Bibliographiques}
 
 % Nomenclature
 %\usepackage[french]{nomencl}
@@ -55,21 +55,21 @@
         \pdffalse
     \else
         % for running pdflatex
-        \pdfoutput = 1    
-                          
+        \pdfoutput = 1
+
         \pdftrue
 \fi
 \ifpdf
  \usepackage[pdftex]{graphicx}
 \usepackage[pdftex, pdfauthor={David Lantiat}, plainpages = false,
-								 pdfpagelabels= true, 
+								 pdfpagelabels= true,
                  pdfpagelayout = SinglePage,
                  bookmarks,
                  bookmarksopen = true,
                  bookmarksnumbered = true,
                  breaklinks = true,
                  linktocpage,
-                 pagebackref = true, % pour effacer les rappels de pages dans la biblio (utile dans la version papier).  
+                 pagebackref = true, % pour effacer les rappels de pages dans la biblio (utile dans la version papier).
                  colorlinks = true,
                  linkcolor = blue,
                  urlcolor  = blue,
@@ -78,7 +78,7 @@
                  hyperindex = true,
                  hyperfootnotes=false,
                  hyperfigures
-                 ]{hyperref} 
+                 ]{hyperref}
 
     \DeclareGraphicsExtensions{.png, .jpg, .pdf}
      \pdfcompresslevel=9
@@ -104,28 +104,28 @@
     \usepackage{graphicx}
   \fi
 
-%Paramètres A4 
+%Parametres A4
 \ifpdf
    \pdfpageheight=297mm
    \pdfpagewidth=210mm
 \else
-   \setlength{\paperheight}{297mm} 
-   \setlength{\paperwidth}{210mm} 
+   \setlength{\paperheight}{297mm}
+   \setlength{\paperwidth}{210mm}
 \fi
 
 \setlength{\hoffset}{0.00cm}
 \setlength{\voffset}{0.00cm}
 
-\setlength{\evensidemargin}{0cm} 
-\setlength{\oddsidemargin}{0mm} % 15 mm par def.  
+\setlength{\evensidemargin}{0cm}
+\setlength{\oddsidemargin}{0mm} % 15 mm par def.
 \setlength{\topmargin}{1mm}
-\setlength{\headheight}{0cm} % 1 cm par défaut
+\setlength{\headheight}{0cm} % 1 cm par defaut
 \setlength{\headsep}{1.00cm}
 \setlength{\textheight}{22cm}
-\setlength{\textwidth}{17cm} % 16 cm par déf.
+\setlength{\textwidth}{17cm} % 16 cm par def.
 \setlength{\marginparsep}{0cm} % 1mm par def.
 \setlength{\marginparwidth}{0cm}
-\setlength{\headheight}{2\baselineskip} 
+\setlength{\headheight}{2\baselineskip}
 \setlength{\footskip}{2.36cm}
 
 %En tete et pied de page
@@ -184,12 +184,12 @@
 \begin{quote}}
 {\end{quote}\end{alwayssingle}}
 
-%Résumé
+%Resume
 
 \newenvironment{resume} {\begin{alwayssingle} \pagestyle{empty}
   \begin{flushleft}
   \vspace*{1.5cm}
-  {\Large \bfseries  Résumé}
+  {\Large \bfseries  Resume}
   \end{flushleft}
   \vspace{0.5cm}
    \begin{quote}}
@@ -267,7 +267,7 @@
 \newcommand{\JURY}{
 \textbf{\large{\textbf{JURY}}}\\[\baselineskip]
 \begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
-\PRESn &\PRESp &(Président)\\
+\PRESn &\PRESp &(President)\\
 \RAPAn &\RAPAp &(Rapporteur)
 \end{tabular}
 }
@@ -285,10 +285,10 @@
 \newcommand{\PrenomD}{}
 \newcommand{\NomD}{}
 
-\newcommand{\AUTEURA}{\PrenomA \hspace{0.05cm} \NomA} 
-\newcommand{\AUTEURB}{\PrenomB \hspace{0.05cm} \NomB} 
+\newcommand{\AUTEURA}{\PrenomA \hspace{0.05cm} \NomA}
+\newcommand{\AUTEURB}{\PrenomB \hspace{0.05cm} \NomB}
 \newcommand{\AUTEURC}{\PrenomC \hspace{0.05cm} \NomC}
-\newcommand{\AUTEURD}{\PrenomD \hspace{0.05cm} \NomD} 
+\newcommand{\AUTEURD}{\PrenomD \hspace{0.05cm} \NomD}
 
 \newcommand{\AUTEURS}{
 	{\Large{\textbf{\AUTEURA}}}\\
@@ -309,38 +309,38 @@
 
 \begin{center}
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
-{\Large{Institut National des Sciences Appliquées et de Technologie}}\\[\baselineskip]
-      UNIVERSITÉ DE CARTHAGE\\[\baselineskip]
-{\Large{\textbf{Projet de Fin d'Études}}}\\[\baselineskip]
-      
-      Filière : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
-      
+{\Large{National Institut of Applied Sciences and Technology}}\\[\baselineskip]
+      UNIVERSITY OF CARTHAGE\\[\baselineskip]
+{\Large{\textbf{Graduation Project}}}\\[\baselineskip]
+
+      Speciality : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
+
 			\hbox{\raisebox{0.2em}{\vrule depth 0pt height 3.5pt width 17cm}}
 			\setlength{\baselineskip}{4pt}
 			\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 			\vspace*{-26pt}
-		 	{\Large\textbf{\begin{spacing}{1}Titre du projet\end{spacing}}}~\\[\baselineskip]
+		 	{\Large\textbf{\begin{spacing}{1}Flouci Developers API\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
-	  	
-	Présenté par~\\[\baselineskip]
+
+	Presented By~\\[\baselineskip]
 	      \baselineskip=20pt
-	\AUTEURS \\[\baselineskip] 
+	\AUTEURS \\[\baselineskip]
 			\begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
-				Encadrant INSAT & : &\textbf{\ENCADRANT}\\
-				Encadrant ENTREPRISE & : &\textbf{\ENCADRANTSoc}
-			\end{tabular}    	
+				University Supervisor & : &\textbf{\ENCADRANT}\\
+				Enterprise Supervisor & : &\textbf{\ENCADRANTSoc}
+			\end{tabular}
      	\\[\baselineskip]
-      Présenté le : \textbf{\DATE}\\[\baselineskip]
-           
+      Presented the : \textbf{\DATE}\\[\baselineskip]
+
             \JURY
             ~\\[\baselineskip]~\\[\baselineskip]
-            Année Universitaire : \ANNEEUNIV\\
+            Annee Universitaire : \ANNEEUNIV\\
 \end{center}
-          
-           } 
- 
+
+           }
+
 % Auteurs
-    
+
 \newcommand{\AuteurA}[2]{%
 \renewcommand{\PrenomA}{#1}%
 \renewcommand{\NomA}{#2}%
@@ -361,7 +361,7 @@
 \renewcommand{\NomD}{#2}%
 }
 
-% Filière
+% Speciality
 \newcommand{\Filiere}[1]{
 \renewcommand{\FILIERE}{#1}
 }
@@ -371,7 +371,7 @@
 \renewcommand{\DATE}{#1}%
 }
 
-% Année Universitaire
+% Annee Universitaire
 \newcommand{\AnneeUniv}[1]{
 \renewcommand{\ANNEEUNIV}{#1}
 }
@@ -396,7 +396,7 @@
 \renewcommand{\PRESp}{#2}%
 }
 
-% Nom Profession Qualité de l'invité
+% Nom Profession Qualite de l'invite
 \newcommand{\Invite}[3]{%
 \renewcommand{\INVAn}{#1}%
 \renewcommand{\INVAp}{#2}%
@@ -452,5 +452,3 @@
 }
 \AtEndDocument{%
 }
-
-

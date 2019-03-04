@@ -10,7 +10,7 @@
 \else   \LoadClass[pdftex, a4paper]{book}
 \fi
 
-%Packages à charger
+%Packages e charger
 \usepackage{amssymb}
 \usepackage{graphics}
 \usepackage{fancyhdr} % en-tete et pieds de page
@@ -23,7 +23,7 @@
 \RequirePackage{calc}
 \RequirePackage{float}
 
-%Redéfinition de l'environnement \part
+%Redefinition de l'environnement \part
 \def\@part[#1]#2{
 		 \refstepcounter{part}%
  	{
@@ -43,7 +43,7 @@
 }%
 
 %Bibliographie
-\renewcommand{\bibname}{Références Bibliographiques}
+\renewcommand{\bibname}{References Bibliographiques}
 
 % Nomenclature
 %\usepackage[french]{nomencl}
@@ -104,7 +104,7 @@
     \usepackage{graphicx}
   \fi
 
-%Paramètres A4 
+%Parametres A4 
 \ifpdf
    \pdfpageheight=297mm
    \pdfpagewidth=210mm
@@ -119,10 +119,10 @@
 \setlength{\evensidemargin}{0cm} 
 \setlength{\oddsidemargin}{0mm} % 15 mm par def.  
 \setlength{\topmargin}{1mm}
-\setlength{\headheight}{0cm} % 1 cm par défaut
+\setlength{\headheight}{0cm} % 1 cm par defaut
 \setlength{\headsep}{1.00cm}
 \setlength{\textheight}{22cm}
-\setlength{\textwidth}{17cm} % 16 cm par déf.
+\setlength{\textwidth}{17cm} % 16 cm par def.
 \setlength{\marginparsep}{0cm} % 1mm par def.
 \setlength{\marginparwidth}{0cm}
 \setlength{\headheight}{2\baselineskip} 
@@ -184,12 +184,12 @@
 \begin{quote}}
 {\end{quote}\end{alwayssingle}}
 
-%Résumé
+%Resume
 
 \newenvironment{resume} {\begin{alwayssingle} \pagestyle{empty}
   \begin{flushleft}
   \vspace*{1.5cm}
-  {\Large \bfseries  Résumé}
+  {\Large \bfseries  Resume}
   \end{flushleft}
   \vspace{0.5cm}
    \begin{quote}}
@@ -314,11 +314,11 @@
 
 \begin{center}
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
-{\Large{Institut National des Sciences Appliquées et de Technologie}}\\[\baselineskip]
-      UNIVERSITÉ DE CARTHAGE\\[\baselineskip]
+{\Large{National Institut of Applied Sciences and Technology}}\\[\baselineskip]
+      UNIVERSITY OF CARTHAGE\\[\baselineskip]
 {\Large{\textbf{Projet Personnel Professionnel}}}\\[\baselineskip]
       
-      Filière : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
+      Speciality : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
       
 			\hbox{\raisebox{0.2em}{\vrule depth 0pt height 3.5pt width 17cm}}
 			\setlength{\baselineskip}{4pt}
@@ -327,17 +327,17 @@
 		 	{\Large\textbf{\begin{spacing}{1}Titre du projet\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
 	  	
-	Présenté par~\\[\baselineskip]
+	Presented By~\\[\baselineskip]
 	      \baselineskip=20pt
 	\AUTEURS \\[\baselineskip]     	
      	Encadrant : \textbf{\ENCADRANT}\\
      	
-      Présenté le : \textbf{\DATE}\\[\baselineskip]
+      Presented the : \textbf{\DATE}\\[\baselineskip]
       %Devant le JURY\\[\baselineskip]~\\[\baselineskip] 
            
             %\JURY
             ~\\[\baselineskip]~\\[\baselineskip]~\\[\baselineskip]
-            Année Universitaire : \ANNEEUNIV\\
+            Annee Universitaire : \ANNEEUNIV\\
 \end{center}
           
            } 
@@ -364,7 +364,7 @@
 \renewcommand{\NomD}{#2}%
 }
 
-% Filière
+% Speciality
 \newcommand{\Filiere}[1]{
 \renewcommand{\FILIERE}{#1}
 }
@@ -374,7 +374,7 @@
 \renewcommand{\DATE}{#1}%
 }
 
-% Année Universitaire
+% Annee Universitaire
 \newcommand{\AnneeUniv}[1]{
 \renewcommand{\ANNEEUNIV}{#1}
 }
@@ -394,7 +394,7 @@
 \renewcommand{\PRESq}{#3}%
 }
 
-% Nom Profession Qualité de l'invité
+% Nom Profession Qualite de l'invite
 \newcommand{\Invite}[3]{%
 \renewcommand{\INVAn}{#1}%
 \renewcommand{\INVAp}{#2}%
