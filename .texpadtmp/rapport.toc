@@ -1,25 +1,34 @@
 \babel@toc {french}{}
-\contentsline {chapter}{Liste des Figures}{iii}{Doc-Start}
-\contentsline {xchapter}{}{iii}{Doc-Start}
-\contentsline {chapter}{Liste des Tableaux}{iv}{Doc-Start}
+\contentsline {chapter}{Liste des Figures}{iv}{Doc-Start}
 \contentsline {xchapter}{}{iv}{Doc-Start}
-\contentsline {chapter}{Resume}{v}{Doc-Start}
-\contentsline {chapter}{Abstract}{vi}{Doc-Start}
-\contentsline {chapter}{Introduction Generale}{1}{Doc-Start}
-\contentsline {chapter}{\numberline {I}etude Theorique}{2}{chapter.1}
-\contentsline {section}{\numberline {1}etat de l'art}{2}{section.1.1}
-\contentsline {section}{\numberline {2}etude de l'existant}{3}{section.1.2}
-\contentsline {chapter}{\numberline {II}Conception}{4}{chapter.2}
-\contentsline {section}{\numberline {1}Recommadations}{4}{section.2.1}
-\contentsline {section}{\numberline {2}Diagrammes}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.1}Diagramme de Sequence}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2}Diagramme de Classes}{5}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {III}Realisation}{6}{chapter.3}
-\contentsline {section}{\numberline {1}Outils et langages utilises}{6}{section.3.1}
-\contentsline {section}{\numberline {2}Presentation de l'application}{6}{section.3.2}
-\contentsline {subsection}{\numberline {2.1}Exemple de tableau}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {2.2}Exemple de Code}{7}{subsection.3.2.2}
-\contentsline {section}{\numberline {3}Remarques sur la bibliographie}{8}{section.3.3}
-\contentsline {chapter}{Conclusion Generale et Perspectives}{10}{chapter*.10}
-\contentsline {chapter}{Bibliographique}{11}{chapter*.10}
-\contentsline {chapter}{Annexe : Remarques Diverses}{12}{chapter*.11}
+\contentsline {chapter}{Liste des Tableaux}{v}{Doc-Start}
+\contentsline {xchapter}{}{v}{Doc-Start}
+\contentsline {chapter}{Resume}{vi}{Doc-Start}
+\contentsline {chapter}{Abstract}{vii}{Doc-Start}
+\contentsline {chapter}{General Introduction}{1}{Doc-Start}
+\contentsline {chapter}{\numberline {I}Project Scope}{2}{chapter.1}
+\contentsline {section}{\numberline {1}Host company presentation}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1}Presentation of Kaoun}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}Presentation of Flouci}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {2}Project overview}{3}{section.1.2}
+\contentsline {subsection}{\numberline {2.1}Project Context}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {2.2}Study of the existing}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {2.3}Project goals}{3}{subsection.1.2.3}
+\contentsline {section}{\numberline {3}Methodology}{3}{section.1.3}
+\contentsline {subsection}{\numberline {3.1}Agile methodology}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {3.2}SCRUM methodology}{3}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {3.3}Lean software development}{3}{subsection.1.3.3}
+\contentsline {chapter}{\numberline {II}Conception}{5}{chapter.2}
+\contentsline {section}{\numberline {1}Recommadations}{5}{section.2.1}
+\contentsline {section}{\numberline {2}Diagrammes}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.1}Diagramme de Sequence}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2}Diagramme de Classes}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {III}Realisation}{7}{chapter.3}
+\contentsline {section}{\numberline {1}Outils et langages utilises}{7}{section.3.1}
+\contentsline {section}{\numberline {2}Presentation de l'application}{7}{section.3.2}
+\contentsline {subsection}{\numberline {2.1}Exemple de tableau}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {2.2}Exemple de Code}{8}{subsection.3.2.2}
+\contentsline {section}{\numberline {3}Remarques sur la bibliographie}{9}{section.3.3}
+\contentsline {chapter}{General Conclusion }{11}{chapter*.10}
+\contentsline {chapter}{Bibliographique}{12}{chapter*.10}
+\contentsline {chapter}{Annexe : Remarques Diverses}{13}{chapter*.11}
