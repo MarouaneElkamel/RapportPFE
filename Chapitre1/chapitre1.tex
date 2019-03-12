@@ -129,36 +129,69 @@ By the end of our project, we need to achieve these goals :
    A unique token is generated for each app to allow client integration.
   \item \textbf{Integrate Flouci client:}
  
- Once the App is configured the developer can easily add flouci as a payment method with the token provided.
+ Once the App is configured the developer can easily add Flouci as a payment method with the token provided.
   \item \textbf{Check App analytics:}
   
   Every App should enable a dashboard for the developer to monitor sales and check a set of KPI's.
 \end{itemize}
 \section{Methodology}
+
+In this section, we will go through the importance of having a fixed methodology in a software development project, as well as our choice for this project and the reasons behind it. 
 \subsection{Agile methodology}
-\subsection{SCRUM methodology}
+In every professional IT project, it is essential to adopt a methodology
+of work in order to guarantee a good organization of tasks and to define the different phases
+through which the project passes.
+Since their appearance, agile development methods have considerably improved
+the quality of the software and have reduced their production time. Thanks to its nature,
+incremental and collaborative, such a methodology allows to take into account the evolution
+of the customer's needs. Agile methodologies are based on four main values:
+\begin{itemize}
+	\item They promote interaction between the various parties involved in the project by
+in relation to processes and tools.
+\item They replace exhaustive documentation with concrete functionalities.
+\item The client participates in the project throughout its implementation instead of defining contracts
+that formalize the relationship with the client.
+\item It is necessary to accept the likely changes during the implementation process.
+\end{itemize}
+
+We chose the Kanban methodology for our project for three reasons:
+
+\begin{itemize}
+	\item Visually see work in progress.
+	\item Empower teams to self-manage visual processes and workflows.
+	\item Kanban boards can easily be managed on different free tools, like Trello, MeisterTask or GitKraken which we will be using in our project.
+\end{itemize}
+
+
+
+\subsection{Kanban methodology}
+
+In general, Kanban is a scheduling system for lean and other JIT processes. In a Kanban process, there are physical (or virtual) "cards" called Kanban that move through the process from start to finish. The aim is to keep a constant flow of Kanban so that as inventory is required at the end of the process, just that much is created at the start.
+
+
+When used for software development, Kanban uses the stages in the software development lifecycle (SDLC) to represent the different stages in the manufacturing process. The aim is to control and manage the flow of features (represented by Kanban cards) so that the number of features entering the process matches those being completed.
+
+Kanban is an agile methodology that is not necessarily iterative. Processes like Scrum have short iterations which mimic a project lifecycle on a small scale, having a distinct beginning and end for each iteration. Kanban allows the software be developed in one large development cycle. Despite this, Kanban is an example of an agile methodology because it fulfils all twelve of the principles behind the Agile manifesto, because whilst it is not iterative, it is incremental.
+
+The principle behind Kanban that allows it to be incremental and Agile, is limited throughput. With no iterations a Kanban project has no defined start or end points for individual work items; each can start and end independently from one another, and work items have no pre-determined duration for that matter. Instead, each phase of the lifecycle is recognized as having a limited capacity for work at any one time. A small work item is created from the prioritized and unstarted requirements list and then begins the development process, usually with some requirements elaboration. A work item is not allowed to move on to the next phase until some capacity opens up ahead. By controlling the number of tasks active at any one time, developers still approach the overall project incrementally which gives the opportunity for Agile principles to be applied.
+
+Kanban projects have Work In Progress (WIP) limits which are the measure of capacity that keeps the development team focused on only a small amount of work at one time. It is only as tasks are completed that new tasks are pulled into the cycle. WIP limits should be fine-tuned based on comparisons of expected versus actual effort for tasks that complete.
+
+Kanban does not impose any role definition as say, Scrum does and along with the absence of formal iterations, role flexibility makes Kanban attractive to those who have been using waterfall-style development models and want to change but are afraid of the initial upheaval something like Scrum can cause while being adopted by a development team.
+
 \subsection{Lean software development}
+
+Lean Software Development is a set of principles to deliver software according to the principles of lean manufacturing. In a lean environment, activities or processes that result in the expenditure of effort and/or resources towards goals that are not producing value for the customer should be eliminated. Essentially, lean is centered on preserving value with less work. Lean approaches are often called six-sigma or Just-In Time (JIT).
+
+
 \section*{Conclusion}
 
+This first chapter allowed us to define the general boundaries of our project.
 
-Une etude theorique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
-Elle est en general realisee quand on va developper un module supplementaire sur un 
-logiciel existant, ou si on va modifier une application existante. L'etude de l'existant
-consiste e expliquer ce qui existe deje dans votre environnement de travail.
+We gave an introduction of our host company and the motivations behind the project.
+We studied the project context and the existing similar projects, we took a look into the three biggest implementations.
 
-
-La conclusion est en general sans numerotation, et n'apparaet pas dans la table des matieres.
-
-C'est une etude assez detaillee sur ce qui existe sur le marche ou dans la litterature (d'oe 
-le terme etat de l'art), qui permet de repondre e la problematique. L'idee ici est de faire 
-un comparatif entre les solutions existantes, mais surtout d'analyser le resultat de cette 
-comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour repondre e votre 
-problematique.
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.9]{art.jpg}
-\caption{state of the art}
-\label{fig:fig1}
-\end{figure}
+In The end we set the basis of the project by fixing a methodology to follow in the development and realization of the project.
 
 
 
