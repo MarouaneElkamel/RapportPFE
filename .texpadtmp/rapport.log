@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  12 MAR 2019 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  13 MAR 2019 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,7 +898,11 @@ LaTeX Warning: Label `fig:fig1' multiply defined.
 
 LaTeX Warning: Label `fig:fig1' multiply defined.
 
-) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre2/chapitre2.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre3/chapitre3.aux) (/Users/Programming/RapportPFE/.texpadtmp/Conclusion/conclusion.aux) (/Users/Programming/RapportPFE/.texpadtmp/Annexe1/annexe1.aux))
+) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre2/chapitre2.aux
+
+LaTeX Warning: Label `fig:fig1' multiply defined.
+
+) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre3/chapitre3.aux) (/Users/Programming/RapportPFE/.texpadtmp/Conclusion/conclusion.aux) (/Users/Programming/RapportPFE/.texpadtmp/Annexe1/annexe1.aux))
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
@@ -1058,7 +1062,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count195
-<insat.jpg, id=123, 1027.84pt x 360.34625pt>
+<insat.jpg, id=217, 1027.84pt x 360.34625pt>
 File: insat.jpg Graphic file (type jpg)
 <use insat.jpg>
 Package pdftex.def Info: insat.jpg  used on input line 116.
@@ -1115,10 +1119,6 @@ Package minitoc Info: I0033
 (minitoc)             Writing rapport.mtc10.
 \openout3 = `rapport.mtc10'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing rapport.mtc11.
-\openout3 = `rapport.mtc11'.
-
  (/Users/Programming/RapportPFE/.texpadtmp/rapport.toc [2
 
 
@@ -1147,14 +1147,12 @@ Package minitoc Info: I0033
 ]
 \openout2 = `Resumes/resumeA.aux'.
 
- (./Resumes/resumeA.tex) [7
-
-
-
-]
+ (./Resumes/resumeA.tex)
 \openout2 = `Introduction/introduction.aux'.
 
  (./Introduction/introduction.tex) [1
+
+
 
 
 
@@ -1170,35 +1168,35 @@ Chapitre I.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
-(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc6) [2
+(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc5) [2
 
 
 
 ]
-<kaounlogo.png, id=242, 1543.7675pt x 373.395pt>
+<kaounlogo.png, id=345, 1543.7675pt x 373.395pt>
 File: kaounlogo.png Graphic file (type png)
 <use kaounlogo.png>
 Package pdftex.def Info: kaounlogo.png  used on input line 31.
 (pdftex.def)             Requested size: 463.13382pt x 112.01936pt.
  [3 <./kaounlogo.png>]
-<floucilogo.png, id=249, 1251.67625pt x 295.1025pt>
+<floucilogo.png, id=352, 1251.67625pt x 295.1025pt>
 File: floucilogo.png Graphic file (type png)
 <use floucilogo.png>
 Package pdftex.def Info: floucilogo.png  used on input line 53.
 (pdftex.def)             Requested size: 375.50577pt x 88.53142pt.
  [4 <./floucilogo.png>]
-<stripe.png, id=256, 1561.835pt x 1007.765pt>
+<stripe.png, id=358, 1561.835pt x 1007.765pt>
 File: stripe.png Graphic file (type png)
 <use stripe.png>
 Package pdftex.def Info: stripe.png  used on input line 83.
 (pdftex.def)             Requested size: 468.55412pt x 302.33183pt.
-<PayPal.png, id=257, 1204.5pt x 593.21625pt>
+<PayPal.png, id=359, 1204.5pt x 593.21625pt>
 File: PayPal.png Graphic file (type png)
 <use PayPal.png>
 Package pdftex.def Info: PayPal.png  used on input line 93.
 (pdftex.def)             Requested size: 361.35278pt x 177.96625pt.
  [5 <./stripe.png>]
-<twint.jpg, id=263, 649.42625pt x 582.175pt>
+<twint.jpg, id=366, 649.42625pt x 582.175pt>
 File: twint.jpg Graphic file (type jpg)
 <use twint.jpg>
 Package pdftex.def Info: twint.jpg  used on input line 104.
@@ -1212,17 +1210,17 @@ Chapitre II.
 
 \openout3 = `rapport.mtc'.
 
-(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc7) [10
+(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc6) [10
 
 
 
-]
-<Chapitre2/figures/stereotypes.jpg, id=294, 140.77594pt x 48.93282pt>
-File: Chapitre2/figures/stereotypes.jpg Graphic file (type jpg)
-<use Chapitre2/figures/stereotypes.jpg>
-Package pdftex.def Info: Chapitre2/figures/stereotypes.jpg  used on input line 65.
-(pdftex.def)             Requested size: 126.69714pt x 44.03911pt.
-) [11 <./Chapitre2/figures/stereotypes.jpg>]
+] [11] [12] [13]
+<tddSteps.jpg, id=426, 286.06876pt x 551.05875pt>
+File: tddSteps.jpg Graphic file (type jpg)
+<use tddSteps.jpg>
+Package pdftex.def Info: tddSteps.jpg  used on input line 120.
+(pdftex.def)             Requested size: 171.64258pt x 330.63779pt.
+ [14] [15 <./tddSteps.jpg>] [16] [17]) [18]
 \openout2 = `Chapitre3/chapitre3.aux'.
 
  (./Chapitre3/chapitre3.tex
@@ -1231,7 +1229,7 @@ Chapitre III.
 
 \openout3 = `rapport.mtc'.
 
-(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc8) [12
+(/Users/Programming/RapportPFE/.texpadtmp/rapport.mtc7) [19
 
 
 
@@ -1250,10 +1248,10 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 74.
-[13]) [14] [15]
+[20]) [21] [22]
 \openout2 = `Conclusion/conclusion.aux'.
 
- (./Conclusion/conclusion.tex) [16
+ (./Conclusion/conclusion.tex) [23
 
 
 
@@ -1262,7 +1260,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
 \tf@brf=\write10
 \openout10 = `rapport.brf'.
 
-) [17
+) [24
 
 
 ]
@@ -1275,16 +1273,16 @@ Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is usel
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 12.
 
-[18
+[25
 
 
 ]
-<Annexe1/figures/ingenieur.jpg, id=361, 259.97125pt x 194.7275pt>
+<Annexe1/figures/ingenieur.jpg, id=515, 259.97125pt x 194.7275pt>
 File: Annexe1/figures/ingenieur.jpg Graphic file (type jpg)
 <use Annexe1/figures/ingenieur.jpg>
 Package pdftex.def Info: Annexe1/figures/ingenieur.jpg  used on input line 50.
 (pdftex.def)             Requested size: 129.9853pt x 97.3635pt.
-) [19 <./Annexe1/figures/ingenieur.jpg>]
+) [26 <./Annexe1/figures/ingenieur.jpg>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the rapport.maf file.
@@ -1307,7 +1305,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the rapport.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-[20
+[27
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
@@ -1325,18 +1323,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 18084 strings out of 492649
- 256541 string characters out of 6129622
+ 18122 strings out of 492649
+ 257137 string characters out of 6129622
  460426 words of memory out of 5000000
- 21169 multiletter control sequences out of 15000+600000
- 86437 words of font info for 86 fonts, out of 8000000 for 9000
+ 21183 multiletter control sequences out of 15000+600000
+ 80415 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,48p,3311b,1346s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (29 pages, 730236 bytes).
+ 39i,12n,48p,3311b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (35 pages, 722704 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 473 words of extra memory for PDF output out of 10000 (max. 10000000)
 
