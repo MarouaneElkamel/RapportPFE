@@ -1,9 +1,9 @@
 \babel@toc {french}{}
-\contentsline {chapter}{Liste des Figures}{iv}{Doc-Start}
-\contentsline {xchapter}{}{iv}{Doc-Start}
-\contentsline {chapter}{Liste des Tableaux}{v}{Doc-Start}
+\contentsline {chapter}{Liste des Figures}{v}{Doc-Start}
 \contentsline {xchapter}{}{v}{Doc-Start}
-\contentsline {chapter}{Resume}{vi}{Doc-Start}
+\contentsline {chapter}{Liste des Tableaux}{vi}{Doc-Start}
+\contentsline {xchapter}{}{vi}{Doc-Start}
+\contentsline {chapter}{Resume}{vii}{Doc-Start}
 \contentsline {chapter}{General Introduction}{1}{Doc-Start}
 \contentsline {chapter}{\numberline {I}Project Scope}{2}{chapter.1}
 \contentsline {section}{\numberline {1}Host company presentation}{2}{section.1.1}

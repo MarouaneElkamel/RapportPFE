@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  13 MAR 2019 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  13 MAR 2019 18:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1072,9 +1072,11 @@ Package pdftex.def Info: insat.jpg  used on input line 116.
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./insat.jpg>] [-2]
 \openout2 = `Remerciement/remerciement.aux'.
 
- (./Remerciement/remerciement.tex) [1
+ (./Remerciement/remerciement.tex [1
 
 
+
+]) [2
 
 ]
 Package minitoc Info: I0024
@@ -1119,29 +1121,29 @@ Package minitoc Info: I0033
 (minitoc)             Writing rapport.mtc10.
 \openout3 = `rapport.mtc10'.
 
- (/Users/Programming/RapportPFE/.texpadtmp/rapport.toc [2
+ (/Users/Programming/RapportPFE/.texpadtmp/rapport.toc [3
 
 
 ])
 \tf@toc=\write7
 \openout7 = `rapport.toc'.
 
- [3] (/Users/Programming/RapportPFE/.texpadtmp/rapport.lof)
+ [4] (/Users/Programming/RapportPFE/.texpadtmp/rapport.lof)
 \tf@lof=\write8
 \openout8 = `rapport.lof'.
 
- [4
+ [5
 
 ] (/Users/Programming/RapportPFE/.texpadtmp/rapport.lot)
 \tf@lot=\write9
 \openout9 = `rapport.lot'.
 
- [5
+ [6
 
 ]
 \openout2 = `Resumes/resumeF.aux'.
 
- (./Resumes/resumeF.tex) [6
+ (./Resumes/resumeF.tex) [7
 
 
 ]
@@ -1173,30 +1175,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<kaounlogo.png, id=345, 1543.7675pt x 373.395pt>
+<kaounlogo.png, id=349, 1543.7675pt x 373.395pt>
 File: kaounlogo.png Graphic file (type png)
 <use kaounlogo.png>
 Package pdftex.def Info: kaounlogo.png  used on input line 31.
 (pdftex.def)             Requested size: 463.13382pt x 112.01936pt.
  [3 <./kaounlogo.png>]
-<floucilogo.png, id=352, 1251.67625pt x 295.1025pt>
+<floucilogo.png, id=356, 1251.67625pt x 295.1025pt>
 File: floucilogo.png Graphic file (type png)
 <use floucilogo.png>
 Package pdftex.def Info: floucilogo.png  used on input line 53.
 (pdftex.def)             Requested size: 375.50577pt x 88.53142pt.
  [4 <./floucilogo.png>]
-<stripe.png, id=358, 1561.835pt x 1007.765pt>
+<stripe.png, id=363, 1561.835pt x 1007.765pt>
 File: stripe.png Graphic file (type png)
 <use stripe.png>
 Package pdftex.def Info: stripe.png  used on input line 83.
 (pdftex.def)             Requested size: 468.55412pt x 302.33183pt.
-<PayPal.png, id=359, 1204.5pt x 593.21625pt>
+<PayPal.png, id=364, 1204.5pt x 593.21625pt>
 File: PayPal.png Graphic file (type png)
 <use PayPal.png>
 Package pdftex.def Info: PayPal.png  used on input line 93.
 (pdftex.def)             Requested size: 361.35278pt x 177.96625pt.
  [5 <./stripe.png>]
-<twint.jpg, id=366, 649.42625pt x 582.175pt>
+<twint.jpg, id=370, 649.42625pt x 582.175pt>
 File: twint.jpg Graphic file (type jpg)
 <use twint.jpg>
 Package pdftex.def Info: twint.jpg  used on input line 104.
@@ -1215,7 +1217,7 @@ Chapitre II.
 
 
 ] [11] [12] [13]
-<tddSteps.jpg, id=426, 286.06876pt x 551.05875pt>
+<tddSteps.jpg, id=430, 286.06876pt x 551.05875pt>
 File: tddSteps.jpg Graphic file (type jpg)
 <use tddSteps.jpg>
 Package pdftex.def Info: tddSteps.jpg  used on input line 120.
@@ -1277,7 +1279,7 @@ Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is usel
 
 
 ]
-<Annexe1/figures/ingenieur.jpg, id=515, 259.97125pt x 194.7275pt>
+<Annexe1/figures/ingenieur.jpg, id=519, 259.97125pt x 194.7275pt>
 File: Annexe1/figures/ingenieur.jpg Graphic file (type jpg)
 <use Annexe1/figures/ingenieur.jpg>
 Package pdftex.def Info: Annexe1/figures/ingenieur.jpg  used on input line 50.
@@ -1323,18 +1325,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 18122 strings out of 492649
- 257137 string characters out of 6129622
+ 18123 strings out of 492649
+ 257145 string characters out of 6129622
  460426 words of memory out of 5000000
  21183 multiletter control sequences out of 15000+600000
  80415 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,48p,3311b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (35 pages, 722704 bytes).
+Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (36 pages, 726022 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 530 compressed objects within 6 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
  473 words of extra memory for PDF output out of 10000 (max. 10000000)
 
