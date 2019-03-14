@@ -6,7 +6,7 @@ A level-1 auxiliary file: Acknowledgments/acknowledgments.aux
 A level-1 auxiliary file: Resumes/resumeF.aux
 A level-1 auxiliary file: Resumes/resumeA.aux
 A level-1 auxiliary file: Introduction/introduction.aux
-A level-1 auxiliary file: Chapitre1/chapitre1.aux
+A level-1 auxiliary file: Chapter1/chapter1.aux
 A level-1 auxiliary file: Chapitre2/chapitre2.aux
 A level-1 auxiliary file: Chapitre3/chapitre3.aux
 A level-1 auxiliary file: Conclusion/conclusion.aux
@@ -16,7 +16,7 @@ Database file #1: ../Biblio/aesm_edspia.bib
 Warning--can't use both author and editor fields in YOUSFI2015
 You've used 2 entries,
             1882 wiz_defined-function locations,
-            483 strings with 4145 characters,
+            483 strings with 4143 characters,
 and the built_in function-call counts, 343 in all, are:
 = -- 26
 > -- 12
