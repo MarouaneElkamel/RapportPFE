@@ -1,7 +1,7 @@
 \babel@toc {french}{}
-\contentsline {chapter}{Liste des Figures}{v}{Doc-Start}
+\contentsline {chapter}{List of Figures}{v}{Doc-Start}
 \contentsline {xchapter}{}{v}{Doc-Start}
-\contentsline {chapter}{Liste des Tableaux}{vi}{Doc-Start}
+\contentsline {chapter}{List of Tables}{vi}{Doc-Start}
 \contentsline {xchapter}{}{vi}{Doc-Start}
 \contentsline {chapter}{Summary}{vii}{Doc-Start}
 \contentsline {chapter}{General Introduction}{1}{Doc-Start}
