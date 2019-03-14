@@ -3,8 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/Programming/RapportPFE/.texpadtmp/rapport.aux
 A level-1 auxiliary file: Dedication/dedication.aux
 A level-1 auxiliary file: Acknowledgments/acknowledgments.aux
-A level-1 auxiliary file: Resumes/resumeF.aux
-A level-1 auxiliary file: Resumes/resumeA.aux
+A level-1 auxiliary file: Summary/summary.aux
 A level-1 auxiliary file: Introduction/introduction.aux
 A level-1 auxiliary file: Chapter1/chapter1.aux
 A level-1 auxiliary file: Chapter2/chapter2.aux
@@ -19,7 +18,7 @@ Repeated entry---line 11 of file ../Biblio/aesm_edspia.bib
 I'm skipping whatever remains of this entry
 You've used 2 entries,
             1882 wiz_defined-function locations,
-            482 strings with 4133 characters,
+            481 strings with 4114 characters,
 and the built_in function-call counts, 307 in all, are:
 = -- 24
 > -- 8
