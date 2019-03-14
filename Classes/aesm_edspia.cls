@@ -61,7 +61,7 @@
 \fi
 \ifpdf
  \usepackage[pdftex]{graphicx}
-\usepackage[pdftex, pdfauthor={David Lantiat}, plainpages = false,
+\usepackage[pdftex, pdfauthor={Marouane Elkamel}, plainpages = false,
 								 pdfpagelabels= true,
                  pdfpagelayout = SinglePage,
                  bookmarks,
