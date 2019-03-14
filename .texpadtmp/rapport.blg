@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/Programming/RapportPFE/.texpadtmp/rapport.aux
 A level-1 auxiliary file: Remerciement/remerciement.aux
+A level-1 auxiliary file: Acknowledgments/acknowledgments.aux
 A level-1 auxiliary file: Resumes/resumeF.aux
 A level-1 auxiliary file: Resumes/resumeA.aux
 A level-1 auxiliary file: Introduction/introduction.aux
@@ -15,7 +16,7 @@ Database file #1: ../Biblio/aesm_edspia.bib
 Warning--can't use both author and editor fields in YOUSFI2015
 You've used 2 entries,
             1882 wiz_defined-function locations,
-            482 strings with 4114 characters,
+            483 strings with 4149 characters,
 and the built_in function-call counts, 343 in all, are:
 = -- 26
 > -- 12
