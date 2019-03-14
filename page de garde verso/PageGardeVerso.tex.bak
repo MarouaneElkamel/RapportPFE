@@ -10,13 +10,13 @@
  \begin{document}
 \setlength{\parindent}{0pt}
 \setlength{\topmargin}{0mm}
-\setlength{\headheight}{0cm} 
+\setlength{\headheight}{0cm}
 \setlength{\headsep}{0cm}
 \setlength{\textheight}{20cm}
-\setlength{\textwidth}{17cm} 
-\setlength{\marginparsep}{0cm} 
+\setlength{\textwidth}{17cm}
+\setlength{\marginparsep}{0cm}
 \setlength{\marginparwidth}{0cm}
-\setlength{\headheight}{0cm} 
+\setlength{\headheight}{0cm}
 \setlength{\footskip}{0cm}
 
 \pagestyle{fancy}
@@ -29,10 +29,10 @@
 %\doublebox{
 \begin{minipage}[c]{\textwidth}
   \textbf{خلاصة}\\ [0.4cm]
-\footnotesize 
+\footnotesize
 يجب أن لا تتجاوز خمسة أسطر \\[0.4cm]
 الكلمات الرئيسية:
-    كلمة ١, كلمة ٢, كلمة 
+    كلمة ١, كلمة ٢, كلمة
 \end{minipage}
 %}
 \\[1.5cm]
@@ -44,7 +44,7 @@
 \begin{minipage}[c]{\textwidth}
 \textbf{Résumé}\\[0.4cm]
 \footnotesize
-\textbf{Le résumé du rapport ne doit pas dépasser les cinq lignes.}  
+\textbf{Le résumé du rapport ne doit pas dépasser les cinq lignes.}
 \\[0.4cm]
 \textbf{Mots clés :} \textbf{Mot1, Mot2, Mot3...}
 \end{minipage}
@@ -64,7 +64,7 @@
 \end{minipage}%}
 \begin{center}
 \begin{figure}
-\includegraphics[scale=.1]{insat.jpg}
+\includegraphics[scale=.1]{images/insat.jpg}
 \end{figure}
 \end{center}
 

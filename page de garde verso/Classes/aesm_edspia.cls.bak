@@ -39,7 +39,7 @@
  	}%
  	\nobreak
  	\vskip 3ex\@afterheading
- 	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\ 
+ 	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 }%
 
 %Bibliographie
@@ -55,21 +55,21 @@
         \pdffalse
     \else
         % for running pdflatex
-        \pdfoutput = 1    
-                          
+        \pdfoutput = 1
+
         \pdftrue
 \fi
 \ifpdf
  \usepackage[pdftex]{graphicx}
 \usepackage[pdftex, pdfauthor={David Lantiat}, plainpages = false,
-								 pdfpagelabels= true, 
+								 pdfpagelabels= true,
                  pdfpagelayout = SinglePage,
                  bookmarks,
                  bookmarksopen = true,
                  bookmarksnumbered = true,
                  breaklinks = true,
                  linktocpage,
-                 pagebackref = true, % pour effacer les rappels de pages dans la biblio (utile dans la version papier).  
+                 pagebackref = true, % pour effacer les rappels de pages dans la biblio (utile dans la version papier).
                  colorlinks = true,
                  linkcolor = blue,
                  urlcolor  = blue,
@@ -78,7 +78,7 @@
                  hyperindex = true,
                  hyperfootnotes=false,
                  hyperfigures
-                 ]{hyperref} 
+                 ]{hyperref}
 
     \DeclareGraphicsExtensions{.png, .jpg, .pdf}
      \pdfcompresslevel=9
@@ -104,20 +104,20 @@
     \usepackage{graphicx}
   \fi
 
-%Parametres A4 
+%Parametres A4
 \ifpdf
    \pdfpageheight=297mm
    \pdfpagewidth=210mm
 \else
-   \setlength{\paperheight}{297mm} 
-   \setlength{\paperwidth}{210mm} 
+   \setlength{\paperheight}{297mm}
+   \setlength{\paperwidth}{210mm}
 \fi
 
 \setlength{\hoffset}{0.00cm}
 \setlength{\voffset}{0.00cm}
 
-\setlength{\evensidemargin}{0cm} 
-\setlength{\oddsidemargin}{0mm} % 15 mm par def.  
+\setlength{\evensidemargin}{0cm}
+\setlength{\oddsidemargin}{0mm} % 15 mm par def.
 \setlength{\topmargin}{1mm}
 \setlength{\headheight}{0cm} % 1 cm par defaut
 \setlength{\headsep}{1.00cm}
@@ -125,7 +125,7 @@
 \setlength{\textwidth}{17cm} % 16 cm par def.
 \setlength{\marginparsep}{0cm} % 1mm par def.
 \setlength{\marginparwidth}{0cm}
-\setlength{\headheight}{2\baselineskip} 
+\setlength{\headheight}{2\baselineskip}
 \setlength{\footskip}{2.36cm}
 
 %En tete et pied de page
@@ -285,10 +285,10 @@
 \newcommand{\PrenomD}{}
 \newcommand{\NomD}{}
 
-\newcommand{\AUTEURA}{\PrenomA \hspace{0.05cm} \NomA} 
-\newcommand{\AUTEURB}{\PrenomB \hspace{0.05cm} \NomB} 
+\newcommand{\AUTEURA}{\PrenomA \hspace{0.05cm} \NomA}
+\newcommand{\AUTEURB}{\PrenomB \hspace{0.05cm} \NomB}
 \newcommand{\AUTEURC}{\PrenomC \hspace{0.05cm} \NomC}
-\newcommand{\AUTEURD}{\PrenomD \hspace{0.05cm} \NomD} 
+\newcommand{\AUTEURD}{\PrenomD \hspace{0.05cm} \NomD}
 
 \newcommand{\AUTEURS}{
 	{\Large{\textbf{\AUTEURA}}}\\
@@ -310,40 +310,40 @@
 \baselineskip=13pt
 \vspace*{-4cm}
 
-\begin{center} \includegraphics[scale=0.2]{insat.jpg} \end{center}
+\begin{center} \includegraphics[scale=0.2]{images/insat.jpg} \end{center}
 
 \begin{center}
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
 {\Large{National Institut of Applied Sciences and Technology}}\\[\baselineskip]
       UNIVERSITY OF CARTHAGE\\[\baselineskip]
 {\Large{\textbf{Projet Personnel Professionnel}}}\\[\baselineskip]
-      
+
       Speciality : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
-      
+
 			\hbox{\raisebox{0.2em}{\vrule depth 0pt height 3.5pt width 17cm}}
 			\setlength{\baselineskip}{4pt}
 			\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 			\vspace*{-26pt}
 		 	{\Large\textbf{\begin{spacing}{1}Titre du projet\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
-	  	
+
 	Presented By~\\[\baselineskip]
 	      \baselineskip=20pt
-	\AUTEURS \\[\baselineskip]     	
+	\AUTEURS \\[\baselineskip]
      	Encadrant : \textbf{\ENCADRANT}\\
-     	
+
       Presented the : \textbf{\DATE}\\[\baselineskip]
-      %Devant le JURY\\[\baselineskip]~\\[\baselineskip] 
-           
+      %Devant le JURY\\[\baselineskip]~\\[\baselineskip]
+
             %\JURY
             ~\\[\baselineskip]~\\[\baselineskip]~\\[\baselineskip]
             Annee Universitaire : \ANNEEUNIV\\
 \end{center}
-          
-           } 
- 
+
+           }
+
 % Auteurs
-    
+
 \newcommand{\AuteurA}[2]{%
 \renewcommand{\PrenomA}{#1}%
 \renewcommand{\NomA}{#2}%
@@ -451,5 +451,3 @@
 }
 \AtEndDocument{%
 }
-
-

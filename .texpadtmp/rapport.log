@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  13 MAR 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  14 MAR 2019 10:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1062,14 +1062,14 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count195
-<insat.jpg, id=217, 1027.84pt x 360.34625pt>
-File: insat.jpg Graphic file (type jpg)
-<use insat.jpg>
-Package pdftex.def Info: insat.jpg  used on input line 116.
+<images/insat.jpg, id=217, 1027.84pt x 360.34625pt>
+File: images/insat.jpg Graphic file (type jpg)
+<use images/insat.jpg>
+Package pdftex.def Info: images/insat.jpg  used on input line 116.
 (pdftex.def)             Requested size: 205.56436pt x 72.06796pt.
  [0
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./insat.jpg>] [-2]
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/insat.jpg>] [-2]
 \openout2 = `Remerciement/remerciement.aux'.
 
  (./Remerciement/remerciement.tex [1
@@ -1175,35 +1175,35 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<kaounlogo.png, id=349, 1543.7675pt x 373.395pt>
-File: kaounlogo.png Graphic file (type png)
-<use kaounlogo.png>
-Package pdftex.def Info: kaounlogo.png  used on input line 31.
+<images/kaounlogo.png, id=349, 1543.7675pt x 373.395pt>
+File: images/kaounlogo.png Graphic file (type png)
+<use images/kaounlogo.png>
+Package pdftex.def Info: images/kaounlogo.png  used on input line 31.
 (pdftex.def)             Requested size: 463.13382pt x 112.01936pt.
- [3 <./kaounlogo.png>]
-<floucilogo.png, id=356, 1251.67625pt x 295.1025pt>
-File: floucilogo.png Graphic file (type png)
-<use floucilogo.png>
-Package pdftex.def Info: floucilogo.png  used on input line 53.
+ [3 <./images/kaounlogo.png>]
+<images/floucilogo.png, id=356, 1251.67625pt x 295.1025pt>
+File: images/floucilogo.png Graphic file (type png)
+<use images/floucilogo.png>
+Package pdftex.def Info: images/floucilogo.png  used on input line 53.
 (pdftex.def)             Requested size: 375.50577pt x 88.53142pt.
- [4 <./floucilogo.png>]
-<stripe.png, id=363, 1561.835pt x 1007.765pt>
-File: stripe.png Graphic file (type png)
-<use stripe.png>
-Package pdftex.def Info: stripe.png  used on input line 83.
+ [4 <./images/floucilogo.png>]
+<images/stripe.png, id=363, 1561.835pt x 1007.765pt>
+File: images/stripe.png Graphic file (type png)
+<use images/stripe.png>
+Package pdftex.def Info: images/stripe.png  used on input line 83.
 (pdftex.def)             Requested size: 468.55412pt x 302.33183pt.
-<PayPal.png, id=364, 1204.5pt x 593.21625pt>
-File: PayPal.png Graphic file (type png)
-<use PayPal.png>
-Package pdftex.def Info: PayPal.png  used on input line 93.
+<images/PayPal.png, id=364, 1204.5pt x 593.21625pt>
+File: images/PayPal.png Graphic file (type png)
+<use images/PayPal.png>
+Package pdftex.def Info: images/PayPal.png  used on input line 93.
 (pdftex.def)             Requested size: 361.35278pt x 177.96625pt.
- [5 <./stripe.png>]
-<twint.jpg, id=370, 649.42625pt x 582.175pt>
-File: twint.jpg Graphic file (type jpg)
-<use twint.jpg>
-Package pdftex.def Info: twint.jpg  used on input line 104.
+ [5 <./images/stripe.png>]
+<images/twint.jpg, id=370, 649.42625pt x 582.175pt>
+File: images/twint.jpg Graphic file (type jpg)
+<use images/twint.jpg>
+Package pdftex.def Info: images/twint.jpg  used on input line 104.
 (pdftex.def)             Requested size: 194.82938pt x 174.65384pt.
- [6 <./PayPal.png (PNG copy)> <./twint.jpg>] [7] [8]) [9]
+ [6 <./images/PayPal.png (PNG copy)> <./images/twint.jpg>] [7] [8]) [9]
 \openout2 = `Chapitre2/chapitre2.aux'.
 
  (./Chapitre2/chapitre2.tex
@@ -1217,12 +1217,12 @@ Chapitre II.
 
 
 ] [11] [12] [13]
-<tddSteps.jpg, id=430, 286.06876pt x 551.05875pt>
-File: tddSteps.jpg Graphic file (type jpg)
-<use tddSteps.jpg>
-Package pdftex.def Info: tddSteps.jpg  used on input line 120.
+<images/tddSteps.jpg, id=430, 286.06876pt x 551.05875pt>
+File: images/tddSteps.jpg Graphic file (type jpg)
+<use images/tddSteps.jpg>
+Package pdftex.def Info: images/tddSteps.jpg  used on input line 120.
 (pdftex.def)             Requested size: 171.64258pt x 330.63779pt.
- [14] [15 <./tddSteps.jpg>] [16] [17]) [18]
+ [14] [15 <./images/tddSteps.jpg>] [16] [17]) [18]
 \openout2 = `Chapitre3/chapitre3.aux'.
 
  (./Chapitre3/chapitre3.tex
@@ -1325,9 +1325,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 18123 strings out of 492649
- 257145 string characters out of 6129622
- 460426 words of memory out of 5000000
+ 18124 strings out of 492649
+ 257348 string characters out of 6129622
+ 460433 words of memory out of 5000000
  21183 multiletter control sequences out of 15000+600000
  80415 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
