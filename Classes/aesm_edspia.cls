@@ -305,7 +305,7 @@
 \baselineskip=13pt
 \vspace*{-4cm}
 
-\begin{center} \includegraphics[scale=0.2]{images/insat.jpg} \end{center}
+\begin{center} \includegraphics[scale=0.2]{Cover/Figures/insat.jpg} \end{center}
 
 \begin{center}
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
