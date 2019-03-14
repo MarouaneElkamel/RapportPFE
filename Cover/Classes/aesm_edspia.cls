@@ -229,10 +229,6 @@
 \newcommand{\ENCn}{}
 \newcommand{\ENCp}{}
 
-\newcommand{\ENCSt}{}
-\newcommand{\ENCSn}{}
-\newcommand{\ENCSp}{}
-
 \newcommand{\PRESn}{}
 \newcommand{\PRESp}{}
 \newcommand{\PRESq}{}
@@ -266,15 +262,19 @@
 
 \newcommand{\JURY}{
 \textbf{\large{\textbf{JURY}}}\\[\baselineskip]
-\begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
-\PRESn &\PRESp &(President)\\
-\RAPAn &\RAPAp &(Rapporteur)
+\begin{tabular}{l@{\protect\hspace{0.5cm}}l@{\protect\hspace{0.5cm}}l}
+%\textbf{\large{\textbf{Composition du jury :}}}
+\RAPAn &\RAPAp &\RAPAq\\
+\RAPBn &\RAPBp &\RAPBq\\
+\EXAAn &\EXAAp &\EXAAq\\
+\PRESn &\PRESp &\PRESq\\
+\EXABn &\EXABp &\EXABq\\
+%\EXACn &\EXACp &\EXACq\\
+%\INVAn &\INVAp &\INVAq\\
 \end{tabular}
 }
 
 \newcommand{\ENCADRANT}{\ENCt \hspace{0.05cm} \ENCp \hspace{0.05cm} \ENCn}
-
-\newcommand{\ENCADRANTSoc}{\ENCSt \hspace{0.05cm} \ENCSp \hspace{0.05cm} \ENCSn}
 
 \newcommand{\PrenomA}{}
 \newcommand{\NomA}{}
@@ -295,6 +295,11 @@
 	{\Large{\textbf{\AUTEURB}}}\\
 	{\Large{\textbf{\AUTEURC}}}\\
 	{\Large{\textbf{\AUTEURD}}}
+%\begin{tabular}{c@{\protect\hspace{0.5cm}}c@{\protect\hspace{0.5cm}}l}
+%{\Large{\textbf{\AUTEURA}}} & {\Large{\textbf{\AUTEURB}}}\\
+% & \\
+%{\Large{\textbf{\AUTEURC}}} & {\Large{\textbf{\AUTEURD}}}\\
+%\end{tabular}
 }
 
 \newcommand{\ANNEEUNIV}{}
@@ -311,7 +316,7 @@
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
 {\Large{National Institut of Applied Sciences and Technology}}\\[\baselineskip]
       UNIVERSITY OF CARTHAGE\\[\baselineskip]
-{\Large{\textbf{Graduation Project}}}\\[\baselineskip]
+{\Large{\textbf{Projet Personnel Professionnel}}}\\[\baselineskip]
 
       Speciality : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
 
@@ -319,21 +324,19 @@
 			\setlength{\baselineskip}{4pt}
 			\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 			\vspace*{-26pt}
-		 	{\Large\textbf{\begin{spacing}{1}Flouci Developers API\end{spacing}}}~\\[\baselineskip]
+		 	{\Large\textbf{\begin{spacing}{1}Titre du projet\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
 
 	Presented By~\\[\baselineskip]
 	      \baselineskip=20pt
 	\AUTEURS \\[\baselineskip]
-			\begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
-				University Supervisor & : &\textbf{\ENCADRANT}\\
-				Enterprise Supervisor & : &\textbf{\ENCADRANTSoc}
-			\end{tabular}
-     	\\[\baselineskip]
-      Presented the : \textbf{\DATE}\\[\baselineskip]
+     	Encadrant : \textbf{\ENCADRANT}\\
 
-            \JURY
-            ~\\[\baselineskip]~\\[\baselineskip]
+      Presented the : \textbf{\DATE}\\[\baselineskip]
+      %Devant le JURY\\[\baselineskip]~\\[\baselineskip]
+
+            %\JURY
+            ~\\[\baselineskip]~\\[\baselineskip]~\\[\baselineskip]
             Annee Universitaire : \ANNEEUNIV\\
 \end{center}
 
@@ -384,16 +387,11 @@
 \renewcommand{\ENCp}{#3}
 }
 
-\newcommand{\EncadrantS}[3]{
-\renewcommand{\ENCSt}{#1}
-\renewcommand{\ENCSn}{#2}
-\renewcommand{\ENCSp}{#3}
-}
-
 % Nom profession Qualite du president du jury
-\newcommand{\President}[2]{%
+\newcommand{\President}[3]{%
 \renewcommand{\PRESn}{#1}%
 \renewcommand{\PRESp}{#2}%
+\renewcommand{\PRESq}{#3}%
 }
 
 % Nom Profession Qualite de l'invite
@@ -404,9 +402,10 @@
 }
 
 % Nom Profession Qualite d'un rapporteur A
-\newcommand{\RapporteurA}[2]{%
+\newcommand{\RapporteurA}[3]{%
 \renewcommand{\RAPAn}{#1}%
 \renewcommand{\RAPAp}{#2}%
+\renewcommand{\RAPAq}{#3}%
 }
 % Nom Profession Qualite d'un rapporteur B
 \newcommand{\RapporteurB}[3]{%

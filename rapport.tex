@@ -7,10 +7,10 @@
 \usepackage{amsmath}
 \usepackage{lmodern}%font modern
 \rmfamily
-\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub * cmr/bx/sc}{} 
+\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub * cmr/bx/sc}{}
 \usepackage{lettrine}
 \usepackage{tabularx}
-\usepackage{epsfig, floatflt, amssymb} 
+\usepackage{epsfig, floatflt, amssymb}
 \usepackage{moreverb} %% pour le verbatim en boite
 \usepackage{cases}%equations en systemes numerotes - soluce possible package : CASES
 \usepackage{multirow} %% pour regrouper un texte sur plusieurs lignes dans une table
@@ -50,32 +50,32 @@
 
 \usepackage{listings}
 \lstloadlanguages{xml, java}
-	
+
 	 \usepackage{listings}
   \usepackage{courier}
  \lstset{
-         basicstyle=\footnotesize\ttfamily, 
-         %numbers=left,               
-         numberstyle=\tiny,          
-         %stepnumber=2,               
-         numbersep=5pt,              
-         tabsize=2,                  
-         extendedchars=true,         
-         breaklines=true,            
+         basicstyle=\footnotesize\ttfamily,
+         %numbers=left,
+         numberstyle=\tiny,
+         %stepnumber=2,
+         numbersep=5pt,
+         tabsize=2,
+         extendedchars=true,
+         breaklines=true,
          keywordstyle=\color[rgb]{0.43,0,0}\textbf,
     		frame=b,
          commentstyle=\color[rgb]{0.51,0.51,0.51} \textit ,
          stringstyle=\ttfamily  \color[rgb]{0,0.44,0} ,
-         showspaces=false,           
-         showtabs=false,             
+         showspaces=false,
+         showtabs=false,
          xleftmargin=17pt,
          framexleftmargin=17pt,
          framexrightmargin=5pt,
          framexbottommargin=4pt,
          %backgroundcolor=\color{lightgray},
-         showstringspaces=false            
+         showstringspaces=false
  }
- 
+
  \usepackage{caption}
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFont{red}{\color{red}}
@@ -87,16 +87,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand\figurename{\small\textbf{Figure}} 
+\renewcommand\figurename{\small\textbf{Figure}}
 
 \addtocounter{page}{-1}%pour revenir e 0
 
 % Pour remplir la page de garde
-\AuteurA{Marouane} {ELKAMEL} 
+\AuteurA{Marouane} {ELKAMEL}
 %\AuteurB{Flen2} {FOULENI}
-%\AuteurC{Flen3} {FOULENI} 
+%\AuteurC{Flen3} {FOULENI}
 %\AuteurD{Flen4} {FOULENI}
-
 \Encadrant{Mr}{Aymen}{SELLAOUTI}
 \EncadrantS{Mr} {Anis} {KALLEL}
 
@@ -130,8 +129,8 @@
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\include{Remerciement/remerciement}
-
+\include{Dedication/dedication}
+\include{Acknowledgments/acknowledgments}
 
 %%%%%%%% TOC
 
@@ -167,7 +166,7 @@
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand\listfigurename{Liste des Figures}
-\listoffigures \mtcaddchapter 
+\listoffigures \mtcaddchapter
 
 \fancyhead[R]{Liste des Figures}
 \newpage
@@ -181,20 +180,18 @@
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand\listtablename{Liste des Tableaux}
 
-\listoftables  \mtcaddchapter 
+\listoftables  \mtcaddchapter
 
 \fancyhead[R]{Liste des Tableaux}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\fancyhead[R]{Resumes}
 
-\include{Resumes/resumeF}
-
-\include{Resumes/resumeA}
+\include{Summary/summary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-                       
+
 \mainmatter %numeros arabes
 \pagestyle{fancy}
 \fancyhead[R]{Introduction Generale}
@@ -207,8 +204,8 @@
 
 
 
-\include{Chapitre1/chapitre1}
-\include{Chapitre2/chapitre2}
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
 \include{Chapitre3/chapitre3}
 
 \backmatter
@@ -221,7 +218,7 @@
 \renewcommand{\footrulewidth}{0pt}
 \include{Conclusion/conclusion}
 
-\bibliographystyle{Biblio/unsrt_modif} 
+\bibliographystyle{Biblio/unsrt_modif}
 \singlespacing
 \renewcommand{\bibname}{Bibliographique}
 

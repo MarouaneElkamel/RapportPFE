@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  13 MAR 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  14 MAR 2019 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -885,7 +885,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (/Users/Programming/RapportPFE/.texpadtmp/rapport.aux (/Users/Programming/RapportPFE/.texpadtmp/Remerciement/remerciement.aux) (/Users/Programming/RapportPFE/.texpadtmp/Resumes/resumeF.aux) (/Users/Programming/RapportPFE/.texpadtmp/Resumes/resumeA.aux) (/Users/Programming/RapportPFE/.texpadtmp/Introduction/introduction.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre1/chapitre1.aux
+) (/Users/Programming/RapportPFE/.texpadtmp/rapport.aux (/Users/Programming/RapportPFE/.texpadtmp/Dedication/dedication.aux) (/Users/Programming/RapportPFE/.texpadtmp/Acknowledgments/acknowledgments.aux) (/Users/Programming/RapportPFE/.texpadtmp/Summary/summary.aux) (/Users/Programming/RapportPFE/.texpadtmp/Introduction/introduction.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapter1/chapter1.aux
 
 LaTeX Warning: Label `fig:fig1' multiply defined.
 
@@ -898,7 +898,7 @@ LaTeX Warning: Label `fig:fig1' multiply defined.
 
 LaTeX Warning: Label `fig:fig1' multiply defined.
 
-) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre2/chapitre2.aux
+) (/Users/Programming/RapportPFE/.texpadtmp/Chapter2/chapter2.aux
 
 LaTeX Warning: Label `fig:fig1' multiply defined.
 
@@ -1062,25 +1062,30 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count195
-<insat.jpg, id=217, 1027.84pt x 360.34625pt>
-File: insat.jpg Graphic file (type jpg)
-<use insat.jpg>
-Package pdftex.def Info: insat.jpg  used on input line 116.
+<Cover/Figures/insat.jpg, id=217, 1027.84pt x 360.34625pt>
+File: Cover/Figures/insat.jpg Graphic file (type jpg)
+<use Cover/Figures/insat.jpg>
+Package pdftex.def Info: Cover/Figures/insat.jpg  used on input line 115.
 (pdftex.def)             Requested size: 205.56436pt x 72.06796pt.
  [0
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./insat.jpg>] [-2]
-\openout2 = `Remerciement/remerciement.aux'.
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Cover/Figures/insat.jpg>] [-2]
+\openout2 = `Dedication/dedication.aux'.
 
- (./Remerciement/remerciement.tex [1
+ (./Dedication/dedication.tex) [1
 
 
 
-]) [2
+]
+\openout2 = `Acknowledgments/acknowledgments.aux'.
+
+ (./Acknowledgments/acknowledgments.tex) [2
+
+
 
 ]
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM rapport.toc on input line 149.
+(minitoc)             PREPARING MINITOCS FROM rapport.toc on input line 148.
 Package minitoc Info: I0033
 (minitoc)             Writing rapport.mtc1.
 \openout3 = `rapport.mtc1'.
@@ -1141,15 +1146,12 @@ Package minitoc Info: I0033
  [6
 
 ]
-\openout2 = `Resumes/resumeF.aux'.
+\openout2 = `Summary/summary.aux'.
 
- (./Resumes/resumeF.tex) [7
+ (./Summary/summary.tex) [7
 
 
 ]
-\openout2 = `Resumes/resumeA.aux'.
-
- (./Resumes/resumeA.tex)
 \openout2 = `Introduction/introduction.aux'.
 
  (./Introduction/introduction.tex) [1
@@ -1157,12 +1159,10 @@ Package minitoc Info: I0033
 
 
 
-
-
 ]
-\openout2 = `Chapitre1/chapitre1.aux'.
+\openout2 = `Chapter1/chapter1.aux'.
 
- (./Chapitre1/chapitre1.tex
+ (./Chapter1/chapter1.tex
 Chapitre I.
 \openout3 = `rapport.mtc'.
 
@@ -1175,38 +1175,38 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<kaounlogo.png, id=349, 1543.7675pt x 373.395pt>
-File: kaounlogo.png Graphic file (type png)
-<use kaounlogo.png>
-Package pdftex.def Info: kaounlogo.png  used on input line 31.
+<Chapter1/figures/kaounlogo.png, id=349, 1543.7675pt x 373.395pt>
+File: Chapter1/figures/kaounlogo.png Graphic file (type png)
+<use Chapter1/figures/kaounlogo.png>
+Package pdftex.def Info: Chapter1/figures/kaounlogo.png  used on input line 31.
 (pdftex.def)             Requested size: 463.13382pt x 112.01936pt.
- [3 <./kaounlogo.png>]
-<floucilogo.png, id=356, 1251.67625pt x 295.1025pt>
-File: floucilogo.png Graphic file (type png)
-<use floucilogo.png>
-Package pdftex.def Info: floucilogo.png  used on input line 53.
+ [3 <./Chapter1/figures/kaounlogo.png>]
+<Chapter1/figures/floucilogo.png, id=356, 1251.67625pt x 295.1025pt>
+File: Chapter1/figures/floucilogo.png Graphic file (type png)
+<use Chapter1/figures/floucilogo.png>
+Package pdftex.def Info: Chapter1/figures/floucilogo.png  used on input line 53.
 (pdftex.def)             Requested size: 375.50577pt x 88.53142pt.
- [4 <./floucilogo.png>]
-<stripe.png, id=363, 1561.835pt x 1007.765pt>
-File: stripe.png Graphic file (type png)
-<use stripe.png>
-Package pdftex.def Info: stripe.png  used on input line 83.
+ [4 <./Chapter1/figures/floucilogo.png>]
+<Chapter1/figures/stripe.png, id=363, 1561.835pt x 1007.765pt>
+File: Chapter1/figures/stripe.png Graphic file (type png)
+<use Chapter1/figures/stripe.png>
+Package pdftex.def Info: Chapter1/figures/stripe.png  used on input line 83.
 (pdftex.def)             Requested size: 468.55412pt x 302.33183pt.
-<PayPal.png, id=364, 1204.5pt x 593.21625pt>
-File: PayPal.png Graphic file (type png)
-<use PayPal.png>
-Package pdftex.def Info: PayPal.png  used on input line 93.
+<Chapter1/figures/PayPal.png, id=364, 1204.5pt x 593.21625pt>
+File: Chapter1/figures/PayPal.png Graphic file (type png)
+<use Chapter1/figures/PayPal.png>
+Package pdftex.def Info: Chapter1/figures/PayPal.png  used on input line 93.
 (pdftex.def)             Requested size: 361.35278pt x 177.96625pt.
- [5 <./stripe.png>]
-<twint.jpg, id=370, 649.42625pt x 582.175pt>
-File: twint.jpg Graphic file (type jpg)
-<use twint.jpg>
-Package pdftex.def Info: twint.jpg  used on input line 104.
+ [5 <./Chapter1/figures/stripe.png>]
+<Chapter1/figures/twint.jpg, id=370, 649.42625pt x 582.175pt>
+File: Chapter1/figures/twint.jpg Graphic file (type jpg)
+<use Chapter1/figures/twint.jpg>
+Package pdftex.def Info: Chapter1/figures/twint.jpg  used on input line 104.
 (pdftex.def)             Requested size: 194.82938pt x 174.65384pt.
- [6 <./PayPal.png (PNG copy)> <./twint.jpg>] [7] [8]) [9]
-\openout2 = `Chapitre2/chapitre2.aux'.
+ [6 <./Chapter1/figures/PayPal.png (PNG copy)> <./Chapter1/figures/twint.jpg>] [7] [8]) [9]
+\openout2 = `Chapter2/chapter2.aux'.
 
- (./Chapitre2/chapitre2.tex
+ (./Chapter2/chapter2.tex
 Chapitre II.
 \openout3 = `rapport.mtc'.
 
@@ -1217,12 +1217,12 @@ Chapitre II.
 
 
 ] [11] [12] [13]
-<tddSteps.jpg, id=430, 286.06876pt x 551.05875pt>
-File: tddSteps.jpg Graphic file (type jpg)
-<use tddSteps.jpg>
-Package pdftex.def Info: tddSteps.jpg  used on input line 120.
+<Chapter2/figures/tddSteps.jpg, id=430, 286.06876pt x 551.05875pt>
+File: Chapter2/figures/tddSteps.jpg Graphic file (type jpg)
+<use Chapter2/figures/tddSteps.jpg>
+Package pdftex.def Info: Chapter2/figures/tddSteps.jpg  used on input line 120.
 (pdftex.def)             Requested size: 171.64258pt x 330.63779pt.
- [14] [15 <./tddSteps.jpg>] [16] [17]) [18]
+ [14] [15 <./Chapter2/figures/tddSteps.jpg>] [16] [17]) [18]
 \openout2 = `Chapitre3/chapitre3.aux'.
 
  (./Chapitre3/chapitre3.tex
@@ -1306,34 +1306,34 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the rapport.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
 [27
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
- (/Users/Programming/RapportPFE/.texpadtmp/rapport.aux (/Users/Programming/RapportPFE/.texpadtmp/Remerciement/remerciement.aux) (/Users/Programming/RapportPFE/.texpadtmp/Resumes/resumeF.aux) (/Users/Programming/RapportPFE/.texpadtmp/Resumes/resumeA.aux) (/Users/Programming/RapportPFE/.texpadtmp/Introduction/introduction.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre1/chapitre1.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre2/chapitre2.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre3/chapitre3.aux) (/Users/Programming/RapportPFE/.texpadtmp/Conclusion/conclusion.aux) (/Users/Programming/RapportPFE/.texpadtmp/Annexe1/annexe1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+ (/Users/Programming/RapportPFE/.texpadtmp/rapport.aux (/Users/Programming/RapportPFE/.texpadtmp/Dedication/dedication.aux) (/Users/Programming/RapportPFE/.texpadtmp/Acknowledgments/acknowledgments.aux) (/Users/Programming/RapportPFE/.texpadtmp/Summary/summary.aux) (/Users/Programming/RapportPFE/.texpadtmp/Introduction/introduction.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapter1/chapter1.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapter2/chapter2.aux) (/Users/Programming/RapportPFE/.texpadtmp/Chapitre3/chapitre3.aux) (/Users/Programming/RapportPFE/.texpadtmp/Conclusion/conclusion.aux) (/Users/Programming/RapportPFE/.texpadtmp/Annexe1/annexe1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 9288D511EEF1AB81F92AC3092B67DE28;1396.
 Package rerunfilecheck Info: File `rapport.brf' has not changed.
-(rerunfilecheck)             Checksum: CE368A21DB601220DE648EC8FA5B6A16;222.
+(rerunfilecheck)             Checksum: A15183FF52252C74669C58444AC101AE;229.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 18123 strings out of 492649
- 257145 string characters out of 6129622
- 460426 words of memory out of 5000000
+ 18127 strings out of 492649
+ 257786 string characters out of 6129622
+ 460446 words of memory out of 5000000
  21183 multiletter control sequences out of 15000+600000
  80415 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,48p,3311b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (36 pages, 726025 bytes).
+Output written on /Users/Programming/RapportPFE/.texpadtmp/rapport.pdf (36 pages, 725895 bytes).
 PDF statistics:
  599 PDF objects out of 1000 (max. 8388607)
  533 compressed objects within 6 object streams
