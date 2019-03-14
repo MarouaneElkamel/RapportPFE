@@ -2,7 +2,7 @@
 \setcounter{chapter}{1}
 \chapter{Project Development Practices}
 \minitoc %insert la minitoc
-\graphicspath{{Chapitre2/figures/}}
+\graphicspath{{Chapter2/figures/}}
 
 %\DoPToC
 
@@ -18,7 +18,7 @@
 
 \begin{spacing}{1.2}
 %==============================================================================
-\section*{Introduction} 
+\section*{Introduction}
 This chapter is introducing the software development disciplines and rules followed during the achievement of our project. In order to have a clear development structure, a development process must be set in place in the earliest stage of our project life.
 
 Our development process is a combination of different practices like Test-driven development and DevOps.
@@ -50,7 +50,7 @@ This stage indicates that the tickets is being taking care of, it also shows the
 If the developer finish his work he should move the ticket to "Code Review" stage and make a pull request of the branch.
 
 
-In the case of failure ticket should go back to "Selected For Development" stage. 
+In the case of failure ticket should go back to "Selected For Development" stage.
 \subsection{Code Review}
 Once a ticket is in the "Code Review" stage, the project manager should open the pull request and check the code committed by the developer.
 
@@ -69,9 +69,9 @@ All tickets should finally be moved to the "Done" stage, this stage groups all t
 
 After a fixed time tickets get archived to gain space in the Kanban board.
 \section{Gitflow workflow }
-Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects. 
+Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
 
-Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together. 
+Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together.
 \subsection{Feature Branch}
 The feature branch is created by the developer for every Kanban ticket he tackles. When moving the ticket to the "In Progress" stage the branch should be created with the same name as the ticket.
 
@@ -79,13 +79,13 @@ All the development specific to the scope of the ticket should be done in the sa
 \subsection{Develop Branch}
 The Develop branch present the edge version of the product, it contains all new developed features. This branch is the main branch to the internal project team, All newly developed feature are tested by developers on this branch, it maps to the "dev environment".
 
-This branch could present a number of bugs because by nature it's a testing and validation branch of the latest developed code. 
+This branch could present a number of bugs because by nature it's a testing and validation branch of the latest developed code.
 
-This branch is daily updated. 
+This branch is daily updated.
 \subsection{Master Branch}
-After tickets validation and bug fixes, the internal team merge a stable version of the product (Develop branch) to the Master branch. This branch maps to the staging environment and serves for testing on the company level. 
+After tickets validation and bug fixes, the internal team merge a stable version of the product (Develop branch) to the Master branch. This branch maps to the staging environment and serves for testing on the company level.
 
-All company projects depending on our project always use its staging version. The testing and integration with other projects should be verified extensively before merging to the production environment. 
+All company projects depending on our project always use its staging version. The testing and integration with other projects should be verified extensively before merging to the production environment.
 
 
 \subsection{Release Branch}
@@ -117,20 +117,20 @@ The TDD can be divided into 5 distinct steps:
 \end{enumerate}
 
 \begin{figure}[!ht]\centering
-\includegraphics[scale=0.6]{images/tddSteps.jpg}
+\includegraphics[scale=0.6]{tddSteps.jpg}
 \caption{TDD Steps}
 \label{fig:fig1}
 \end{figure}
 \newpage
 In our project, The development of every ticket starts by writing the test. A pull request can only be approved if it contains and passes the new test.
 
-This discipline enable our project to benefits from the DevOps world, As it's important to have test for the CI-CD process to be defined.  
+This discipline enable our project to benefits from the DevOps world, As it's important to have test for the CI-CD process to be defined.
 
 
 \section{DevOps}
-DevOps is a set of practices that automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably. 
+DevOps is a set of practices that automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably.
 
-In our project we need to have an autonomous testing and deployment process to maintain our three environments: 
+In our project we need to have an autonomous testing and deployment process to maintain our three environments:
 \begin{itemize}
 	\item \textbf{Dev environment:} Represents the Develop branch and used for internal team testing.
 	\item \textbf{Staging environment:} Represents the Master branch and used for a company level testing.
@@ -142,17 +142,17 @@ With every branch push our CI-CD server (Jenkins) triggers an automatic script t
 
 The steps behave slightly different according to the branch name.
 \subsubsection{Preparation}
-The first step of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project. 
+The first step of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project.
 \subsubsection{Testing}
 In this step all tests are executed for both backend and frontend. A full report is created with the test results.
-We can only continue the build if all tests are passed gracefully otherwise the job is terminated. 
+We can only continue the build if all tests are passed gracefully otherwise the job is terminated.
 \subsubsection{Quality Measurements}
 In this steps the code is inspected by the open-source platform SonarQube.
 
 The step performs automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.
 \subsubsection{Dockerization}
 If all testing and quality measures are approved we proceed to the Dockerization of our project.
-This step creates a standard artifact that can be deployed on any infrastructure without the need of specific configurations for different servers. 
+This step creates a standard artifact that can be deployed on any infrastructure without the need of specific configurations for different servers.
 
 If the Docker images is created successfully, it will be tagged latest and pushed to the Docker Hub.
 
@@ -178,7 +178,7 @@ In order to have our CI/CD environment, we used Jenkins which is an open source 
 
 Jenkins is a stand-alone open source automation server that can be used to automate all kinds of tasks related to software creation, testing, delivery or deployment.
 \subsection{SonarQube}
-SonarQube (formerly Sonar) is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages. 
+SonarQube (formerly Sonar) is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages.
 
 SonarQube offers reports on duplicated code, coding standards, unit tests, code coverage, code complexity, comments, bugs, and security vulnerabilities.
 \section*{Conclusion}
@@ -187,7 +187,7 @@ In this chapter we set the development disciplines to follow in the making of ou
 We went through the Kanban methodology in practice, explaining the different steps of the incremental code writing.
 
  We also set the rules of the git branching model we will be using in our development process, as well as  the test-driven development discipline to follow for every branch.
- 
+
 We tackled our DevOps setup and the different steps of the automation process from code writing to project deployment.
 
 In the end we presented the tools we will be using in our project development life cycle.
