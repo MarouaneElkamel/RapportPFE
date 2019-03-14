@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  14 MAR 2019 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.15)  14 MAR 2019 12:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,9 +1315,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 9288D511EEF1AB81F92AC3092B67DE28;1396.
+(rerunfilecheck)             Checksum: <no file>.
 Package rerunfilecheck Info: File `rapport.brf' has not changed.
-(rerunfilecheck)             Checksum: A15183FF52252C74669C58444AC101AE;229.
+(rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
