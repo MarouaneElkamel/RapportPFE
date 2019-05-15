@@ -56,7 +56,7 @@ Flouci is the first wallet designed to innovate mobile payment in Tunisia. It se
 \end{figure}
 
 \section{Project overview}
-In this section, we will present the developer API project context, we will analyze some of the existing mobile payments API's. And finally, we will indicate our project goals.
+In this section, we will start by presinting the developers API project context, then we will set our project goals.
 \subsection{Project Context}
 Flouci in it's first version made it possible for users to pay merchants in simple steps and without the need of cash. However the market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
 
@@ -65,48 +65,6 @@ In it's current implementation Flouci is not able to integrate into any form of 
 Facing this problem and a fast moving e-commerce market the company had to move toward implementing a solution for developers.
 
 The API should make it possible for developers to link their Flouci wallets to the their e-commerce sites and add flouci as an easy and instant payment method.
-\subsection{Study of the existing}
-In The world of e-commerce a lot of payments methods exists. Most of the methods are credit card related and offer the possibility to pay using the card number and the 3 digits code.
-
-In our case Flouci offer payments through QR codes scans. Although the payment steps on the user side is different the developer API should offer similar functionalities.
-
-
-Below is a list of world leader online payment API's:
-\begin{itemize}
-  \item \textbf{Stripe:}
-
- The Stripe API is organized around REST. The API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
-
-You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks. The API key you use to authenticate the request determines whether the request is live mode or test mode.
-
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{stripe.png}
-\caption{Stripe Api}
-\label{fig:fig1}
-\end{figure}
-
-  \item \textbf{Paypal:}
-
-  The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
-
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{PayPal.png}
-\caption{Stripe Api}
-\label{fig:fig1}
-\end{figure}
-\newpage
-\item \textbf{Twint:}
-
-Twint is the closest implementation to Flouci, it offers payments through QR code scans.
-
-The plugin allows QR code generation on the web page, it also creates a code for each transaction, It serves to confirm payments.
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{twint.jpg}
-\caption{Twint Payment Method}
-\label{fig:fig1}
-\end{figure}
-  \end{itemize}
-
 \subsection{Project goals}
 To bring developers to the Flouci world and allow e-commerce owners to introduce a mobile payment solution Kaoun has decided to build it's own developer API from scratch and provide an easy way to accept payments in few simple steps. This presented the opportunity for us to turn this problem into the main objective of our graduation project.
 
