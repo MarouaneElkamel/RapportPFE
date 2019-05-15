@@ -46,7 +46,7 @@ You can use the Stripe API in test mode, which does not affect your live data or
 
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.3]{PayPal.png}
-\caption{Stripe Api}
+\caption{PayPal Api}
 \label{fig:fig1}
 \end{figure}
 \newpage
@@ -57,7 +57,7 @@ Twint is the closest implementation to Flouci, it offers payments through QR cod
 The plugin allows QR code generation on the web page, it also creates a code for each transaction, It serves to confirm payments.
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.3]{twint.jpg}
-\caption{General Use Case}
+\caption{Twint Pop-up}
 \label{fig:fig1}
 \end{figure}
   \end{itemize}
@@ -127,18 +127,43 @@ In this section we will understand the functional requirements of our project by
 
 \subsection{Non-functional requirements}
 \subsubsection{Security}
-When it comes to payments solutions security is the number one requirements to keep in mind.
-Our solution implements many layers of security: 
+When it comes to payment solutions security is the number one requirement to keep in mind.
+Our solution implements many layers of security including: 
 \begin{itemize}
-	\item JWT Token : Access to the platform is secured with JWT tokens.
-	\item Private / Public Tokens for Apps: In order to accept Payments Flouci user sign payments attached to the app public key and the developer can only accept them if he have the private key.
+	\item \textbf{JWT Token\cite{JWT}:}  Access to the platform is secured with JWT tokens, managing apps is only possible with this token.
+	\item \textbf{Private / Public Tokens for Apps:}  In order to accept Payments Flouci user sign payments attached to the app public key and the developer can only accept them if he have the private key.
+	App public keys can be revoked.
 \end{itemize}
 \subsubsection{Documentation}
 An API is only usable with proper documentation, So in order to get developers to implement our solutions we should have an easy and understandable documentation. The documentation is accessible in our platform.
 \subsubsection{Logging}
-Our Solution is using "logstash" to forward logs to our ELK stack, different log levels are used and we implemented a lot of metrics and dashboards on our kibana.
+Our Solution is using "logstash" to forward logs to our ELK\cite{ELK} stack, different log levels are used and we implemented a lot of metrics and dashboards on our kibana.
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.3]{ELK.png}
+\caption{Kibana Dashboard}
+\label{fig:usecasediagram}
+\end{figure}
+
 \subsubsection{Integrability}
 Flouci online payment method can be easy integrated in any e-commerce website. It only requires a HTML form in the front end and an API call to accept payments on the backend.
+The HTML code is Listed in \ref{code:html}.
+\begin{lstlisting}[rulecolor=\color{white}]
+\end{lstlisting}
+
+\begin{lstlisting}[label=code:html,caption=Flouci Integration Java,language=xml]
+ <form id="myform" action="/handle_payment" method="post">
+    <script
+            src="https://developersdev.flouci.com/static/main.js"
+            data-key="f6b5d0a5-e559-4acb-bcbb-a9e6ec9d788d"
+            data-amount="2700000"
+            data-name="Flouci Checkout"
+            data-description="Flouci Data"
+            data-server-url="https://datadev.flouci.com">
+    </script>
+  </form>
+\end{lstlisting}
+
 \subsubsection{Extensibility}
 Our payment method should allow extensibility and add more payment method other than the QR code scans. 
 \subsubsection{Legal}
@@ -163,6 +188,6 @@ To guarantee a good control of our project and to simplify the interaction with 
 \end{figure}
 
 \section*{Conclusion}
-
+In this section we took the time to think about different aspects of our project, we went through detailed analysis in order to comprehend the project boundaries. After this we can launch our project development cycles which what we will be the topic of our next chapter.
 %==============================================================================
 \end{spacing}
