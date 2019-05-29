@@ -1,6 +1,6 @@
 
 \setcounter{chapter}{4}
-\chapter{Sprint 3: Checkout API}
+\chapter{Sprint 3: Checkout Module}
 \minitoc %insert la minitoc
 \graphicspath{{Chapter5/figures/}}
 
@@ -59,7 +59,7 @@ The HTML code is listed in \ref{code:html}.
 \section{Back end Integration}
 After the user inputs the six digits code into the form, the form checks the validity of the payment and return a special key to the backend ( the action function inputed by the developer)
 
-The developer then is only required to call an endpoint to accept the payment and then redirects the user to an other page depending on the payment result.
+The developer then is only required to call an endpoint to accept the payment and then redirects the user to an other page depending on the payment result. 
 
 In the figure \ref{fig:flask} we show the code of a simple flask server with a Flouci integration that works with the HTML code listed in \ref{code:html}.
 \begin{figure}[H]\centering
@@ -68,11 +68,16 @@ In the figure \ref{fig:flask} we show the code of a simple flask server with a F
 \label{fig:flask}
 \end{figure}
 \section{Payment process}
-
+To summarize the payment process, we created a sequence diagram prsented in the figure \ref{fig:FPSD} that contains all the interactions needed to process a payment.
 \begin{figure}[H]\centering
 \includegraphics[scale=0.6]{Payment_Sequence_Diagram.png}
-\caption{Flouci payment Backend Integration}
-\label{fig:flask}
+\caption{Flouci payment Sequence Diagram}
+\label{fig:FPSD}
 \end{figure}
+In order to make a payment, the user should click the payment button and scan the QR code. The mobile app then gets the app info from the developer API and verify its validity. If the app is valid the mobile phone call the payment API to prepare the payment, this will return a key. The user inputs the key into the form and then the form will call the payment API to verify it and get an extra id to return it to the developer backend. Finally the developer should call the developer api and send his app secret, the key and the id returned by the form, the developer api calls the payment api to execute the payment and return the result to the developer.
 \section*{Conclusion}
+In this chapter we implemented the checkout API, which serve as an integration module that can be integrated in any web based project.
+
+In the implementation of our solution we had to made it the simplest integration possible and the most portable one. And we made as easy as implementing a simple REST call. 
+
 \end{spacing}

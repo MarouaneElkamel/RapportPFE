@@ -26,6 +26,10 @@
 \usepackage[nottoc]{tocbibind} % tables des figures, des matieres et autres dans la TOC
 \usepackage{fancybox}
 \usepackage[leftcaption]{sidecap}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{multicol}
+\usepackage{lipsum}
 \usepackage[labelsep=endash, textfont={footnotesize, singlespacing}, margin=10pt, format=plain, labelfont=bf]{caption}
 \usepackage[Conny]{Classes/fncychap} %en tete chapitrage
 \newcommand{\ie}{c.-\`a-d.~}
@@ -130,6 +134,13 @@
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
 
+\addtolength{\hoffset}{-0.5cm}
+\thispagestyle{empty}
+\baselineskip=13pt
+\vspace*{-4cm}
+
+
+
 \include{Dedication/dedication}
 \include{Acknowledgments/acknowledgments}
 \include{Abbreviations_Acronyms/Abbreviations_Acronyms}
@@ -188,8 +199,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\fancyhead[R]{Resumes}
 
-\include{Summary/summary}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -231,6 +240,5 @@
 \onehalfspacing
 
 \appendix
-\include{Annexe1/annexe1}
 
 \end{document}

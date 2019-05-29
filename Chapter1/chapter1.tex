@@ -1,5 +1,6 @@
-\setcounter{mtc}{4} %indique le numero reel du chapitre, pour la mini Table of Contents
+\setcounter{chapter}{0} %indique le numero reel du chapitre, pour la mini Table of Contents
 \chapter{Project Scope}
+\adjustmtc
 \minitoc  %insert la minitoc
 
 \graphicspath{{Chapter1/figures/}}
@@ -18,7 +19,7 @@
 
 \section*{Introduction}
 This chapter is dedicated to the presentation of our project's general scope.
-This will include an introduction of the host company Kaoun and it's main product Flouci. Also we will give an overview of the developer API project. After that, we will describe the chosen methodology that we followed during the realization of our project.
+This will include an introduction of the host company Kaoun and it's main product Flouci. Also, we will give an overview of the developer API project. After that, we will describe the chosen methodology that we followed during the realization of our project.
 \section{Host company presentation}
 In The first section of the report, we will introduce Kaoun, The host company that made the project possible.
 \subsection{Presentation of Kaoun}
@@ -56,29 +57,27 @@ Flouci is the first wallet designed to innovate mobile payment in Tunisia. It se
 \end{figure}
 
 \section{Project overview}
-In this section, we will start by presinting the developers API project context, then we will set our project goals.
+In this section, we will start by presenting the developers API project context, then we will set our project goals.
 \subsection{Project Context}
-Flouci in it's first version made it possible for users to pay merchants in simple steps and without the need of cash. However the market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
+Flouci in its first version made it possible for users to pay merchants in simple steps and without the need of cash. However, the market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
 
-In it's current implementation Flouci is not able to integrate into any form of online payments due to the lack of it's implementation.
+In its current implementation, Flouci is not able to integrate into any form of online payments due to the lack of its implementation.
 
 Facing this problem and a fast moving e-commerce market the company had to move toward implementing a solution for developers.
 
-The API should make it possible for developers to link their Flouci wallets to the their e-commerce sites and add flouci as an easy and instant payment method.
+The API should make it possible for developers to link their Flouci wallets to their e-commerce sites and add Flouci as an easy and instant payment method.
 \subsection{Project goals}
-To bring developers to the Flouci world and allow e-commerce owners to introduce a mobile payment solution Kaoun has decided to build it's own developer API from scratch and provide an easy way to accept payments in few simple steps. This presented the opportunity for us to turn this problem into the main objective of our graduation project.
+To bring developers to the Flouci world and allow e-commerce owners to introduce a mobile payment solution Kaoun has decided to build its own developer API from scratch and provide an easy way to accept payments in few simple steps. This presented the opportunity for us to turn this problem into the main objective of our graduation project.
 
 By the end of our project, we need to achieve these goals :
 \begin{itemize}
   \item \textbf{Create Account:}
+  Any developer should be able to create a Flouci developer account from the web platform, basic information is needed to open an account.
 
-  Any developer should be able to create a Flouci developer account from the web platform, basic informations are needed to open an account.
-
-  Also it should be possible to use an existing Flouci account and switch it to developer mode.
-
+  Also, it should be possible to use an existing Flouci account and switch it to developer mode.
   \item \textbf{Create App and link Flouci wallet:}
 
-  The web interface should offer the possibility to create an App and link an existing wallet to the specific configuration. A two steps verification system should be put in place to verify ownership of the wallet.
+  The web interface should offer the possibility to create an App and link it an existing wallet. A two steps verification system should be put in place to verify ownership of the wallet.
   To verify transaction developer could choose between two modes:
   \begin{itemize}
   \item \textbf{Active mode:} Activate an endpoint to verify transactions by id.
@@ -101,11 +100,10 @@ of work in order to guarantee a good organization of tasks and to define the dif
 through which the project passes.
 Since their appearance, agile development methods have considerably improved
 the quality of the software and have reduced their production time. Thanks to its nature,
-incremental and collaborative, such a methodology allows to take into account the evolution
+incremental and collaborative, such a methodology allows taking into account the evolution
 of the customer's needs. Agile methodologies are based on four main values:
 \begin{itemize}
-	\item They promote interaction between the various parties involved in the project by
-in relation to processes and tools.
+	\item They promote interaction between the various parties involved in the project.
 \item They replace exhaustive documentation with concrete functionalities.
 \item The client participates in the project throughout its implementation instead of defining contracts
 that formalize the relationship with the client.

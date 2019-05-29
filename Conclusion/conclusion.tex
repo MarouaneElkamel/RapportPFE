@@ -1,4 +1,4 @@
-\chapter{General Conclusion }
+\chapter{General Conclusion and Perspectives }
 %==============================================================================
 \pagestyle{fancy}
 \fancyhf{}
@@ -11,16 +11,24 @@
 
 \begin{spacing}{1.2}
 %==============================================================================
+During a period of four months, we had to design and implement our challenging project. We needed to expand the Flouci ecosystem and add the ability to perform online integrations.
+The project had to involve a lot of pieces, A platform that allows developers to manage their integration, A module that could be integrated into e-commerce websites, As well as the existing API's of The Flouci ecosystem including the payment API and the Wallets API.   
 
-C'est l'une des parties les plus importantes et pourtant les plus negligees 
-du rapport. Ce qu'on \underline{ne veut pas voir} ici, c'est combien ce stage vous a ete benefique, comment il vous a appris e vous integrer, e connaetre le monde du travail, etc.\\
-Franchement, personne n'en a rien e faire, du moins dans cette partie. Pour cela, vous 
-avez les remerciements et les dedicaces, vous pourrez vous y exprimer e souhait.\\
-La conclusion, c'est tres simple : c'est d'abord le resume de ce que vous avez raconte
-dans le rapport : vous reprenez votre contribution, en y ajoutant ici les outils que vous 
-avez utilise, votre maniere de proceder. Vous pouvez meme mettre les difficultes
-rencontrees. En deuxieme lieu, on y met les perspectives du travail : ce qu'on pourrait 
-ajouter e votre application, comment on pourrait l'ameliorer.
+We started our work by setting up a modern software development discipline. We followed the Kanban methodology and created our project board from day one. We also defined a DevOps pipeline that involves different steps from testing to packaging and deploying. And we followed a strict TDD to ensure that we have a good testing coverage. 
+
+Only after making sure that we can write code in the best quality possible and making the development experience as modern as we could that we started implementing our core functionalities. 
+
+First, we started implementing the developer's platform, We challenged ourselves to build the front end in React, Since the company was shifting all its products to react and that's when we knew that in order to finish our product we needed to be adapt and learn anything.
+
+After finishing our platform, we dived into the next sprint and started developing the integration module. The hardest part of the project was to make the module as portable as possible, and we had to make it in pure javascript.  
+
+In the end, we delivered a platform to create integration apps, as well as a simple module that could use those apps to add the Flouci payment method on any website. It only takes the knowledge of performing a REST call to complete the integration.
+
+From this state, our project could evolve and add more functionalities:
+\begin{itemize}
+	\item \textbf{Plateform:} We could add more customization to our integration app and allow developers to add their users and items. After that we can add more metrics relevant to items or users like most sold items, or most active customers.
+	\item \textbf{Checkout module:} we can add the possibility to pay with the Flouci login credentials, and also we can make a button that redirects to the app on mobile devices to perform payments without having to scan any QR codes.
+\end{itemize} 
 
 %==============================================================================
 \end{spacing}
