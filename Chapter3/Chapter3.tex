@@ -26,10 +26,11 @@ Our development process is a combination of different practices like Test-driven
 
 \section{Kanban Tickets Life Cycle}
 Following the Kanban methodology, our project is decomposed to small tickets with limited scopes. The tickets are developed in an incremental way following priority order, and together they shape our project to its final version.
+The figure \ref{fig:kanban} shows our product board.
 \begin{figure}[H]\centering
 \includegraphics[scale=0.3]{kanban_board.png}
 \caption{Kanban Board}
-\label{fig:fig1}
+\label{fig:kanban}
 \end{figure}
 \subsection{Backlog}
 All tickets are created in the "Backlog" stage, any work that needs to be done is formed into a ticket.
@@ -74,15 +75,20 @@ All tickets should finally be moved to the "Done" stage, this stage groups all t
 
 
 After a fixed time tickets get archived to gain space in the Kanban board.
+
 \section{Gitflow workflow }
+Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
+
+Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together. 
+The figure \ref{fig:git} shows our different branches and our merging strategy.
+
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.4]{git_workflow.png}
 \caption{Git Workflow}
-\label{fig:fig1}
+\label{fig:git}
 \end{figure}
-Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
 
-Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together.
+\newpage
 \subsection{Feature Branch}
 The feature branch is created by the developer for every Kanban ticket he tackles. When moving the ticket to the "In Progress" stage the branch should be created with the same name as the ticket.
 
@@ -110,6 +116,10 @@ As it is impossible to have a bug free software, we should take in consideration
 Every bug discovered on the prod environment opens an urgent fix ticket, the ticket branch is based on the release branch and it's merged directly to the release branch after the fix.
 
 This is a measure to quickly fix issues that have effects on the end user.
+
+
+
+
 \section{Test-driven development}
 Test Driven Development\cite{TDD} is a development technique that requires the writing of tests even before writing the first line of code.
 
@@ -117,7 +127,7 @@ In theory, the method requires the intervention of at least two different people
 
 In practice things are more complicated, sometimes you develop alone or you write the tests yourself that guarantee the integrity of new functionality in a collaborative project.
 
-The TDD can be divided into 5 distinct steps:
+The TDD can be divided into 5 distinct steps as shown in the figure  \ref{fig:tdd}:
 \begin{enumerate}
 	\item  Write a test.
 	\item Check that it fails.
@@ -129,7 +139,7 @@ The TDD can be divided into 5 distinct steps:
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.6]{tddSteps.jpg}
 \caption{TDD Steps}
-\label{fig:fig1}
+\label{fig:tdd}
 \end{figure}
 \newpage
 In our project, The development of every ticket starts by writing the test. A pull request can only be approved if it contains and passes the new test.
@@ -150,11 +160,12 @@ In our project we need to have an autonomous testing and deployment process to m
 \subsection{DevOps Steps}
 With every branch push our CI-CD server (Jenkins) triggers an automatic script that consists of a set of predefined steps.
 
-The steps behave slightly different according to the branch name.
+The steps behave slightly different according to the branch name. 
+Our pipeline is shown in the figure \ref{fig:jenkins}
 \begin{figure}[!h]\centering
 \includegraphics[scale=0.3]{jenkins.png}
 \caption{Kaoun logo }
-\label{fig:fig1}
+\label{fig:jenkins}
 \end{figure}
 \subsubsection{Preparation}
 The first step, of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project.
@@ -187,7 +198,7 @@ GitKraken Glo Boards is a software that manage boards and tickets. In our case t
 \subsection{Docker}
 Docker\cite{Docker} is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
 \subsection{Docker Swarm}
-As a platform, Docker has revolutionized the manner software was packaged. Docker Swarm\cite{Docekr swarm} or simply Swarm is an open-source container orchestration platform and is the native clustering engine for and by Docker. Any software, services, or tools that run with Docker containers run equally well in Swarm. Also, Swarm utilizes the same command line from Docker.
+As a platform, Docker has revolutionized the manner software was packaged. Docker Swarm \cite{Dockerswarm} or simply Swarm is an open-source container orchestration platform and is the native clustering engine for and by Docker. Any software, services, or tools that run with Docker containers run equally well in Swarm. Also, Swarm utilizes the same command line from Docker.
 
 Swarm turns a pool of Docker hosts into a virtual, single host. Swarm is especially useful for people who are trying to get comfortable with an orchestrated environment or who need to adhere to a simple deployment technique but also have more just one cloud environment or one particular platform to run this on.
 \subsection{Jenkins}

@@ -34,20 +34,22 @@ Below is a list of world leader online payment API's:
 
 You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks. The API key you use to authenticate the request determines whether the request is live mode or test mode.
 
+The figure \ref{fig:stripe} shows the code behind stripe integration.
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.3]{stripe.png}
 \caption{Stripe Api}
-\label{fig:fig1}
+\label{fig:stripe}
 \end{figure}
 
   \item \textbf{Paypal:}
 
   The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
-
+  
+The figure \ref{fig:paypal} shows the develeopers API of Paypal.
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.3]{PayPal.png}
 \caption{PayPal Api}
-\label{fig:fig1}
+\label{fig:paypal}
 \end{figure}
 \newpage
 \item \textbf{Twint:}
@@ -55,10 +57,11 @@ You can use the Stripe API in test mode, which does not affect your live data or
 Twint is the closest implementation to Flouci, it offers payments through QR code scans.
 
 The plugin allows QR code generation on the web page, it also creates a code for each transaction, It serves to confirm payments.
+The figure \ref{fig:twint} shows the Twint payment interface.
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.3]{twint.jpg}
 \caption{Twint Pop-up}
-\label{fig:fig1}
+\label{fig:twint}
 \end{figure}
   \end{itemize}
   
@@ -138,11 +141,11 @@ Our solution implements many layers of security including:
 \subsubsection{Documentation}
 An API is only usable with proper documentation, So in order to get developers to implement our solutions, we should have easy and understandable documentation. The documentation is accessible in our platform.\subsubsection{Logging}
 Our Solution is using "logstash" to forward logs to our ELK\cite{ELK} stack, different log levels are used and we implemented a lot of metrics and dashboards on our kibana.
-
+The figure below \ref{fig:kibana} shows the logging dashboard of Kibana.
 \begin{figure}[H]\centering
 \includegraphics[scale=0.3]{ELK.png}
 \caption{Kibana Dashboard}
-\label{fig:usecasediagram}
+\label{fig:kibana}
 \end{figure}
 
 \subsubsection{Integrability}
@@ -160,7 +163,7 @@ To guarantee a good control of our project and to simplify the interaction with 
 \newline Figure \ref{developersPlatform} represents the Developers API platform.
 
 \begin{figure}[H]\centering
-\includegraphics[scale=0.4]{Checkout_screen}
+\includegraphics[scale=0.3]{Checkout_screen}
 \caption{Checkout pop-up mock-up}
 \label{checkoutScreen}
 \end{figure}
