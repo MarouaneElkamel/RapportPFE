@@ -19,7 +19,7 @@
 \begin{spacing}{1.2}
 %==============================================================================
 \section*{Introduction}
-In this chapter we will begin our project by a study of the existing checkout developers API's on the market, then we will start the requirements analysis to identify the different actors that will interact with our system, as well as the features required in our project.
+In this chapter, we will begin our project by a study of the existing checkout developers API's on the market. Then we will start the requirements analysis. This will help us identify the different actors that will interact with our system, as well as the features required in our project.
 \section{Study of the existing}
 In The world of e-commerce, a lot of payments methods exists.  Most of the methods are credit card related and offer the possibility to pay using the card number and the three digits code.
 
@@ -30,7 +30,7 @@ Below is a list of world leader online payment API's:
 \begin{itemize}
   \item \textbf{Stripe:}
 
- The Stripe API is organized around REST. The API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
+ The Stripe\cite{stripe} API is organized around REST. The API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
 You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks. The API key you use to authenticate the request determines whether the request is live mode or test mode.
 
@@ -43,7 +43,7 @@ The figure \ref{fig:stripe} shows the code behind stripe integration.
 
   \item \textbf{Paypal:}
 
-  The PayPal APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
+  The PayPal\cite{paypal} APIs are HTTP-based RESTful APIs that use OAuth 2.0 for authorization. API request and response bodies are formatted in JSON.
   
 The figure \ref{fig:paypal} shows the develeopers API of Paypal.
 \begin{figure}[!ht]\centering
@@ -54,7 +54,7 @@ The figure \ref{fig:paypal} shows the develeopers API of Paypal.
 \newpage
 \item \textbf{Twint:}
 
-Twint is the closest implementation to Flouci, it offers payments through QR code scans.
+Twint \cite{twint} is the closest implementation to Flouci, it offers payments through QR code scans.
 
 The plugin allows QR code generation on the web page, it also creates a code for each transaction, It serves to confirm payments.
 The figure \ref{fig:twint} shows the Twint payment interface.
@@ -133,11 +133,9 @@ In this section, we will understand the functional requirements of our project b
 When it comes to payment solutions security is the number one requirement to keep in mind.
 Our solution implements many layers of security including: 
 \begin{itemize}
-	\item \textbf{HTTPS:} The platform only works on https mode, we use "Kaoun" trusted certificate.
-	\item \textbf{JWT Token\cite{JWT}:}  Access to the platform is secured with JWT tokens, managing apps is only possible with this token.
-	\item \textbf{Private / Public Tokens for Apps:}  In order to accept Payments Flouci user sign payments attached to the app public key and the developer can only accept them if he has the private key.
-	App public keys can be revoked.
-\end{itemize}
+	\item \textbf{Secure connection:} Since we will be handling payments data each connection should be secure .
+	\item \textbf{Authentication / Authorization :}  A clear protocol should be set to handle different access types to our platform.
+    \end{itemize}
 \subsubsection{Documentation}
 An API is only usable with proper documentation, So in order to get developers to implement our solutions, we should have easy and understandable documentation. The documentation is accessible in our platform.\subsubsection{Logging}
 Our Solution is using "logstash" to forward logs to our ELK\cite{ELK} stack, different log levels are used and we implemented a lot of metrics and dashboards on our kibana.
@@ -159,21 +157,7 @@ This is achieved on the app creation level, at the stage of linking the wallet.
 \subsubsection{Privacy}
 Flouci users privacy should be considered at the highest levels, payment history and activities should be seen only by the persons with the right permissions.
 \subsubsection{Ergonomics}
-To guarantee a good control of our project and to simplify the interaction with the final users, we support our analysis of functional needs with mock-ups that model the different interfaces of our final product. These models are made by the "Adobe XD" tool and they are compliant with the overall Kaoun prouducts user experience. \newline Figure \ref{checkoutScreen} represents the checkout pop-up on e-commerce websites.
-\newline Figure \ref{developersPlatform} represents the Developers API platform.
-
-\begin{figure}[H]\centering
-\includegraphics[scale=0.3]{Checkout_screen}
-\caption{Checkout pop-up mock-up}
-\label{checkoutScreen}
-\end{figure}
-
-\begin{figure}[H]\centering
-\includegraphics[scale=0.4]{web_screen}
-\caption{Developers platform mock-up}
-\label{developersPlatform}
-\end{figure}
-
+To guarantee a good control of our project and to simplify the interaction with the final users, we support our analysis of functional needs with mock-ups that model the different interfaces of our final product. These models are made by the "Adobe XD" tool and they are compliant with the overall Kaoun prouducts user experience. 
 \section*{Conclusion}
 In this chapter, we took the time to think about different aspects of our project, we went through detailed analysis in order to comprehend the project boundaries. After this we can launch our project development cycles which what we will be the topic of our next chapter.
 %==============================================================================

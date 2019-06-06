@@ -23,19 +23,27 @@ This will include an introduction of the host company Kaoun and it's main produc
 \section{Host company presentation}
 In The first section of the report, we will introduce Kaoun, The host company that made the project possible.
 \subsection{Presentation of Kaoun}
+\begin{center}
+	\includegraphics[scale=0.2]{kaounlogo.png}
+\end{center}
+
+
+
 Kaoun is a new FinTech company that builds reliable infrastructure for payments and credits in Tunisia, and whose mission is to enable all individuals and businesses to access financial services using any phone, anywhere, anytime.
 
 Kaoun's first product, Flouci, is a mobile and web payment application built on top of a unique decentralized inter and intrabank infrastructure that allows instant transactions for peer to peer transfers and merchant payments. Kaoun plans to work with governments, traditional banks, mobile operators, and microfinance institutions to fix the lag between technology adoption and financial inclusion by reducing the barriers to entry for the unbanked and the underbanked.
 
 
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{kaounlogo.png}
-\caption[]{Kaoun logo}
-\label{fig:fig1}
-\end{figure}
+
+
+
+
 
 
 \subsection{Presentation of Flouci}
+\begin{center}
+	\includegraphics[scale=0.2]{floucilogo.png}
+\end{center}
 Flouci is the first wallet designed to innovate mobile payment in Tunisia. It serves as a quick, easy, and convenient way to open a bank account, send and receive money, and pay different merchants in-person or online, all from within the app.
 \begin{itemize}
   \item \textbf{Open an account:}
@@ -50,16 +58,14 @@ Flouci is the first wallet designed to innovate mobile payment in Tunisia. It se
   Through Flouci, you have access to a wide range of partner merchants across Tunisia. You can pay through the app by just scanning the QR code shown on the counter of the merchant. No waiting lines, no more looking for change or realizing you forgot your wallet at home.
 \end{itemize}
 
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{floucilogo.png}
-\caption[]{Flouci logo}
-\label{fig:fig1}
-\end{figure}
-
 \section{Project overview}
 In this section, we will start by presenting the developers API project context, then we will set our project goals.
 \subsection{Project Context}
-Flouci in its first version made it possible for users to pay merchants in simple steps and without the need of cash. However, the market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
+Flouci in its first version made it possible for users to pay merchants in simple steps and without the need of cash.
+Flouci main app made it easy to transfer money between accounts. With the use of QR codes, users can send and receive money in less than 5 seconds.
+
+\subsection{Flouci limitations}
+The market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
 
 In its current implementation, Flouci is not able to integrate into any form of online payments due to the lack of its implementation.
 
@@ -98,7 +104,7 @@ In this section, we will go through the importance of having a fixed methodology
 In every professional IT project, it is essential to adopt a methodology
 of work in order to guarantee a good organization of tasks and to define the different phases
 through which the project passes.
-Since their appearance, agile development methods have considerably improved
+Since their appearance, agile \cite{agile}  development methods have considerably improved
 the quality of the software and have reduced their production time. Thanks to its nature,
 incremental and collaborative, such a methodology allows taking into account the evolution
 of the customer's needs. Agile methodologies are based on four main values:
@@ -122,7 +128,7 @@ We chose the Kanban methodology for our project for three reasons:
 
 \subsection{Kanban methodology}
 
-In general, Kanban is a scheduling system for lean and other JIT processes. In a Kanban process, there are physical (or virtual) "cards" called Kanban that move through the process from start to finish. The aim is to keep a constant flow of Kanban so that as inventory is required at the end of the process, just that much is created at the start.
+In general, Kanban\cite{kanban} is a scheduling system for lean and other JIT processes. In a Kanban process, there are physical (or virtual) "cards" called Kanban that move through the process from start to finish. The aim is to keep a constant flow of Kanban so that as inventory is required at the end of the process, just that much is created at the start.
 
 
 When used for software development, Kanban uses the stages in the software development lifecycle (SDLC) to represent the different stages in the manufacturing process. The aim is to control and manage the flow of features (represented by Kanban cards) so that the number of features entering the process matches those being completed.
@@ -137,13 +143,45 @@ Kanban does not impose any role definition as say, Scrum does and along with the
 
 \subsection{Lean software development}
 
-Lean Software Development is a set of principles to deliver software according to the principles of lean manufacturing. In a lean environment, activities or processes that result in the expenditure of effort and/or resources towards goals that are not producing value for the customer should be eliminated. Essentially, lean is centered on preserving value with less work. Lean approaches are often called six-sigma or Just-In Time (JIT).
+Lean Software Development \cite{lean} is a set of principles to deliver software according to the principles of lean manufacturing. In a lean environment, activities or processes that result in the expenditure of effort and/or resources towards goals that are not producing value for the customer should be eliminated. Essentially, lean is centered on preserving value with less work. Lean approaches are often called six-sigma or Just-In Time (JIT).
 
-\subsection*{Conclusion}
+\subsection{Project orientations}
 After a deep study of existing methodologies, we decided to divide our project into three sprints.
 we will dedicate the first sprint to the initial project set up including the DevOps, in the second sprint we will be implementing the developer platform and finally, we will implement the checkout module in the last sprint.
 
 In each sprint, we will have a Kanban board to divide the sprint into incremental tickets.
+
+\subsection{Project Backlog}
+the backlog is intended to collect all the customer's needs that the project team must realize. Therefore it contains the list of functionalities involved in the creation of the product, as well as all the elements requiring the intervention of the project team. All the elements included in the backlog are classified by priority indicating the order of their realization.
+\newpage
+
+
+
+
+\begin{table}[!h]
+\centering
+\caption{Use case description table}
+\begin{tabularx}{\linewidth}{|c|X|c|c|}
+\hline
+ID & \multicolumn{1}{c|}{User Story} & Estimation & Priority \\ \hline
+1 & As an unauthorized user i want to create a new account. &  3 & 1  \\  \hline
+2 & As an unauthorized user i want to recover my account using my email. &  1 & 3 \\ \hline
+3 & As an unauthorized user i want to read the documentation. & 2 & 2 \\ \hline
+4 & As an unauthorized user i want to login in to my account. & 3 & 1 \\ \hline
+5 & As an authorized user i want to logout in to my account. & 1 & 1 \\ \hline
+6 & As an authorized user i want to create an integration app. & 3 & 1 \\ \hline
+7 & As an authorized user i want to  enable/disable my integration app. & 1 & 3 \\ \hline
+8 & As an authorized user i want to  revoke my integration app. & 1 & 2 \\ \hline
+9 & As an authorized user i want to  generate my integration app credentials. & 1 & 1 \\ \hline
+10 & As an authorized user i want to check my integration app orders. & 2 & 2 \\ \hline
+11 & As an authorized user i want to check my integration app transaction number. & 1 & 3 \\ \hline
+12 & As an authorized user i want to check my integration app gross sales. & 1 & 2 \\ \hline
+13 & As an authorized user i want to change my account settings. & 2 & 3 \\ \hline
+14 & As an authorized user i want to integrate Flouci button in my website using my integration app public token. & 3 & 1 \\ \hline
+15 & As an authorized user i want to accept payments in my website using my integration app private token. & 3 & 1 \\ \hline
+16 & As an authorized user i want to reimburse payments orders. & 3 & 2 \\ \hline
+\end{tabularx}
+\end{table}
 
 \section*{Conclusion}
 
