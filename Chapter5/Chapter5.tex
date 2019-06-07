@@ -1,6 +1,6 @@
 
 \setcounter{chapter}{4}
-\chapter{Sprint 3: Checkout Module}
+\chapter{Sprint 3: Checkout Integration}
 \minitoc %insert la minitoc
 \graphicspath{{Chapter5/figures/}}
 
@@ -37,7 +37,8 @@ The figure \ref{fig:onlinepay} shows the payment form of the developer API.
 
 \subsection{Code}
 To create our front end form and make it easy to integrate, we created a web-pack project that bundles next generation javascript and css into one single javascript file.
-
+The code contains the payment form, and an api validation call to the payment API.
+If the six digit code entered by the user is correct, the script return the code to the form submit action.
 \subsection{Integration}
 After hosting the javascript file we can easily add the form to our project. The form will only require the public app key  and the amount.
 The HTML code is listed in \ref{code:html}.
@@ -64,14 +65,14 @@ The developer then is only required to call an endpoint to accept the payment an
 
 In the figure \ref{fig:flask} we show the code of a simple flask server with a Flouci integration that works with the HTML code listed in \ref{code:html}.
 \begin{figure}[H]\centering
-\includegraphics[scale=0.5]{flask.png}
+\includegraphics[width=\textwidth,height=12cm]{flask.png}
 \caption{Flouci payment Backend Integration}
 \label{fig:flask}
 \end{figure}
 \section{Payment process}
 To summarize the payment process, we created a sequence diagram prsented in the figure \ref{fig:FPSD} that contains all the interactions needed to process a payment.
 \begin{figure}[H]\centering
-\includegraphics[scale=0.6]{Payment_Sequence_Diagram.png}
+\includegraphics[width=\textwidth,height=18cm]{Payment_Sequence_Diagram.png}
 \caption{Flouci payment Sequence Diagram}
 \label{fig:FPSD}
 \end{figure}
@@ -80,5 +81,7 @@ In order to make a payment, the user should click the payment button and scan th
 In this chapter we implemented the checkout API, which serve as an integration module that can be integrated in any web based project.
 
 In the implementation of our solution we had to made it the simplest integration possible and the most portable one. And we made as easy as implementing a simple REST call. 
+
+With the checkout integration module, we finally have all the pieces needed in the Flouci online payment process. We now have a fully functional project.
 
 \end{spacing}

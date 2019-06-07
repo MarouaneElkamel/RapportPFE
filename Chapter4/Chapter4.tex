@@ -23,6 +23,85 @@ In order to integrate Flouci as a web payment method, we opted for an app model.
 \newline
 In this chapter, we will start our project development. We will focus on implementing two linked parts of our application which are the user and app. 
 
+\section{Flux Design Pattern}
+Our solution is implemented with two main frameworks, Spring Boot and React JS.
+Our back-end is entirely written with spring boot and serves as an api for our front-end developed with react.
+
+Using React Js we had to follow a newly created design pattern called Flux. The pattern was created by Facebook and they define it as follow : 
+
+
+\say{Flux\cite{Flux} is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.}
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.3]{Fluxdesignpattern.png}
+\caption{Flux design pattern}
+\label{usermanagementusecase}
+\end{figure}
+
+Flux is made up of 4 key elements:
+
+\begin{itemize}
+	\item \textbf{Actions:} Objects with property and data.
+	\item \textbf{Stores:} Contain the application's state and logic.
+	\item \textbf{The Dispatcher:} Processes registered actions and callbacks.
+	\item \textbf{Views:} Listen to changes from the stores and re-render themselves.
+\end{itemize}
+
+\section{Sprint Use cases}
+In this section, we will start by understanding the sprint specification by looking into the use cases diagrams.
+
+\subsection{User management use case}
+Each project starts with the user management section. This section is about the basic user management features.
+
+The figure \ref{usermanagementusecase} shows the user management use case diagram.
+\begin{figure}[H]\centering
+\includegraphics[scale=0.3]{userusecase.png}
+\caption{User management use case diagram}
+\label{usermanagementusecase}
+\end{figure}
+
+
+\subsection{App management use case}
+For every integration, the developer should create an integration app.
+The app is linked to a Flouci wallet, and it contains two keys public and private.
+The keys are used in the process of integrating the app on e-commerce websites.
+
+
+The figure \ref{appmanagementusecase} shows the use case diagram, and the table \ref{apptable} is a textual description of the main use case "create app".
+\begin{figure}[H]\centering
+\includegraphics[scale=0.3]{appusecase.png}
+\caption{App management use case diagram}
+\label{appmanagementusecase}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Text description of the create app use case}
+\begin{tabularx}{\linewidth}{|c|X|}
+\hline
+Title & create app.  \\ \hline
+Summary & The user creates an integration app to use it on his e-commerce website. \\ \hline
+Actors & Registered developer. \\ \hline
+Precondition & The user visits the new app page. \\ \hline
+Nominal Scenario & \begin{enumerate}
+ \item The user enters the app name, description and a phone number linked to a Flouci wallet. 
+ \item The user gets an OTP on his phone number.
+ \item The user enters the OTP to activate the app.
+ \item The user is redirected to the newly created app page.
+ \end{enumerate}
+ \\ \hline
+Scénario alternatifs & \begin{itemize}
+	\item A1 If the app name is already used, the user should change the name.
+	\item A2 If the phone number is not linked to a business wallet the user is asked to verify the number.
+	\item A3 If the OTP is never received the user can ask to resend OTP.
+	\item A3 If the user enters a wrong OTP he is asked to retry with a limit of three times.
+\end{itemize} \\ \hline
+Exception Scenario & If the user exceeds the maximum number of apps, he cannot create a new app. \\ \hline
+Post-condition & The user is redirected to the app page. \\ \hline
+\end{tabularx}
+\label{apptable}
+\end{table}
+
 \section{Platform Design}
 Before diving into writing the code, we started by modeling the platform using Adobe XD. This was very helpful for us since it made it possible to focus on the key features we want to have.
 
@@ -73,7 +152,7 @@ After finishing creating the app, the developer will obtain two tokens.
 
 The figure \ref{fig:appcreate} shows the whole process in details.
 \begin{figure}[H]\centering
-\includegraphics[scale=0.7]{Create_App_Sequence_Diagram.png}
+\includegraphics[width=\textwidth,height=12cm]{Create_App_Sequence_Diagram.png}
 \caption{App creation Sequence diagram}
 \label{fig:appcreate}
 \end{figure}
@@ -97,7 +176,7 @@ We can then display all orders made, add filtering and even add a button to reim
 Our database modal can be divided into three big sections of the projects. We have tables managing the user data, Tables managing the app data and others independent tables handling auditing events. Also, we made the modal in a way that the user can have from 0 to N apps and an app can only be linked to one user.
 The database schema is presented in the figure \ref{fig:database}
 \begin{figure}[H]\centering
-\includegraphics[scale=0.6]{db.png}
+\includegraphics[width=\textwidth,keepaspectratio]{db.png}
 \caption{Database modal}
 \label{fig:database}
 \end{figure}
