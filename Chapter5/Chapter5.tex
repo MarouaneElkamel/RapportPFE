@@ -52,7 +52,7 @@ In order to create this script, we had to use different modules such as a QR cod
 
 The solution we agreed on is to create a webpack project. With webpack, we could use next generation javascript and already existing NPM modules then bundle everything in one script. 
 
-The figure \ref{fig:webpack} shows how webpack can transform a javascript module with dependencies into on static bundle.
+The figure \ref{fig:webpack} shows how webpack can transform a javascript module with dependencies into one static bundle.
 \begin{figure}[H]\centering
 \includegraphics[width=\textwidth, keepaspectratio ]{webpack.png}
 \caption{Webpack build process}
@@ -64,10 +64,10 @@ In software engineering, a design pattern\cite{designpattern} is a general repea
 
 In our solution we used this design patterns:
 \begin{itemize}
-	\item \textbf{Creational design patterns:} The QR code contains different fields so we followed the Builder design pattern to create it.
-	\item \textbf{Structural design patterns:} Our form hide different components and complex behavior so we implemented a Facade design pattern to deliver a single class that 
+	\item \textbf{Creational design patterns\cite{designpattern}:} The QR code contains different fields so we followed the Builder design pattern to create it.
+	\item \textbf{Structural design patterns\cite{designpattern}:} Our form hide different components and complex behavior so we implemented a Facade design pattern to deliver a single class that 
 	 represents the entire subsystem.
-	 \item \textbf{Behavioral design patterns:} The process of payments include different steps, that's why we implemented a  Chain of responsibility design pattern to pass he payment request between our three main objects.
+	 \item \textbf{Behavioral design patterns\cite{designpattern}:} The process of payments include different steps, that's why we implemented a  Chain of responsibility design pattern to pass the payment request between our three main objects.
 \end{itemize}
 \subsection{Integration}
 After hosting the javascript file we can easily add the form to our project. The form will only require the public app key  and the amount.
