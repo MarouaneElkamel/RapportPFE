@@ -30,15 +30,45 @@ So we decided to create the same QR code experience in mobile and only add a ste
 
 The figure \ref{fig:onlinepay} shows the payment form of the developer API.
 \begin{figure}[H]\centering
-\includegraphics[scale=0.5]{payment_form.png}
+\includegraphics[width= \textwidth, keepaspectratio ]{Checkout_screen.png}
 \caption{Flouci payment Form}
 \label{fig:onlinepay}
 \end{figure}
 
-\subsection{Code}
-To create our front end form and make it easy to integrate, we created a web-pack project that bundles next generation javascript and css into one single javascript file.
-The code contains the payment form, and an api validation call to the payment API.
-If the six digit code entered by the user is correct, the script return the code to the form submit action.
+\subsection{Implementation}
+To create our front-end form and make it easy to integrate, we created a web-pack project that bundles next generation javascript and CSS into one single javascript file.
+The code contains the payment form and an API validation call to the payment API.
+If the six-digit code entered by the user is correct, the script returns the code to the form submit action.
+\subsection{Building the script file}
+Our front-end integration is basically a web script capable of delivering three main objectives:
+\begin{itemize}
+	\item \textbf{Payment Button:} The payment button should have a distinct and recognizable style across all e-commerce websites.
+	\item \textbf{Payment Form:} The payment form goal is to encode the app public key, amount and other optional fields into one single QR code readable by our Flouci App.
+	\item \textbf{Validation API:} After scanning the QR code, the script should be able to validate the pre-payment with the payments API and give feedback to the e-commerce backend.
+\end{itemize}
+
+In order to create this script, we had to use different modules such as a QR code generator. This made it impossible to write everything in vanilla javascript and deliver our project on time. 
+
+
+The solution we agreed on is to create a webpack project. With webpack, we could use next generation javascript and already existing NPM modules then bundle everything in one script. 
+
+The figure \ref{fig:webpack} shows how webpack can transform a javascript module with dependencies into on static bundle.
+\begin{figure}[H]\centering
+\includegraphics[width=\textwidth, keepaspectratio ]{webpack.png}
+\caption{Webpack build process}
+\label{fig:webpack}
+\end{figure}
+
+\subsection{Design patterns}
+In software engineering, a design pattern\cite{designpattern} is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+In our solution we used this design patterns:
+\begin{itemize}
+	\item \textbf{Creational design patterns:} The QR code contains different fields so we followed the Builder design pattern to create it.
+	\item \textbf{Structural design patterns:} Our form hide different components and complex behavior so we implemented a Facade design pattern to deliver a single class that 
+	 represents the entire subsystem.
+	 \item \textbf{Behavioral design patterns:} The process of payments include different steps, that's why we implemented a  Chain of responsibility design pattern to pass he payment request between our three main objects.
+\end{itemize}
 \subsection{Integration}
 After hosting the javascript file we can easily add the form to our project. The form will only require the public app key  and the amount.
 The HTML code is listed in \ref{code:html}.
