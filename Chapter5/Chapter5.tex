@@ -19,16 +19,16 @@
 \begin{spacing}{1.2}
 
 \section*{Introduction}
-In this section, we will implement the tools needed for developers to be able to integrate Flouci in their websites. 
+In this chapter, we will implement the tools needed for developers to be able to integrate Flouci in their websites. 
 
 In order to make it portable in any existing e-commerce, we decided to implement it in pure javascript.
-\section{Front end Integration}
-In this section, we will implement the front end payment plugin that can can be integrated in any HTML code.
-\subsection{User experience}
+\section{Front End Integration}
+In this section, we will implement the front end payment plugin that  can be integrated in any HTML code.
+\subsection{User Experience}
 In the online payment, we faced a small issue regarding the payment experience, because the process is different from the mobile version. The online payments needs the developer to accept them.
 So we decided to create the same QR code experience in mobile and only add a step to enter a six digits code in the browser.
 
-The figure \ref{fig:onlinepay} shows the payment form of the developer API.
+Figure \ref{fig:onlinepay} shows the payment form of the developer API.
 \begin{figure}[H]\centering
 \includegraphics[width= \textwidth, keepaspectratio ]{Checkout_screen.png}
 \caption{Flouci payment Form}
@@ -59,7 +59,7 @@ The figure \ref{fig:webpack} shows how webpack can transform a javascript module
 \label{fig:webpack}
 \end{figure}
 
-\subsection{Design patterns}
+\subsection{Design Patterns}
 In order to implement our solution, we faced a lot of design problems. Luckily such problems were commonly occurring problems in software design. So we studied the known design patterns\cite{designpattern} and we solved our issues with these design patterns:
 \begin{itemize}
 	\item \textbf{Creational design patterns\cite{designpattern}:} The QR code contains different fields so we followed the Builder design pattern to create it.
@@ -86,7 +86,7 @@ The HTML code is listed in \ref{code:html}.
 \end{lstlisting}
 
 
-\section{Back end Integration}
+\section{Back End Integration}
 After the user inputs the six digits code into the form, the form checks the validity of the payment and return a special key to the backend ( the action function inputed by the developer)
 
 The developer then is only required to call an endpoint to accept the payment and then redirects the user to an other page depending on the payment result. 
@@ -97,11 +97,11 @@ In the figure \ref{fig:flask} we show the code of a simple flask server with a F
 \caption{Flouci payment Backend Integration}
 \label{fig:flask}
 \end{figure}
-\section{Payment process}
+\section{Payment Process}
 To summarize the payment process, we created a sequence diagram prsented in the figure \ref{fig:FPSD} that contains all the interactions needed to process a payment.
 \begin{figure}[H]\centering
 \includegraphics[width=\textwidth,height=18cm]{Payment_Sequence_Diagram.png}
-\caption{Flouci payment Sequence Diagram}
+\caption{Flouci Payment Sequence Diagram}
 \label{fig:FPSD}
 \end{figure}
 In order to make a payment, the user should click the payment button and scan the QR code. The mobile app then gets the app info from the developer API and verify its validity. If the app is valid the mobile phone call the payment API to prepare the payment, this will return a key. The user inputs the key into the form and then the form will call the payment API to verify it and get an extra id to return it to the developer backend. Finally the developer should call the developer api and send his app secret, the key and the id returned by the form, the developer api calls the payment api to execute the payment and return the result to the developer.
