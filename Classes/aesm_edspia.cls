@@ -334,7 +334,7 @@
 
             \JURY
             ~\\[\baselineskip]~\\[\baselineskip]
-            Annee Universitaire : \ANNEEUNIV\\
+            Academic Year : \ANNEEUNIV\\
 \end{center}
 
            }
