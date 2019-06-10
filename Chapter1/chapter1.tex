@@ -19,9 +19,9 @@
 
 \section*{Introduction}
 This chapter is dedicated to the presentation of our project's general scope.
-This will include an introduction of the host company Kaoun and it's main product Flouci. Also, we will give an overview of the developer API project. After that, we will describe the chosen methodology that we followed during the realization of our project.
-\section{Host company presentation}
-In The first section of the report, we will introduce Kaoun, The host company that made the project possible.
+This will include an introduction of the host company Kaoun and it's main product Flouci. We will also give an overview of the developer API project. After that, we will describe the chosen methodology that we followed during the realization of our project.
+\section{Host Company Presentation}
+In the first section of the report, we will introduce Kaoun, the host company that has made this project possible.
 \subsection{Presentation of Kaoun}
 \begin{center}
 	\includegraphics[scale=0.2]{kaounlogo.png}
@@ -29,7 +29,7 @@ In The first section of the report, we will introduce Kaoun, The host company th
 
 
 
-Kaoun is a new FinTech company that builds reliable infrastructure for payments and credits in Tunisia, and whose mission is to enable all individuals and businesses to access financial services using any phone, anywhere, anytime.
+Kaoun is a new fintech company that builds reliable infrastructure for payments and credits in Tunisia, and whose mission is to enable all individuals and businesses to access financial services using any phone, anywhere, anytime.
 
 Kaoun's first product, Flouci, is a mobile and web payment application built on top of a unique decentralized inter and intrabank infrastructure that allows instant transactions for peer to peer transfers and merchant payments. Kaoun plans to work with governments, traditional banks, mobile operators, and microfinance institutions to fix the lag between technology adoption and financial inclusion by reducing the barriers to entry for the unbanked and the underbanked.
 
@@ -44,7 +44,7 @@ Kaoun's first product, Flouci, is a mobile and web payment application built on 
 \begin{center}
 	\includegraphics[scale=0.2]{floucilogo.png}
 \end{center}
-Flouci is the first wallet designed to innovate mobile payment in Tunisia. It serves as a quick, easy, and convenient way to open a bank account, send and receive money, and pay different merchants in-person or online, all from within the app.
+Flouci is the first electronic wallet designed to innovate mobile payments in Tunisia. It serves as a quick, easy, and convenient way to open a bank account, send and receive money, and pay different merchants in-person or online, all from within the app.
 \begin{itemize}
   \item \textbf{Open an account:}
 
@@ -52,61 +52,60 @@ Flouci is the first wallet designed to innovate mobile payment in Tunisia. It se
 
   \item \textbf{Send and receive money:}
 
-  Once you create a Flouci account, you can send and receive money to and from anybody that has a flouci account/wallet. It's easy, cheap, and secure. And the best part is that it's practically instant. All you have to do is enter their number or scan their personal QR code to access their profile. You then enter the amount and confirm. You both then receive a confirmation SMS and you're done.
+  Once you create a Flouci account, you can send and receive money to and from anybody that has a Flouci account/wallet. It's easy, cheap, secure, and practically instant. All you have to do is enter a friend's phone number or scan their personal QR code to access their Flouci profile. You then enter the amount you would like to send or request and confirm. At this point, both parties will receive a confirmation SMS confirming the success of the transaction.
   \item \textbf{Pay merchants:}
 
-  Through Flouci, you have access to a wide range of partner merchants across Tunisia. You can pay through the app by just scanning the QR code shown on the counter of the merchant. No waiting lines, no more looking for change or realizing you forgot your wallet at home.
+  Through Flouci, you have access to a wide range of partner merchants across Tunisia. You can pay through the app by just scanning the QR code shown on the counter of the merchant. No waiting in bank lines for cash, no more looking for change or being stuck in a bad situation after forgetting your wallet at home.
 \end{itemize}
 
-\section{Project overview}
-In this section, we will start by presenting the developers API project context, then we will set our project goals.
+\section{Project Overview}
+In this section, we will start by presenting the developer's API project context, then we will set our project goals.
 \subsection{Project Context}
-Flouci in its first version made it possible for users to pay merchants in simple steps and without the need of cash.
-Flouci main app made it easy to transfer money between accounts. With the use of QR codes, users can send and receive money in less than 5 seconds.
+In its first version, Flouci made it possible for users to pay merchants in 2 simple steps and without the need of cash.
+Flouci's main app made it easy to transfer money between accounts. With the use of QR codes, users can send and receive money in less than 5 seconds.
 
-\subsection{Flouci limitations}
+\subsection{Flouci's Limitations}
 The market is rapidly shifting toward online e-commerce sites with companies like Jumia, Tayara and many other introducing their solutions in Tunisia.
 
-In its current implementation, Flouci is not able to integrate into any form of online payments due to the lack of its implementation.
+In its current implementation, Flouci is not able to integrate into any form of online payments due to the lack of integration method.
 
-Facing this problem and a fast moving e-commerce market the company had to move toward implementing a solution for developers.
+Facing this problem and a fast scaling e-commerce market, the company strategically decided to move toward implementing a solution for developers.
 
 The API should make it possible for developers to link their Flouci wallets to their e-commerce sites and add Flouci as an easy and instant payment method.
-\subsection{Project goals}
-To bring developers to the Flouci world and allow e-commerce owners to introduce a mobile payment solution Kaoun has decided to build its own developer API from scratch and provide an easy way to accept payments in few simple steps. This presented the opportunity for us to turn this problem into the main objective of our graduation project.
+\subsection{Project Goals}
+Kaoun has decided to build its own developer API from scratch and provide an easy way for online merchants to accept payments in a few simple steps. This will bring developers to the Flouci world and allow e-commerce owners to introduce a mobile payment solution. This challenge presented the opportunity for us to turn this problem into the main objective of our graduation project.
 
 By the end of our project, we need to achieve these goals :
 \begin{itemize}
   \item \textbf{Create Account:}
-  Any developer should be able to create a Flouci developer account from the web platform, basic information is needed to open an account.
+  Any developer should be able to create a Flouci developer account from the web platform. Basic merchant information is needed to open an account.
 
-  Also, it should be possible to use an existing Flouci account and switch it to developer mode.
+  It should be possible to use an existing Flouci (business) account and switch it to developer mode.
   \item \textbf{Create App and link Flouci wallet:}
 
-  The web interface should offer the possibility to create an App and link it an existing wallet. A two steps verification system should be put in place to verify ownership of the wallet.
-  To verify transaction developer could choose between two modes:
+  The web interface should offer the possibility to create an app and link it an existing wallet. A two-step verification system should be put in place to verify ownership of the wallet.
+  To verify transactions, developer can choose between two modes:
   \begin{itemize}
-  \item \textbf{Active mode:} Activate an endpoint to verify transactions by id.
-  \item \textbf{Passive mode:} Configure a webhook to receive transactions info once validated.
+  \item \textbf{Active mode:} Activate an endpoint to verify transactions by ID.
+  \item \textbf{Passive mode:} Configure a webhook to receive transaction info once validated.
    \end{itemize}
-   A unique token is generated for each app to allow client integration.
+   A unique token is generated for each app to allow for client integration.
   \item \textbf{Integrate Flouci client:}
 
- Once the App is configured the developer can easily add Flouci as a payment method with the token provided.
+ Once the app is configured, the developer can easily add Flouci as a payment method with the token provided.
   \item \textbf{Check App analytics:}
 
-  Every App should enable a dashboard for the developer to monitor sales and check a set of KPI's.
+  Every app should enable a dashboard for the developer to monitor sales and check a personalized set of KPI's.
 \end{itemize}
 \section{Methodology}
 
-In this section, we will go through the importance of having a fixed methodology in a software development project, as well as our choice for this project and the reasons behind it.
-\subsection{Agile methodology}
+In this section, we will review the importance of having a fixed methodology in a software development project, as well as our choice for this project and the reasons behind it.
+\subsection{Agile Methodology}
 In every professional IT project, it is essential to adopt a methodology
 of work in order to guarantee a good organization of tasks and to define the different phases
 through which the project passes.
 Since their appearance, agile \cite{agile}  development methods have considerably improved
-the quality of the software and have reduced their production time. Thanks to its nature,
-incremental and collaborative, such a methodology allows taking into account the evolution
+the quality of the software and have reduced their production time. Thanks to its incremental and collaborative nature, this methodology allows for taking into account the evolution
 of the customer's needs. Agile methodologies are based on four main values:
 \begin{itemize}
 	\item They promote interaction between the various parties involved in the project.
@@ -126,33 +125,37 @@ We chose the Kanban methodology for our project for three reasons:
 
 
 
-\subsection{Kanban methodology}
+\subsection{Kanban Methodology}
 
 In general, Kanban\cite{kanban} is a scheduling system for lean and other JIT processes. In a Kanban process, there are physical (or virtual) "cards" called Kanban that move through the process from start to finish. The aim is to keep a constant flow of Kanban so that as inventory is required at the end of the process, just that much is created at the start.
-
+\newline
 
 When used for software development, Kanban uses the stages in the software development lifecycle (SDLC) to represent the different stages in the manufacturing process. The aim is to control and manage the flow of features (represented by Kanban cards) so that the number of features entering the process matches those being completed.
+\newline
 
-Kanban is an agile methodology that is not necessarily iterative. Processes like Scrum have short iterations which mimic a project lifecycle on a small scale, having a distinct beginning and end for each iteration. Kanban allows the software be developed in one large development cycle. Despite this, Kanban is an example of an agile methodology because it fulfills all twelve of the principles behind the Agile manifesto, because whilst it is not iterative, it is incremental.
+Kanban is an agile methodology that is not necessarily iterative. Processes like Scrum have short iterations which mimic a project lifecycle on a small scale, having a distinct beginning and end for each iteration. Kanban allows the software be developed in one large development cycle. Despite this, Kanban is an example of an agile methodology because it fulfills all twelve of the principles behind the agile manifesto -  whilst it is not iterative, it is incremental.
+\newline
 
-The principle behind Kanban that allows it to be incremental and Agile, is limited throughput. With no iterations a Kanban project has no defined start or end points for individual work items; each can start and end independently from one another, and work items have no pre-determined duration for that matter. Instead, each phase of the lifecycle is recognized as having a limited capacity for work at any one time. A small work item is created from the prioritized and unstated requirements list and then begins the development process, usually with some requirements elaboration. A work item is not allowed to move on to the next phase until some capacity opens up ahead. By controlling the number of tasks active at any one time, developers still approach the overall project incrementally which gives the opportunity for Agile principles to be applied.
+The principle behind Kanban that allows it to be incremental and Agile, is limited throughout. With no iterations, a Kanban project has no defined start or end points for individual work items; each can start and end independently from one another, and work items have no pre-determined duration. Instead, each phase of the lifecycle is recognized as having a limited capacity for work at any one time. A small work item is created from the prioritized and unstated requirements list and then begins the development process, usually with some requirements elaboration. A work item is not allowed to move on to the next phase until some capacity opens up ahead. By controlling the number of tasks active at any one time, developers still approach the overall project incrementally which gives the opportunity for agile principles to be applied.
+\newline
 
-Kanban projects have Work In Progress (WIP) limits which are the measure of capacity that keeps the development team focused on only a small amount of work at one time. It is only as tasks are completed that new tasks are pulled into the cycle. WIP limits should be fine-tuned based on comparisons of expected versus actual effort for tasks that complete.
+Kanban projects have Work In Progress (WIP) limits, which are the measure of capacity that keeps the development team focused on only a small amount of work at one time. It is only as tasks are completed that new tasks are pulled into the cycle. WIP limits should be fine-tuned based on comparisons of expected versus actual effort for tasks that complete.
+\newline
 
-Kanban does not impose any role definition as say, Scrum does and along with the absence of formal iterations, role flexibility makes Kanban attractive to those who have been using waterfall-style development models and want to change but are afraid of the initial upheaval something like Scrum can cause while being adopted by a development team.
+Kanban does not impose any role definition as, for example, Scrum does. That along with the absence of formal iterations and role flexibility make Kanban attractive to those who have been using waterfall-style development models and want to change but are afraid of the initial upheaval that something like Scrum can cause while being adopted by a development team.
 
-\subsection{Lean software development}
+\subsection{Lean Software Development}
 
 Lean Software Development \cite{lean} is a set of principles to deliver software according to the principles of lean manufacturing. In a lean environment, activities or processes that result in the expenditure of effort and/or resources towards goals that are not producing value for the customer should be eliminated. Essentially, lean is centered on preserving value with less work. Lean approaches are often called six-sigma or Just-In Time (JIT).
 
-\subsection{Project orientations}
+\subsection{Project Orientations}
 After a deep study of existing methodologies, we decided to divide our project into three sprints.
-we will dedicate the first sprint to the initial project set up including the DevOps, in the second sprint we will be implementing the developer platform and finally, we will implement the checkout module in the last sprint.
+we will dedicate the first sprint to the initial project set up including the DevOps. In the second sprint we will be implementing the developer platform. Finally, we will implement the checkout module in the last sprint.
 
-In each sprint, we will have a Kanban board to divide the sprint into incremental tickets.
+In each sprint, we have a Kanban board to divide the sprint into incremental tickets.
 
 \subsection{Project Backlog}
-the backlog is intended to collect all the customer's needs that the project team must realize. Therefore it contains the list of functionalities involved in the creation of the product, as well as all the elements requiring the intervention of the project team. All the elements included in the backlog are classified by priority indicating the order of their realization.
+The backlog is intended to collect all the customer's needs that the project team must realize. Therefore, it contains the list of functionalities involved in the creation of the product, as well as all the elements requiring the intervention of the project team. All the elements included in the backlog are classified by priority indicating the order of their realization.
 \newpage
 
 
@@ -164,22 +167,22 @@ the backlog is intended to collect all the customer's needs that the project tea
 \begin{tabularx}{\linewidth}{|c|X|c|c|}
 \hline
 ID & \multicolumn{1}{c|}{User Story} & Estimation & Priority \\ \hline
-1 & As an unauthorized user i want to create a new account. &  3 & 1  \\  \hline
-2 & As an unauthorized user i want to recover my account using my email. &  1 & 3 \\ \hline
-3 & As an unauthorized user i want to read the documentation. & 2 & 2 \\ \hline
-4 & As an unauthorized user i want to login in to my account. & 3 & 1 \\ \hline
-5 & As an authorized user i want to logout in to my account. & 1 & 1 \\ \hline
-6 & As an authorized user i want to create an integration app. & 3 & 1 \\ \hline
-7 & As an authorized user i want to  enable/disable my integration app. & 1 & 3 \\ \hline
-8 & As an authorized user i want to  revoke my integration app. & 1 & 2 \\ \hline
-9 & As an authorized user i want to  generate my integration app credentials. & 1 & 1 \\ \hline
-10 & As an authorized user i want to check my integration app orders. & 2 & 2 \\ \hline
-11 & As an authorized user i want to check my integration app transaction number. & 1 & 3 \\ \hline
-12 & As an authorized user i want to check my integration app gross sales. & 1 & 2 \\ \hline
-13 & As an authorized user i want to change my account settings. & 2 & 3 \\ \hline
-14 & As an authorized user i want to integrate Flouci button in my website using my integration app public token. & 3 & 1 \\ \hline
-15 & As an authorized user i want to accept payments in my website using my integration app private token. & 3 & 1 \\ \hline
-16 & As an authorized user i want to reimburse payments orders. & 3 & 2 \\ \hline
+1 & As an unauthorized user, I want to create a new account. &  3 & 1  \\  \hline
+2 & As an unauthorized user, I want to recover my account using my email. &  1 & 3 \\ \hline
+3 & As an unauthorized user, I want to read the documentation. & 2 & 2 \\ \hline
+4 & As an unauthorized user, I want to login to my account. & 3 & 1 \\ \hline
+5 & As an authorized user, I want to logout of my account. & 1 & 1 \\ \hline
+6 & As an authorized user, I want to create an integration app. & 3 & 1 \\ \hline
+7 & As an authorized user, I want to  enable/disable my integration app. & 1 & 3 \\ \hline
+8 & As an authorized user, I want to  revoke my integration app. & 1 & 2 \\ \hline
+9 & As an authorized user, I want to  generate my integration app credentials. & 1 & 1 \\ \hline
+10 & As an authorized user, I want to check my integration app orders. & 2 & 2 \\ \hline
+11 & As an authorized user, I want to check my integration app transaction number. & 1 & 3 \\ \hline
+12 & As an authorized user, I want to check my integration app gross sales. & 1 & 2 \\ \hline
+13 & As an authorized user, I want to change my account settings. & 2 & 3 \\ \hline
+14 & As an authorized user, I want to integrate a Flouci button in my website using my integration app public token. & 3 & 1 \\ \hline
+15 & As an authorized user, I want to accept payments in my website using my integration app private token. & 3 & 1 \\ \hline
+16 & As an authorized user, I want to reimburse payments orders. & 3 & 2 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -188,7 +191,7 @@ ID & \multicolumn{1}{c|}{User Story} & Estimation & Priority \\ \hline
 This first chapter allowed us to define the general boundaries of our project.
 
 We gave an introduction of our host company and the motivations behind the project.
-We studied the project context and the existing similar projects, we took a look into the three biggest implementations.
+We studied the project context and the existing similar projects and took a look into the three biggest implementations.
 
 In The end we set the basis of the project by fixing a methodology to follow in the development and realization of the project.
 

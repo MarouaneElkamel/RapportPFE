@@ -20,31 +20,33 @@
 %==============================================================================
 
 \section*{Introduction}
-This chapter is introducing the software development disciplines and rules followed during the achievement of our project. In order to have a clear development structure, a development process must be set in place in the earliest stage of our project life.
+This chapter introduces the software development disciplines and rules followed during the achievement of our project. In order to have a clear development structure, a development process must be set in place in the earliest stage of our project life.
 
-Our development process is a combination of different practices like Test-driven development and DevOps.
+Our development process is a combination of different practices such as Test-driven development and DevOps.
 
 \section{Kanban Tickets Life Cycle}
 Following the Kanban methodology, our project is decomposed to small tickets with limited scopes. The tickets are developed in an incremental way following priority order, and together they shape our project to its final version.
-The figure \ref{fig:kanban} shows our product board.
+Figure \ref{fig:kanban} shows our product board.
 \begin{figure}[H]\centering
 \includegraphics[scale=0.3]{kanban_board.png}
 \caption{Kanban Board}
 \label{fig:kanban}
 \end{figure}
 \subsection{Backlog}
-All tickets are created in the "Backlog" stage, any work that needs to be done is formed into a ticket.
+All tickets are created in the "Backlog" stage, any work that needs to be done is formed into a ticket.\newline
 
+The ticket needs to have a self-explanatory description to make it simple for the developer to start working on it without the need for further explanation.
+\newline
 
-The ticket needs to have a self-explanatory description, to make it simple for the developer to start working on it without the need for further explanation.
+A Tag must be assigned to the ticket as well. Tags may refer to the nature of the work to do (e.g. Bug, Fix, Task), or the scope e.g. Back-end, Front-end, DevOps.
+\newline
 
-A Tag must be assigned to the ticket as well, tags could be referring to the nature of the work to do (e.g. Bug, Fix, Task), or the scope e.g. Back-end, Front-end, DevOps.
+In the end, the ticket priority must be set following a priority system decided by the development team. The system could rely on numerical values (e.g. 0 having the least priority, 1, 2), or having specific tags (e.g. LOW, MEDIUM, HIGHT, URGENT) which we will be using in our project.
+\newline
 
-In the end, the ticket priority must be set following a priority system set by the development team. The system could relay on numerical values (e.g. 0 having the least priority, 1, 2), or having specific tags (e.g. LOW, MEDIUM, HIGHT, URGENT) which we will be using in our project.
-
-Tickets could only move from "Backlog" to "Selected For Development".
+Tickets can only move from "Backlog" to "Selected For Development".
 \subsection{Selected For Development}
-In the "Selected For Development" stage developers have access to the tickets. They have to tackle the ticket following the priority system and the tag matching their expertise (Back-end, Front-end).
+In the "Selected For Development" stage developers have access to the tickets. They have to tackle the ticket following the priority system and the tag matching their expertise (back-end, front-end).
 
 Once they choose a ticket they must assign it to their name, move it to the "In Progress" stage and create a git branch with the ticket name and finally start developing.
 
@@ -52,29 +54,29 @@ Tickets could only move from "Selected For Development" to "In Progress".
 \subsection{In Progress}
 The "In Progress" stage serves as a safety mechanism to avoid having two developers working on the same ticket.
 
-This stage indicates that the tickets are taking care of, it also shows the person developing the ticket.
+This stage indicates that the tickets are being taken care of and also shows the person developing the ticket.
 
-If the developer finishes his work he should move the ticket to "Code Review" stage and make a pull request of the branch.
+If the developer finishes his work, he should move the ticket to "Code Review" stage and make a pull request off the branch.
 
 
 In the case of failure, the ticket should go back to the "Selected For Development" stage.
 \subsection{Code Review}
 Once a ticket is in the "Code Review" stage, the project manager should open the pull request and check the code committed by the developer.
 
-In case of approval, the pull request is merged and deployed, the ticket then is moved to "QA".
+In the case of approval, the pull request is merged and deployed, the ticket then is moved to "QA".
 
 
-In case of disapproval, the project manager leaves comments on the pull request and moves the ticket back to "In progress". The developer then needs to check the code and fix the issue.
+In the case of disapproval, the project manager leaves comments on the pull request and moves the ticket back to "In progress". The developer then needs to check the code and fix the issue.
 \subsection{QA}
-In the "QA" stage tickets are tested by fellow developers, the functionality of the ticket should be tested on an environment similar to the production environment, also developer should push the test to the limit and test all edge cases.
+In the "QA" stage tickets are tested by fellow developers. The functionality of the ticket should be tested on an environment similar to the production environment. The developer should also push the test to the limit and test all edge cases.
 
-If all developers approve that the code is working fine in every possible scenario the ticket is moved to do, otherwise, the ticket info should be updated with the issues encountered and the ticket is moved back to the "In Progress" stage.
+If all developers approve that the code is working fine in every possible scenario, the ticket is moved to "Done". Oherwise, the ticket info should be updated with the issues encountered and the ticket is moved back to the "In Progress" stage.
 
 \subsection{Done}
-All tickets should finally be moved to the "Done" stage, this stage groups all the work is done and keeps track of the progress of the development.
+All tickets should finally be moved to the "Done" stage. This stage groups all the work that is done and keeps track of the progress of the development.
 
 
-After a fixed time tickets get archived to gain space in the Kanban board.
+After a fixed time, tickets get archived to gain space in the Kanban board.
 
 \section{Gitflow workflow }
 Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
@@ -89,15 +91,15 @@ The figure \ref{fig:git} shows our different branches and our merging strategy.
 \end{figure}
 
 \subsection{Feature Branch}
-The feature branch is created by the developer for every Kanban ticket he tackles. When moving the ticket to the "In Progress" stage the branch should be created with the same name as the ticket.
+The feature branch is created by the developer for every Kanban ticket he tackles. When moving the ticket to the "In Progress" stage, the branch should be created with the same name as the ticket.
 
 All the development specific to the scope of the ticket should be done in the same branch, and in the end, the developer should make a pull request on the Develop Branch.
 \subsection{Develop Branch}
-The Develop branch presents the edge version of the product, it contains all newly developed features. This branch is the main branch to the internal project team, All newly developed feature is tested by developers on this branch, it maps to the "dev environment".
+The Develop branch presents the edge version of the product, which contains all newly developed features. This branch is the main branch to the internal project team. All newly developed features are tested by developers on this branch, which maps to the "dev environment".
 
-This branch could present a number of bugs because by nature it's a testing and validation branch of the latest developed code.
+This branch could present a number of bugs because, by nature, it's a testing and validation branch of the latest developed code.
 
-This branch is daily updated.
+This branch is updated daily.
 \subsection{Master Branch}
 After tickets validation and bug fixes, the internal team merges a stable version of the product (Develop branch) to the Master branch. This branch maps to the staging environment and serves for testing on the company level.
 
@@ -106,9 +108,9 @@ All company projects depending on our project always use its staging version. Th
 \subsection{Release Branch}
 This is the production branch, code on this branch has been tested twice in both the dev and staging environments.
 
-The branch is updated according to the release dates, it's the result of merging a stable master branch.
+The branch is updated according to the release dates. It's the result of merging a stable master branch.
 
-The branch maps to the prod environment and it's the actual branch used by the end user.
+The branch maps to the prod environment and it is the actual branch used by the end user.
 \subsection{Hotfix Branch}
 As it is impossible to have a bug free software, we should take in consideration bugs popping in the prod environment.
 
@@ -122,9 +124,9 @@ This is a measure to quickly fix issues that have effects on the end user.
 \section{Test-driven development}
 "Test Driven Development"\cite{TDD} is a development technique that requires the writing of tests even before writing the first line of code.
 
-In theory, the method requires the intervention of at least two different people, one person writes the tests, the other writes the code. This avoids problems related to subjectivity.
+In theory, the method requires the intervention of at least two different people, one who writes the tests, and the other who writes the code. This avoids problems related to subjectivity.
 
-In practice things are more complicated, sometimes you develop alone or you write the tests yourself that guarantee the integrity of new functionality in a collaborative project.
+In practice, things are more complicated. Sometimes you develop alone or you write the tests yourself that guarantee the integrity of new functionality in a collaborative project.
 
 The TDD can be divided into 5 distinct steps as shown in the figure  \ref{fig:tdd}:
 \begin{enumerate}
@@ -141,22 +143,22 @@ The TDD can be divided into 5 distinct steps as shown in the figure  \ref{fig:td
 \label{fig:tdd}
 \end{figure}
 \newpage
-In our project, The development of every ticket starts by writing the test. A pull request can only be approved if it contains and passes the new test.
+In our project, the development of every ticket starts by writing the test. A pull request can only be approved if it contains and passes the new test.
 
-This discipline enables our project to benefits from the DevOps world, As it's important to have a test for the CI-CD process to be defined.
+This discipline enables our project to benefits from the DevOps world, as it's important to have a test for the CI-CD process to be defined.
 
 
 \section{DevOps}
 DevOps\cite{devops} is a set of practices that automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably.
 
-In our project we need to have an autonomous testing and deployment process to maintain our three environments:
+In our project, we need to have an autonomous testing and deployment process to maintain our three environments:
 \begin{itemize}
 	\item \textbf{Dev environment:} Represents the Develop branch and used for internal team testing.
 	\item \textbf{Staging environment:} Represents the Master branch and used for a company level testing.
     \item \textbf{Prod environment:} Represents the Release branch and used by the end user.
 \end{itemize}
 
-With every branch push our CI-CD server (Jenkins) triggers an automatic script that consists of a set of predefined steps.
+With every branch push, our CI-CD server (Jenkins) triggers an automatic script that consists of a set of predefined steps.
 
 The steps behave slightly different according to the branch name. 
 Our pipeline is shown in the figure \ref{fig:jenkins}
@@ -166,16 +168,18 @@ Our pipeline is shown in the figure \ref{fig:jenkins}
 \label{fig:jenkins}
 \end{figure}
 \subsubsection{Preparation}
-The first step, of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project.
+The first step of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project.
 \subsubsection{Testing}
 In this step, all tests are executed for both backend and frontend. A full report is created with the test results.
-We can only continue the build if all tests are passed gracefully otherwise the job is terminated.
+We can only continue the build if all tests are passed gracefully. Otherwise, the job is terminated.
 \subsubsection{Quality Measurements}
 In this step, the code is inspected by the open-source platform SonarQube.
 
 The step performs automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.
 \subsubsection{Dockerization}
-If all testing and quality measures are approved we proceed to the Dockerization of our project.
+If all testing and quality measures are approved, we proceed to the Dockerization of our project.
+\newline
+
 This step creates a standard artifact that can be deployed on any infrastructure without the need for specific configurations for different servers.
 
 If the Docker images are created successfully, it will be tagged latest and pushed to the Docker Hub.
@@ -187,16 +191,16 @@ On every target server, we have a docker swarm cluster to deploy the new version
 The swarm cluster is also configured with the different environment variables as secrets to protect the different credentials (database, cloud services\dots).
 
 \section{General Architecture}
-Now that we defined our development process disciplines and the tools we will be using, it's the right time to take the last step before going into the implementation.
+Now that we have defined our development process disciplines and the tools we will be using, we can take the last step before going into the implementation.
 
-In this section, we will be discussing the general architecture of the whole project.
+In this section, we will discuss the general architecture of the whole project.
 
-In order to integrate Flouci web payment solution, we decided to manage integrations with apps. Every e-commerce website maps to an integration app created on our servers, the app will be linked to the Flouci wallet, and it will hold public and private keys.
+In order to integrate Flouci web payment solution, we decided to manage integrations with apps. Every e-commerce website maps to an integration app created on our servers. The app will be linked to the Flouci wallet, and it will hold both public and private keys.
 \begin{itemize}
 	\item \textbf{Public APP Key:} Used to integrate Flouci form in the e-commerce front-end.
 	\item \textbf{Private APP Key:} Used in the e-commerce back-end to verify and accept payments.
 \end{itemize}
- The figure \ref{fig:garch} shows the multiple pieces that make it possible to have Flouci as a web payment solution.Lines sketch the interactions between the different picies, the green key represents the integration app public key and the red key represents the private.
+ The figure \ref{fig:garch} shows the multiple pieces that make it possible to have Flouci as a web payment solution. Arrows show  the interactions between the different pieces. The green key represents the integration app public key and the red key represents the private.
  
 \begin{figure}[H]\centering
 \includegraphics[scale=0.4]{generalarchitecture.png}
@@ -224,7 +228,7 @@ We tackled our DevOps setup and the different steps of the automation process fr
 
 In the end, we studied the general architecture of our project. We also gave a brief description of each component role.
 
-In the next chapter will start our first sprint entitled "User and App Management". The sprint will contain all steps from design to features implementation.
+In the next chapter, will start our first sprint entitled "User and App Management". The sprint will contain all steps from design to features implementation.
 
 
 %==============================================================================
