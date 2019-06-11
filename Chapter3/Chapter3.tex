@@ -81,7 +81,7 @@ After a fixed time, tickets get archived to gain space in the Kanban board.
 \section{Gitflow workflow }
 Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
 
-Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together. 
+Gitflow is really just an abstract idea of a Git workflow. This means it dictates what kind of branches to set up and how to merge them together.
 The figure \ref{fig:git} shows our different branches and our merging strategy.
 
 \begin{figure}[!ht]\centering
@@ -122,7 +122,7 @@ This is a measure to quickly fix issues that have effects on the end user.
 
 
 \section{Test-driven development}
-"Test Driven Development"\cite{TDD} is a development technique that requires the writing of tests even before writing the first line of code.
+"Test Driven Development" \cite{TDD} is a development technique that requires the writing of tests even before writing the first line of code.
 
 In theory, the method requires the intervention of at least two different people, one who writes the tests, and the other who writes the code. This avoids problems related to subjectivity.
 
@@ -149,7 +149,7 @@ This discipline enables our project to benefits from the DevOps world, as it's i
 
 
 \section{DevOps}
-DevOps\cite{devops} is a set of practices that automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably.
+DevOps \cite{devops} is a set of practices that automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably.
 
 In our project, we need to have an autonomous testing and deployment process to maintain our three environments:
 \begin{itemize}
@@ -160,23 +160,23 @@ In our project, we need to have an autonomous testing and deployment process to 
 
 With every branch push, our CI-CD server (Jenkins) triggers an automatic script that consists of a set of predefined steps.
 
-The steps behave slightly different according to the branch name. 
+The steps behave slightly different according to the branch name.
 Our pipeline is shown in the figure \ref{fig:jenkins}
 \begin{figure}[!h]\centering
 \includegraphics[scale=0.3]{jenkins.png}
-\caption{Kaoun logo }
+\caption{Kaoun logoï¿½}
 \label{fig:jenkins}
 \end{figure}
-\subsubsection{Preparation}
+\subsection{Preparation}
 The first step of every build is getting the branch code and preparing a clean environment containing all the dependencies required to run our project.
-\subsubsection{Testing}
+\subsection{Testing}
 In this step, all tests are executed for both backend and frontend. A full report is created with the test results.
 We can only continue the build if all tests are passed gracefully. Otherwise, the job is terminated.
-\subsubsection{Quality Measurements}
+\subsection{Quality Measurements}
 In this step, the code is inspected by the open-source platform SonarQube.
 
 The step performs automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.
-\subsubsection{Dockerization}
+\subsection{Dockerization}
 If all testing and quality measures are approved, we proceed to the Dockerization of our project.
 \newline
 
@@ -184,7 +184,7 @@ This step creates a standard artifact that can be deployed on any infrastructure
 
 If the Docker images are created successfully, it will be tagged latest and pushed to the Docker Hub.
 
-\subsubsection{Deployment}
+\subsection{Deployment}
 In the last step of the build, and according to the branch name the new artifact is deployed to the convenient server (dev, staging, prod).
 
 On every target server, we have a docker swarm cluster to deploy the new version of the product.
@@ -201,7 +201,7 @@ In order to integrate Flouci web payment solution, we decided to manage integrat
 	\item \textbf{Private APP Key:} Used in the e-commerce back-end to verify and accept payments.
 \end{itemize}
  The figure \ref{fig:garch} shows the multiple pieces that make it possible to have Flouci as a web payment solution. Arrows show  the interactions between the different pieces. The green key represents the integration app public key and the red key represents the private.
- 
+
 \begin{figure}[H]\centering
 \includegraphics[scale=0.4]{generalarchitecture.png}
 \caption{Online Payment General Architecture}
@@ -214,10 +214,10 @@ In order to integrate Flouci web payment solution, we decided to manage integrat
 	\item \textbf{Payments API:}  Used to make payments.
 	\item \textbf{Wallets API:}  Used to link wallets to integration apps.
 	\item \textbf{E-commerce Front-end:} Contains the Flouci form that generates QR codes linked to specific integration Apps.
-	\item \textbf{E-commerce Back-end:} Verify and accept payments.	
+	\item \textbf{E-commerce Back-end:} Verify and accept payments.
 	\item \textbf{Flouci mobile APP:} Send money through the QR code generated by the front end.
 \end{itemize}
-  
+
 \section*{Conclusion}
 We went through the Kanban methodology in practice, explaining the different steps of the incremental code writing.
 

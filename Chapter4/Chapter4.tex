@@ -21,17 +21,17 @@
 \section*{Introduction}
 In order to integrate Flouci as a web payment method, we opted for an app model. This model consists of creating an app for each integration the developer wants to have. Each app contains basic information about the e-commerce website and is linked to a Flouci account to accept payment directly.
 \newline
-In this chapter, we will start our project development. We will focus on implementing two linked parts of our application which are the user and app. 
+In this chapter, we will start our project development. We will focus on implementing two linked parts of our application which are the user and app.
 
 \section{Flux Design Pattern}
 Our solution is implemented with two main frameworks, Spring Boot and React JS.
 Our back-end is entirely written with Spring Boot and serves as an API for our front-end developed with React.
 \newline
 
-Using React JS we had to follow a newly created design pattern called Flux. The pattern was created by Facebook and they define it as follows : 
+Using React JS we had to follow a newly created design pattern called Flux. The pattern was created by Facebook and they define it as follows :
 \newline
 
-\say{Flux\cite{Flux} is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.}
+\say{Flux \cite{Flux} is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.}
 
 \begin{figure}[H]\centering
 \includegraphics[scale=0.3]{Fluxdesignpattern.png}
@@ -85,7 +85,7 @@ Summary & The user creates an integration app to use it on his e-commerce websit
 Actors & Registered developer. \\ \hline
 Precondition & The user visits the new app page. \\ \hline
 Nominal Scenario & \begin{enumerate}
- \item The user enters the app name, description and a phone number linked to a Flouci wallet. 
+ \item The user enters the app name, description and a phone number linked to a Flouci wallet.
  \item The user gets an OTP on his phone number.
  \item The user enters the OTP to activate the app.
  \item The user is redirected to the newly created app page.
@@ -126,7 +126,7 @@ In our project we used four different authorities to manage access to different 
 \end{itemize}
 
 \subsection{Registration}
-The registration process is very simple. We only require basic info and a valid email address to open an account. All created accounts have a "DEVELOPER" authorities which essentially give them access to restricted functionalities. 
+The registration process is very simple. We only require basic info and a valid email address to open an account. All created accounts have a "DEVELOPER" authorities which essentially give them access to restricted functionalities.
 
 We only activate the user account after the email confirmation. The activation email contains a link with a key saved in the database. Accessing the link will activate the account.
 

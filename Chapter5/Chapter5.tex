@@ -19,13 +19,13 @@
 \begin{spacing}{1.2}
 
 \section*{Introduction}
-In this chapter, we will implement the tools needed for developers to be able to integrate Flouci in their websites. 
+In this chapter, we will implement the tools needed for developers to be able to integrate Flouci in their websites.
 
-In order to make it portable in any existing e-commerce, we decided to implement it in pure javascript.
+In order to make it portable in any existing e-commerce website, we decided to implement it in pure javascript.
 \section{Front End Integration}
 In this section, we will implement the front end payment plugin that  can be integrated in any HTML code.
 \subsection{User Experience}
-In the online payment, we faced a small issue regarding the payment experience, because the process is different from the mobile version. The online payments needs the developer to accept them.
+In the online payment, we faced a small issue regarding the payment experience, because the process is different from the mobile version. The online payments needs to wait until the developer accept the order.
 So we decided to create the same QR code experience in mobile and only add a step to enter a six digits code in the browser.
 
 Figure \ref{fig:onlinepay} shows the payment form of the developer API.
@@ -39,7 +39,7 @@ Figure \ref{fig:onlinepay} shows the payment form of the developer API.
 To create our front-end form and make it easy to integrate, we created a web-pack project that bundles next generation javascript and CSS into one single javascript file.
 The code contains the payment form and an API validation call to the payment API.
 If the six-digit code entered by the user is correct, the script returns the code to the form submit action.
-\subsection{Building the script file}
+\subsection{Building The Script File}
 Our front-end integration is basically a web script capable of delivering three main objectives:
 \begin{itemize}
 	\item \textbf{Payment Button:} The payment button should have a distinct and recognizable style across all e-commerce websites.
@@ -47,10 +47,10 @@ Our front-end integration is basically a web script capable of delivering three 
 	\item \textbf{Validation API:} After scanning the QR code, the script should be able to validate the pre-payment with the payments API and give feedback to the e-commerce backend.
 \end{itemize}
 
-In order to create this script, we had to use different modules such as a QR code generator. This made it impossible to write everything in vanilla javascript and deliver our project on time. 
+In order to create this script, we had to use different modules such as a QR code generator. This made it impossible to write everything in vanilla javascript and deliver our project on time.
 
 
-The solution we agreed on is to create a webpack project. With webpack, we could use next generation javascript and already existing NPM modules then bundle everything in one script. 
+The solution we agreed on is to create a webpack project. With webpack, we could use next generation javascript and already existing NPM modules then bundle everything in one script.
 
 The figure \ref{fig:webpack} shows how webpack can transform a javascript module with dependencies into one static bundle.
 \begin{figure}[H]\centering
@@ -60,12 +60,12 @@ The figure \ref{fig:webpack} shows how webpack can transform a javascript module
 \end{figure}
 
 \subsection{Design Patterns}
-In order to implement our solution, we faced a lot of design problems. Luckily such problems were commonly occurring problems in software design. So we studied the known design patterns\cite{designpattern} and we solved our issues with these design patterns:
+In order to implement our solution, we faced a lot of design problems. Luckily such problems were commonly occurring problems in software design. So we studied the known design patterns \cite{designpattern} and we solved our issues with these design patterns:
 \begin{itemize}
-	\item \textbf{Creational design patterns\cite{designpattern}:} The QR code contains different fields so we followed the Builder design pattern to create it.
-	\item \textbf{Structural design patterns\cite{designpattern}:} Our form hide different components and complex behavior so we implemented a Facade design pattern to deliver a single class that 
+	\item \textbf{Creational design patterns \cite{designpattern}:} The QR code contains different fields so we followed the Builder design pattern to create it.
+	\item \textbf{Structural design patterns \cite{designpattern}:} Our form hide different components and complex behavior so we implemented a Facade design pattern to deliver a single class that
 	 represents the entire subsystem.
-	 \item \textbf{Behavioral design patterns\cite{designpattern}:} The process of payments include different steps, that's why we implemented a  Chain of responsibility design pattern to pass the payment request between our three main objects.
+	 \item \textbf{Behavioral design patterns \cite{designpattern}:} The process of payments include different steps, that's why we implemented a  Chain of responsibility design pattern to pass the payment request between our three main objects.
 \end{itemize}
 \subsection{Integration}
 After hosting the javascript file we can easily add the form to our project. The form will only require the public app key  and the amount.
@@ -89,7 +89,7 @@ The HTML code is listed in \ref{code:html}.
 \section{Back End Integration}
 After the user inputs the six digits code into the form, the form checks the validity of the payment and return a special key to the backend ( the action function inputed by the developer)
 
-The developer then is only required to call an endpoint to accept the payment and then redirects the user to an other page depending on the payment result. 
+The developer then is only required to call an endpoint to accept the payment and then redirects the user to an other page depending on the payment result.
 
 In the figure \ref{fig:flask} we show the code of a simple flask server with a Flouci integration that works with the HTML code listed in \ref{code:html}.
 \begin{figure}[H]\centering
@@ -108,7 +108,7 @@ In order to make a payment, the user should click the payment button and scan th
 \section*{Conclusion}
 In this chapter we implemented the checkout API, which serve as an integration module that can be integrated in any web based project.
 
-In the implementation of our solution we had to made it the simplest integration possible and the most portable one. And we made as easy as implementing a simple REST call. 
+In the implementation of our solution we had to made it the simplest integration possible and the most portable one. And we made as easy as implementing a simple REST call.
 
 With the checkout integration module, we finally have all the pieces needed in the Flouci online payment process. We now have a fully functional project.
 
