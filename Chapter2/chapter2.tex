@@ -35,7 +35,7 @@ Below is a list of world leader online payments API's:
 You can use the Stripe API in test mode, which does not affect your live data or interact with the banking networks. The API key you use to authenticate the request determines whether the request is live mode or test mode.
 
 The figure \ref{fig:stripe} shows the code behind Stripe integration.
-\begin{figure}[!ht]\centering
+\begin{figure}[H]\centering
 \includegraphics[scale=0.3]{stripe.png}
 \caption{Stripe API}
 \label{fig:stripe}
@@ -47,19 +47,20 @@ The figure \ref{fig:stripe} shows the code behind Stripe integration.
 
 The figure \ref{fig:paypal} shows the developer's API of PayPal.
 \begin{figure}[!ht]\centering
-\includegraphics[scale=0.3]{PayPal.png}
+\includegraphics[width=\textwidth,height=6cm]{PayPal.png}
 \caption{PayPal API}
 \label{fig:paypal}
 \end{figure}
-\newpage
+
 \item \textbf{Twint:}
 
 Twint \cite{twint} is the closest implementation to Flouci as it offers payments through QR code scans.
 
 The plugin allows QR code generation on the web page, it also creates a code for each transaction that serves to confirm payments.
 The figure \ref{fig:twint} shows the Twint payment interface.
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.4]{twint.jpg}
+
+\begin{figure}[H]\centering
+\includegraphics[scale=0.3]{twint.jpg}
 \caption{Twint Pop-up}
 \label{fig:twint}
 \end{figure}

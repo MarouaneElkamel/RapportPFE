@@ -268,7 +268,7 @@
 \textbf{\large{\textbf{JURY}}}\\[\baselineskip]
 \begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
 \PRESn &\PRESp &(President)\\
-\RAPAn &\RAPAp &(Rapporteur)
+\RAPAn &\RAPAp &(Reviewer)
 \end{tabular}
 }
 
