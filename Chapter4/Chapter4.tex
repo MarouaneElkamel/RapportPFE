@@ -174,13 +174,28 @@ With every online payment, we attach the app ID to the payment payload. This inf
 We can then display all orders made, add filtering and even add a button to reimburse orders.
 
 \section{Data Schema}
-Our database model can be divided into three big sections of the projects. We have tables managing the user data, tables managing the app data and other independent tables handling auditing events. We have also made the model in a way that the user can have from 0 to N apps and an app can only be linked to one user.
+Our company is using the same DBMS in all its product for different reasons. One is having a great team managing and perfecting our database architecture, and second is our licensing agreements. This is why we choose the same SQL SGBD.
+Our database can be divided into three big sections that represents different aspects of the projects:
+\begin{itemize}
+	\item Tables for the user data and authorities.
+	\item  Tables for the integration apps and its metrics.
+	\item Tables for auditing events.
+\end{itemize}
+
+We made the model in a way that the user can have from 0 to N apps and an app can only be linked to one user.
+
+The transactions data are stored in our Flouci blockchain ledger and legally can't be stored in any other place.
+
+The table  "metrics\_last\_update" is used by our scheduled task that performs metrics checks everyday.
+ 
 The database schema is presented in the figure \ref{fig:database}
 \begin{figure}[H]\centering
 \includegraphics[width=\textwidth,keepaspectratio]{db.png}
 \caption{Database Model}
 \label{fig:database}
 \end{figure}
+
+
 
 \section*{Conclusion}
 In this section, we implemented the first steps the user should do in order to integrate Flouci. After creating an account and an app, The two tokens provided will be the only missing piece to integrate Flouci payment method.
