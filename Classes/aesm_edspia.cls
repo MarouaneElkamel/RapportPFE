@@ -309,22 +309,22 @@
 
 \begin{center}
 \hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{20pt}~\\
-{\Large{National Institut of Applied Sciences and Technology}}\\[\baselineskip]
-      UNIVERSITY OF CARTHAGE\\[\baselineskip]
-{\Large{\textbf{Graduation Project}}}\\[\baselineskip]
+{\Large{Institut National des SciencesAppliquées et de Technologie}}\\[\baselineskip]
+      Université du Carthage\\[\baselineskip]
+{\Large{\textbf{Projet de Fin d’Etudes}}}\\[\baselineskip]
 
-      Speciality : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
+      Fillière : \textbf{\uppercase{\FILIERE}}\\[\baselineskip]
 
 			\hbox{\raisebox{0.2em}{\vrule depth 0pt height 3.5pt width 17cm}}
 			\setlength{\baselineskip}{4pt}
 			\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}\setlength{\baselineskip}{10pt}~\\
 			\vspace*{-26pt}
-		 	{\Large\textbf{\begin{spacing}{1}Flouci Developers API\end{spacing}}}~\\[\baselineskip]
+		 	{\Large\textbf{\begin{spacing}{1}Mise en place des processus selon le protocole de certification FSCC 22 000 Version 5\end{spacing}}}~\\[\baselineskip]
 	  	\hbox{\raisebox{0.4em}{\vrule depth 0pt height 1pt width 17cm}}~\\[\baselineskip]
 
 	Presented By~\\[\baselineskip]
 	      \baselineskip=20pt
-	\AUTEURS \\[\baselineskip]
+	\AUTEURS
 			\begin{tabular}{l@{\protect\hspace{0.2cm}}l@{\protect\hspace{0.7cm}}l}
 				University Supervisor & : &\textbf{\ENCADRANT}\\
 				Enterprise Supervisor & : &\textbf{\ENCADRANTSoc}
@@ -333,7 +333,7 @@
       Presented the : \textbf{\DATE}\\[\baselineskip]
 
             \JURY
-            ~\\[\baselineskip]~\\[\baselineskip]
+            ~\\[\baselineskip]  ~\\[\baselineskip]
             Annee Universitaire : \ANNEEUNIV\\
 \end{center}
 
